@@ -1,0 +1,21 @@
+{
+  "sprite_version": 2,
+  "atlas_size": [1536, 2288],
+  "cell_size": [192, 208],
+  "columns": 8,
+  "rows": 11,
+  "states": [
+    {"key": "idle", "label": "Idle / blink", "count": 6, "preview_ms": [1680, 660, 660, 840, 840, 1920]},
+    {"key": "running-right", "label": "Carry right", "count": 8, "preview_ms": [120, 120, 120, 120, 120, 120, 120, 220]},
+    {"key": "running-left", "label": "Carry left", "count": 8, "preview_ms": [120, 120, 120, 120, 120, 120, 120, 220]},
+    {"key": "waving", "label": "Wave", "count": 4, "preview_ms": [140, 140, 140, 280]},
+    {"key": "jumping", "label": "Small hop", "count": 5, "preview_ms": [140, 140, 140, 140, 280]},
+    {"key": "failed", "label": "Needs help", "count": 8, "preview_ms": [140, 140, 140, 140, 140, 140, 140, 240]},
+    {"key": "waiting", "label": "Waiting for you", "count": 6, "preview_ms": [150, 150, 150, 150, 150, 260]},
+    {"key": "running", "label": "Working / typing", "count": 6, "preview_ms": [120, 120, 120, 120, 120, 220]},
+    {"key": "review", "label": "Review / ready", "count": 6, "preview_ms": [150, 150, 150, 150, 150, 280]}
+  ],
+  "look_angles": ["000", "022.5", "045", "067.5", "090", "112.5", "135", "157.5", "180", "202.5", "225", "247.5", "270", "292.5", "315", "337.5"],
+  "look_preview_ms": 200,
+  "timing_note": "Previews reproduce the locally observed desktop build 26.1007.71326 (including idle base timing multiplied by six). Timing is controlled by the app; this file does not configure the installed pet. Look timing is for preview only."
+}
