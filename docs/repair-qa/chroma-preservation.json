@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "method": "Preserved the already-clean native alpha; no neighbor-color averaging applied.",
+  "atlas_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
+  "alpha_preserved": true,
+  "opaque_chroma_key_pixels": 0,
+  "chroma_fringe_pixels": 0,
+  "transparent_rgb_residue_pixels": 0,
+  "evidence": "atlas.json"
+}

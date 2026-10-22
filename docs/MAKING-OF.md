@@ -170,6 +170,8 @@ Browse the [archive](IMAGE-GALLERY.md) for early concepts, standing studies, sea
 
 ## 11. Reuse the process for another pet
 
+**v1.0.1 follow-up:** the original review missed an edge-cleanup error that faded some dark contours. The [repair record](OUTLINE-REPAIR.md) shows how the approved pre-cleanup pixels were recovered, checked across all 73 frames, and re-exported without changing the motion. The public validator now checks that source-color fidelity too.
+
 Choose one identity anchor, define the whole state set, and approve the canonical pose before multiplying frames. Keep asymmetry explicit. Generate candidates independently if useful, but reconcile every candidate against the same anchors. Measure geometry after artistic approval, and visually review again after normalization and encoding.
 
 For a public release, separate the two-file runtime from the image archive, write honest compatibility and known-limit sections, attribute references, keep third-party rights separate from code licensing, sanitize metadata, and verify the remote download. Preserve rejected experiments so the next iteration can understand why a seemingly cleaner result was not selected.

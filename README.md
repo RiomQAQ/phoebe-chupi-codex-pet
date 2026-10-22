@@ -10,6 +10,8 @@ This is an unofficial **Phoebe Chupi / 菲比啾比** pet for **Codex and Dot—
 
 Made with **GPT-6-Astra**, using the built-in image generation tools for the artwork. [Credits](NOTICE.md).
 
+**v1.0.1:** restored the dark hair outlines that the previous edge-cleanup pass had faded. The blinking, poses, and Dot head turns stay the same. [Before/after and review](docs/OUTLINE-REPAIR.md).
+
 | Keeping you company | Busy with her laptop | Waiting for your reply |
 | :---: | :---: | :---: |
 | ![Idle](previews/idle.gif) | ![Working](previews/running.gif) | ![Waiting](previews/waiting.gif) |
@@ -26,7 +28,7 @@ The look GIF cycles through the poses to show them all; in Dot, the mouse positi
 
 ## Install
 
-Grab **`phoebe-chupi-v1.0.0.zip`** from [Releases](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/latest) if you only want the pet. The much larger artwork ZIP is for browsing the whole making-of archive.
+Grab **`phoebe-chupi-v1.0.1.zip`** from [Releases](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/latest) if you only want the pet. The much larger artwork ZIP is for browsing the whole making-of archive.
 
 The installable pet is just two files:
 
@@ -70,6 +72,10 @@ python3 scripts/install.py --local
 ```
 
 It leaves different existing files alone and never edits your app settings. Use `--local --pets-dir PATH` to choose another directory.
+
+### Update an existing local copy
+
+Back up your existing pet folder somewhere outside `pets`, then replace only its `spritesheet.webp` with the new one. Keep its `pet.json` so its name and identity stay the same. Refresh the pet picker afterward. If you imported a cloud pet, use the app's update flow for that existing pet.
 
 ### Where it works
 
@@ -124,6 +130,7 @@ The scripts handle previews, crops, file checks, and packaging. The loops still 
 | --- | --- |
 | [Making of](docs/MAKING-OF.md) · [中文制作记录](docs/MAKING-OF.zh-CN.md) | References, character rules, per-frame work, repairs, assembly, review, and why we rolled back the awake experiment. |
 | [Review notes](docs/REVIEW.md) | What was checked, how the direction comparisons worked, what passed, and what still needs care. |
+| [v1.0.1 outline repair](docs/OUTLINE-REPAIR.md) | The export mistake, before/after crops, all-frame checks, and the reproducible repair. |
 | [Prompt recipes](docs/PROMPTS.md) | Practical starting points for character, motion, repair, gaze, and review prompts. |
 | [Format](docs/FORMAT.md) | Manifest, grid, row counts, angles, timing, and assembly rules. |
 | [Sources](docs/SOURCES.md) | Character and community references, Bilibili motion studies, attribution, and README inspirations. |
@@ -133,7 +140,7 @@ The scripts handle previews, crops, file checks, and packaging. The loops still 
 
 - **9 animation states + 16 head directions:** 73 occupied cells, with the other 15 fully transparent.
 - **Native v2 geometry:** 1536 × 2288 atlas, 8 × 11 grid, 192 × 208 per cell.
-- **Lossless WebP:** 1,932,534 bytes; the decoded pixels match the accepted PNG.
+- **Lossless WebP:** 1,910,162 bytes; the decoded pixels match the restored PNG.
 - **Blinking stays.** Half-closed and closed eyes are part of the selected blink cycle. The awake trial is kept in the archive, outside the install folder.
 - **Full image history:** 742 distinct originals, with an index mapping 1,290 working-file copies. Additional public previews and final-atlas crops are included too.
 
@@ -146,11 +153,12 @@ For maintainers, with Python 3.10+:
 ```sh
 python3 -m pip install -r requirements.txt
 python3 scripts/validate.py
+python3 -m unittest discover -s tests
 python3 scripts/render_previews.py
 python3 scripts/package.py
 ```
 
-CI runs the same validator. After changing artwork, review the loops again as well. The small ZIP contains only the manifest and WebP; the separate artwork ZIP includes the full image history. See [checksums](CHECKSUMS.sha256).
+CI runs the validator and outline regression tests, including a check that rejects the damaged v1.0.0 image. After changing artwork, review the loops again as well. The small ZIP contains only the manifest and WebP; the separate artwork ZIP includes the full image history. See [checksums](CHECKSUMS.sha256).
 
 ## If something looks wrong
 

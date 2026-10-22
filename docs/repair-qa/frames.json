@@ -1,0 +1,973 @@
+{
+  "ok": true,
+  "frames_root": "art/frames",
+  "states": [
+    "idle",
+    "running-right",
+    "running-left",
+    "waving",
+    "jumping",
+    "failed",
+    "waiting",
+    "running",
+    "review"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/idle/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16332,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/idle/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16298,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/idle/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16333,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/idle/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16415,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/idle/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16408,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/idle/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16428,
+          "bbox": [
+            24,
+            40,
+            166,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/running-right/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16594,
+          "bbox": [
+            26,
+            13,
+            163,
+            195
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/running-right/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16152,
+          "bbox": [
+            26,
+            14,
+            164,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/running-right/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15973,
+          "bbox": [
+            26,
+            14,
+            164,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/running-right/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16157,
+          "bbox": [
+            26,
+            14,
+            164,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/running-right/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16231,
+          "bbox": [
+            26,
+            14,
+            164,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/running-right/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15830,
+          "bbox": [
+            26,
+            14,
+            164,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "art/frames/running-right/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16021,
+          "bbox": [
+            28,
+            11,
+            166,
+            190
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "art/frames/running-right/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15848,
+          "bbox": [
+            28,
+            13,
+            165,
+            189
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-left",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/running-left/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15198,
+          "bbox": [
+            39,
+            14,
+            167,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/running-left/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14919,
+          "bbox": [
+            39,
+            14,
+            167,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/running-left/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14804,
+          "bbox": [
+            39,
+            14,
+            167,
+            194
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/running-left/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14890,
+          "bbox": [
+            39,
+            14,
+            167,
+            189
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/running-left/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14769,
+          "bbox": [
+            39,
+            14,
+            167,
+            189
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/running-left/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14578,
+          "bbox": [
+            39,
+            14,
+            167,
+            193
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "art/frames/running-left/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 14722,
+          "bbox": [
+            39,
+            14,
+            167,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "art/frames/running-left/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15100,
+          "bbox": [
+            39,
+            14,
+            167,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waving",
+      "expected_frames": 4,
+      "actual_frames": 4,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/waving/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16386,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/waving/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16379,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/waving/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16374,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/waving/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16370,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "jumping",
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/jumping/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16370,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/jumping/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16096,
+          "bbox": [
+            24,
+            27,
+            165,
+            182
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/jumping/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15664,
+          "bbox": [
+            25,
+            24,
+            166,
+            176
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/jumping/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15703,
+          "bbox": [
+            24,
+            40,
+            166,
+            192
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/jumping/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16401,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "failed",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/failed/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16374,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/failed/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16245,
+          "bbox": [
+            23,
+            41,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/failed/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16302,
+          "bbox": [
+            23,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/failed/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16378,
+          "bbox": [
+            23,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/failed/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16395,
+          "bbox": [
+            23,
+            40,
+            165,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/failed/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16419,
+          "bbox": [
+            23,
+            40,
+            166,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "art/frames/failed/06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16422,
+          "bbox": [
+            23,
+            40,
+            165,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "art/frames/failed/07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16383,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "waiting",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/waiting/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16390,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/waiting/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15946,
+          "bbox": [
+            30,
+            40,
+            169,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/waiting/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15973,
+          "bbox": [
+            30,
+            40,
+            169,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/waiting/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16017,
+          "bbox": [
+            30,
+            40,
+            169,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/waiting/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 15966,
+          "bbox": [
+            30,
+            40,
+            169,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/waiting/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16409,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/running/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16130,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/running/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16162,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/running/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16168,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/running/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16227,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/running/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16207,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/running/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16184,
+          "bbox": [
+            24,
+            40,
+            165,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "review",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": null,
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "art/frames/review/00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16346,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "art/frames/review/01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16224,
+          "bbox": [
+            24,
+            41,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "art/frames/review/02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16183,
+          "bbox": [
+            25,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "art/frames/review/03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16185,
+          "bbox": [
+            25,
+            40,
+            166,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "art/frames/review/04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16191,
+          "bbox": [
+            25,
+            40,
+            166,
+            198
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "art/frames/review/05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 16297,
+          "bbox": [
+            24,
+            40,
+            166,
+            197
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

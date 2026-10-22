@@ -1,0 +1,89 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A has a narrower eye on the screen-left side and a face turned left; B shows the mirrored eye-size and face alignment toward the right."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's face projects toward screen-left with the left eye more compressed; B's face and smaller far eye point screen-right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A shows a broad screen-left eye and a narrow right eye as the face turns right; B reverses those visible cues."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's facial features angle toward the screen-right edge; B's eyes and nose are oriented toward screen-left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's screen-left eye is compressed and its face turns left; B has the smaller eye on the right and turns right."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Despite both faces being lowered, A's near eye and facial profile angle left, while B's angle right."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A has the larger eye on the screen-left side and the face directed right; B has the larger eye on the right and the face directed left."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes are open and raised in a lifted face; B's eyes sit low beneath the bangs and its head visibly bows."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a lowered face beneath a prominently visible hat crown; B's face is lifted with large upward-looking eyes."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's face and eyelids tilt down toward the laptop; B's open eyes and raised face tilt upward."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face is lifted and the eyes angle upward; B's face is lowered, with eyes directed closer to the laptop."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A has a raised, open-eyed face; B bows beneath the hat with lowered, flatter eyes."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A's visible face tilts upward with wide eyes; B's head and half-lidded eyes angle downward."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A has a lowered face and gaze beneath the bangs; B lifts its face and open eyes upward."
+    }
+  ],
+  "outline_observations": []
+}

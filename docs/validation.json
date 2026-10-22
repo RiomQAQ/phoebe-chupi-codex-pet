@@ -1,8 +1,8 @@
 {
   "ok": true,
   "errors": [],
-  "runtime_sha256": "f8258573800182db087279d0119896104de1a921e390d4e859a5c95cf1209764",
-  "runtime_bytes": 1932534,
+  "runtime_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
+  "runtime_bytes": 1910162,
   "decoded_png_webp_pixels_equal": true,
   "atlas_size": [
     1536,
@@ -14,9 +14,22 @@
   ],
   "used_cells": 73,
   "transparent_unused_cells": 15,
+  "outline_restoration": {
+    "version": "v1.0.1",
+    "ok": true,
+    "source_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
+    "atlas_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
+    "atlas_bytes": 1910162,
+    "alpha_and_pose_registration_unchanged": true,
+    "reviewed_cells": 73,
+    "restored_visible_rgb_pixels": 88948,
+    "source_pixel_mismatches": 0,
+    "protected_dark_ink_pixels": 263885,
+    "dark_ink_mismatches": 0
+  },
   "unique_archived_source_images": 742,
-  "image_files_checked": 850,
-  "text_files_scanned": 41,
+  "image_files_checked": 886,
+  "text_files_scanned": 61,
   "bounds": [
     {
       "row": 0,

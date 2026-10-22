@@ -8,6 +8,8 @@ All **742 unique source images**, representing **1290 working-file occurrences**
 
 The selected third-party turnaround and its three crops are marked `selected-third-party-reference`; they retain their original visible attribution and are not licensed as original project art.
 
+The original 742-image history is preserved. The [v1.0.1 repair](OUTLINE-REPAIR.md) adds the recovered pre-cleanup atlas, before/after details, light/dark review boards, and regenerated previews. Historical v1.0.0 atlases live in [art/releases/v1.0.0](../art/releases/v1.0.0), so updating the current runtime does not replace the archived originals.
+
 | Stage / 阶段 | Images / 图片 | Browse / 浏览 |
 | --- | ---: | --- |
 | Early concepts / 早期造型 | 6 | [Part 1](gallery/early-concept-01.md) |

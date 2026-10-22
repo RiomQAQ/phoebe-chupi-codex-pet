@@ -2,8 +2,11 @@
 """Render public previews and exact cell crops from the shipped atlas (Pillow only)."""
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
+import shutil
+import subprocess
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,11 +43,17 @@ def gif(frames, durations, path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--mp4", action="store_true", help="Also render all-states.mp4; requires ffmpeg")
+    args = parser.parse_args()
     OUT.mkdir(exist_ok=True)
     frames_dir = ROOT / "art/frames"
     with Image.open(ROOT / "pets/phoebe-chupi/spritesheet.webp") as im:
         atlas = im.convert("RGBA")
     contact = Image.new("RGB", (192 * 8, 240 * 9), "#f5f6fa")
+    dark_contact = Image.new("RGB", contact.size, "#17191f")
+    dark_dir = OUT / "dark"
+    dark_dir.mkdir(exist_ok=True)
     all_frames, all_times, cells = [], [], {}
     for row, spec in enumerate(LAYOUT["states"]):
         state = spec["key"]
@@ -57,12 +66,30 @@ def main():
             cells[state].append(cell)
             labeled = canvas(cell, f'{spec["label"]} {col + 1}/{spec["count"]}')
             contact.paste(labeled, (col * 192, row * 240))
+            dark_contact.paste(canvas(cell, f'{spec["label"]} {col + 1}/{spec["count"]}', dark=True), (col * 192, row * 240))
             all_frames.append(labeled)
         preview = [canvas(c, spec["label"]) for c in cells[state]]
         gif(preview, spec["preview_ms"], OUT / f"{state}.gif")
+        gif([canvas(c, spec["label"], dark=True) for c in cells[state]], spec["preview_ms"], dark_dir / f"{state}.gif")
         all_times.extend(spec["preview_ms"])
     contact.save(OUT / "contact-sheet.png")
+    dark_contact.save(OUT / "contact-sheet-dark.png")
     gif(all_frames, all_times, OUT / "all-states.gif")
+    if args.mp4:
+        ffmpeg = shutil.which("ffmpeg")
+        if not ffmpeg:
+            parser.error("ffmpeg is required for --mp4")
+        command = [ffmpeg, "-hide_banner", "-loglevel", "error", "-y", "-f", "rawvideo",
+                   "-pix_fmt", "rgb24", "-s:v", "192x240", "-r", "100", "-i", "pipe:0",
+                   "-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "18",
+                   "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(OUT / "all-states.mp4")]
+        with subprocess.Popen(command, stdin=subprocess.PIPE) as process:
+            for frame, duration in zip(all_frames, all_times):
+                for _ in range(duration // 10):
+                    process.stdin.write(frame.tobytes())
+            process.stdin.close()
+            if process.wait():
+                raise RuntimeError("ffmpeg failed")
     transition, durations = [], []
     for state in ("idle", "jumping", "idle"):
         spec = next(s for s in LAYOUT["states"] if s["key"] == state)
@@ -82,6 +109,14 @@ def main():
     direction_sheet.save(OUT / "directions.png")
     gif(directions, [LAYOUT["look_preview_ms"]] * 16, OUT / "look-loop.gif")
     gif(dark, [LAYOUT["look_preview_ms"]] * 16, OUT / "look-dark.gif")
+    stills = OUT / "stills"
+    stills.mkdir(exist_ok=True)
+    five_states = Image.new("RGB", (192 * 5, 240))
+    for position, (state, index) in enumerate([("idle", 0), ("running-right", 3), ("running", 2), ("jumping", 2), ("review", 3)]):
+        still = canvas(cells[state][index], f"{state} / {index + 1}")
+        still.save(stills / f"{state}-{index:02}.png")
+        five_states.paste(still, (position * 192, 0))
+    five_states.save(stills / "five-states.png")
     hero = Image.new("RGB", (1000, 440), "#f5f1e9")
     with Image.open(ROOT / "art/canonical/seated-master-approved.png") as im:
         character = im.convert("RGBA")

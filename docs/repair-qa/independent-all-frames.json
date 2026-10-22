@@ -1,0 +1,181 @@
+{
+  "overall_status": "pass",
+  "unique_frames_reviewed": 73,
+  "backgrounds_reviewed": [
+    "light",
+    "dark"
+  ],
+  "reference_files": [
+    "art/canonical/standing-identity.png",
+    "art/canonical/approved-cardinal-reference.png",
+    "art/canonical/carry-master-approved.png",
+    "art/canonical/seated-master-approved.png"
+  ],
+  "summary": "11 行、73 个独立帧均已在浅色和深色背景下检查。未发现明确的灰白发轮廓断线、缺失的金棕内发丝线、道具缺失或破坏形象一致性的比例问题。",
+  "rows": [
+    {
+      "row": "row-00",
+      "status": "pass",
+      "inspected_frames": [
+        "idle/00",
+        "idle/01",
+        "idle/02",
+        "idle/03",
+        "idle/04",
+        "idle/05"
+      ],
+      "observations": "六帧的左右长发外缘及下端均连续，金棕刘海和侧发内线清楚。睁眼、半闭眼和闭眼变化与正面坐姿一致，帽子、笔记本、手套及坐姿比例稳定。",
+      "issues": []
+    },
+    {
+      "row": "row-01",
+      "status": "pass",
+      "inspected_frames": [
+        "running-right/00",
+        "running-right/01",
+        "running-right/02",
+        "running-right/03",
+        "running-right/04",
+        "running-right/05",
+        "running-right/06",
+        "running-right/07"
+      ],
+      "observations": "八帧右向侧身动作中的后发外缘和发尾未见断口，脸旁金棕内线保留。双手持平板、帽沿、蓝色衣饰和条纹腿部在不同步态中一致，未见道具脱离或肢体重叠形成的明显错误。",
+      "issues": []
+    },
+    {
+      "row": "row-02",
+      "status": "pass",
+      "inspected_frames": [
+        "running-left/00",
+        "running-left/01",
+        "running-left/02",
+        "running-left/03",
+        "running-left/04",
+        "running-left/05",
+        "running-left/06",
+        "running-left/07"
+      ],
+      "observations": "八帧左向动作中的后发轮廓连续，发尾与侧发没有灰白断线。脸、发夹、帽沿和双手持平板的关系一致，步态变化中保持同一头身比例。",
+      "issues": []
+    },
+    {
+      "row": "row-03",
+      "status": "pass",
+      "inspected_frames": [
+        "waving/00",
+        "waving/01",
+        "waving/02",
+        "waving/03"
+      ],
+      "observations": "四帧外发轮廓和内发丝均完整。挥动的棕色手套与白袖衔接可读，笔记本及另一只手的位置稳定，角色身份与批准坐姿相符。",
+      "issues": []
+    },
+    {
+      "row": "row-04",
+      "status": "pass",
+      "inspected_frames": [
+        "jumping/00",
+        "jumping/01",
+        "jumping/02",
+        "jumping/03",
+        "jumping/04"
+      ],
+      "observations": "五帧起伏中帽子、头发、身体和笔记本随坐姿整体移动，未见比例脱节。两侧发缘、发尾和金棕内线保持连续，在深背景下也没有明确白边断口。",
+      "issues": []
+    },
+    {
+      "row": "row-05",
+      "status": "pass",
+      "inspected_frames": [
+        "failed/00",
+        "failed/01",
+        "failed/02",
+        "failed/03",
+        "failed/04",
+        "failed/05",
+        "failed/06",
+        "failed/07"
+      ],
+      "observations": "八帧沮丧和闭眼表情可读；眼眉、嘴形变化没有破坏脸部比例。头发外轮廓、金棕刘海线、衣饰、手套和笔记本保持一致。",
+      "issues": []
+    },
+    {
+      "row": "row-06",
+      "status": "pass",
+      "inspected_frames": [
+        "waiting/00",
+        "waiting/01",
+        "waiting/02",
+        "waiting/03",
+        "waiting/04",
+        "waiting/05"
+      ],
+      "observations": "六帧轻微歪头与眨眼时，帽子、刘海和面部一起倾斜，未见接缝或发缘断裂。笔记本、坐姿和发量与批准坐姿保持一致。",
+      "issues": []
+    },
+    {
+      "row": "row-07",
+      "status": "pass",
+      "inspected_frames": [
+        "running/00",
+        "running/01",
+        "running/02",
+        "running/03",
+        "running/04",
+        "running/05"
+      ],
+      "observations": "六帧坐姿中的眼部表情与身体关系稳定，帽子、长发和笔记本没有突变。浅深背景均未见明确灰白轮廓断线，金棕内发丝保留。",
+      "issues": []
+    },
+    {
+      "row": "row-08",
+      "status": "pass",
+      "inspected_frames": [
+        "review/00",
+        "review/01",
+        "review/02",
+        "review/03",
+        "review/04",
+        "review/05"
+      ],
+      "observations": "六帧检查与微笑表情保持同一脸型、发量和坐姿。手部细节变化可读，笔记本和衣饰完整；左右外发缘及发尾未见断口。",
+      "issues": []
+    },
+    {
+      "row": "row-09",
+      "status": "pass",
+      "inspected_frames": [
+        "look/000",
+        "look/022.5",
+        "look/045",
+        "look/067.5",
+        "look/090",
+        "look/112.5",
+        "look/135",
+        "look/157.5"
+      ],
+      "observations": "八个转头姿态中，眼睛、脸型、刘海和帽子随仰视、右向及俯视变化，整体与批准四向参考一致。坐姿与笔记本保持稳定，外发缘连续，金棕内线未被外轮廓替换。",
+      "issues": []
+    },
+    {
+      "row": "row-10",
+      "status": "pass",
+      "inspected_frames": [
+        "look/180",
+        "look/202.5",
+        "look/225",
+        "look/247.5",
+        "look/270",
+        "look/292.5",
+        "look/315",
+        "look/337.5"
+      ],
+      "observations": "八个俯视、左向及仰视过渡姿态中，脸和帽子的朝向关系一致，角色配色、发夹、发量、衣饰和笔记本延续前一行。深背景下的长发侧缘与下缘连续，未见明确灰白缺口。",
+      "issues": []
+    }
+  ],
+  "outline_observations": [],
+  "warnings": [],
+  "failures": []
+}

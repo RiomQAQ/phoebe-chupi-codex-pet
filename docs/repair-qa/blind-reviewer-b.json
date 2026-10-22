@@ -1,0 +1,94 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's face and nose sit toward the left hair edge; B's facial features shift toward the right hair edge."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A has the narrower far eye at screen-left and the face turned left; B has the narrower far eye at screen-right and turns right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's small far eye and nose point right; B mirrors this, with the small far eye and nose pointing left."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's eye pair and nose are displaced toward the right side of the head; B's are displaced toward the left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Despite the lowered pitch, A's narrow far eye is on the left and the face points left; B's narrow far eye is on the right and the face points right."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Both heads bow, but A's face is shifted left under the brim and B's is shifted right; the small far eye follows that direction."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's half-lidded eyes and nose cluster toward screen-right; B's half-lidded eyes and nose cluster toward screen-left."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A has tall open eyes, a raised face, and a narrow visible hat crown; B has compressed eyelids, a lowered face, and a broad exposed crown."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes are lowered beneath a large visible hat top; B's wide eyes and lifted chin sit under a shallower hat crown."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "down",
+      "B": "up",
+      "reason": "A's head is bowed and the hat top dominates above narrowed eyes; B raises the face with round open eyes and less visible crown."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A's side-turned face lifts upward with tall eyes and a shallow crown; B lowers the face beneath a more exposed hat top, with a flatter eye line."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "up",
+      "B": "down",
+      "reason": "A looks upward with large open eyes and an elevated face; B's broad hat crown and nearly horizontal half-closed eyelids communicate a bowed head."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face tilts upward with a shallow hat crown and rounded eyes; B's face tilts downward under a broad visible hat top and narrowed eyes."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A's left-facing head has a lowered face and flatter eyelids beneath a fuller visible crown; B lifts the face with taller eyes and less exposed hat top."
+    }
+  ],
+  "outline_observations": [
+    {
+      "panels": "All A/B panels in blind-part-1.png, blind-part-2.png, and blind-part-3.png",
+      "observation": "No conspicuous genuine gap is visible in the outer black hair contours. The long side contours and lower hair tips appear continuous. Thin gray edge fringes at curves are consistent with normal antialiasing, not open outline breaks."
+    }
+  ]
+}

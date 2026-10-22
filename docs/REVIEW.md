@@ -4,6 +4,8 @@
 
 We checked the drawings and the finished files separately: first the character and motion, then the atlas, archive, and install package.
 
+**Correction for v1.0.1:** the earlier review missed dark hair outlines faded by an edge-cleanup pass. PNG/WebP equality passed because both files already contained the mistake. This release compares all 73 cells with the approved pre-cleanup pixels and repeats the visual review on light and dark backgrounds. [Repair evidence](OUTLINE-REPAIR.md).
+
 ## Review the source hierarchy
 
 Use the selected community turnaround to judge shape, then the accepted seated/carry images to judge new frames. Use neighboring frames to judge motion, not to redefine the character. A rejected candidate is a comparison artifact, not a new canonical reference.
@@ -22,6 +24,7 @@ For third-party references, check the creator attribution and whether the image 
 | Motion | Is the requested pose actually readable? Is its change plausible relative to the previous and next frames? |
 | Registration | Is the body/laptop anchor stable where the action should be stationary? Does the hop return to its origin? |
 | Alpha | Are there light/dark fringes, holes, opaque background remnants, or clipped extremities? |
+| Ink color | Does each dark contour retain its source color after export? Keep the reference's gold/brown inner hair lines; do not turn them black. |
 | Native size | Does the expression remain legible in a 192 × 208 cell? Does added detail turn into visual noise? |
 
 Inspect on a light checkerboard and a dark solid background. Review at native size first, then enlarge to diagnose a defect. An enlarged screenshot alone is not a fair measure of the native artwork's sharpness.
@@ -46,6 +49,8 @@ The final majority result identified the intended directions for all fourteen pa
 
 The reviewers were AI agents. The remaining weak angles are listed below.
 
+For v1.0.1, three independent AI reviewers classified a fresh unlabeled set from the repaired WebP. All fourteen majority comparisons passed. A separate all-frame review covered all 73 cells on both backgrounds. Individual answers and the new results are in [repair QA](repair-qa/); the original record remains in [v1.0.0 history](../art/releases/v1.0.0/production-review.json).
+
 For a future change, randomize the pair order again, hide labels and answer keys, ask for apparent direction plus confidence, and compare against the intended answer only afterward. Do not resolve a failed visual test by renaming the expected answer.
 
 ## Recorded results
@@ -57,15 +62,17 @@ For a future change, randomize the pair order again, hide labels and answer keys
 | Unused cells | 15 fully transparent | Rechecked on the shipped WebP. |
 | PNG/WebP equality | Same decoded RGBA | Encoding comparison, not a visual-quality rating. |
 | Exact final crops | All 73 equal their atlas cells | Rechecked by the public validator. |
+| Source color fidelity | All 73 match the approved pre-cleanup pixels | 88,948 visible RGB pixels restored; zero source mismatches. |
+| Dark ink preservation | 263,885 protected pixels unchanged | Compared with the approved source, in addition to visual inspection. |
 | Source image archive | 742 distinct originals, 1,290 working occurrences | Original hashes and sanitized aliases mapped in the archive index. |
-| Hop peak / landing | 21 px / 0 px offset | Historical production measurement with a thresholded visible boundary. |
-| Gaze horizontal registration | Maximum center drift 3.5 px | Historical production measurement, not raw alpha-bbox center. |
-| Gaze width ratio | Maximum 1.0625 | Same historical measurement policy. |
-| Direction pairs | 14 final majority passes | Three AI reviewers; limits above apply. |
+| Hop peak / landing | 21 px / 0 px offset | Remeasured for v1.0.1 with alpha > 16. |
+| Gaze horizontal registration | Maximum center drift 3.5 px | Remeasured with the same threshold. |
+| Gaze width ratio | Maximum 1.0625 | Remeasured with the same threshold. |
+| Direction pairs | 14 final majority passes | Three fresh AI reviews for v1.0.1. |
 | Metadata | EXIF removed from one reference; no RGBA pixel change | Remaining published images checked for unreviewed EXIF/XMP/comments. |
 | Local runtime | Accepted blinking artwork installed and selected on macOS | Dot cursor-following was confirmed by the project owner; Windows has not been visually tested. |
 
-The raw alpha bounds in [validation.json](validation.json) use any nonzero alpha. They should not be compared numerically with the historical thresholded measurements as though both used the same boundary policy.
+The raw alpha bounds in [validation.json](validation.json) use any nonzero alpha. The movement measurements use alpha > 16; the two boundary policies should not be mixed.
 
 ## Known limits and release decision
 
@@ -83,9 +90,10 @@ Future edits should preserve the expressive range while improving the particular
 ```sh
 python3 -m pip install -r requirements.txt
 python3 scripts/validate.py --report docs/validation.json
+python3 -m unittest discover -s tests
 ```
 
-The script validates the portable five-field v2 manifest, atlas dimensions and alpha, static WebP, required/empty cells, cell-edge margins, exact final crop equality, PNG/WebP pixel equality, archive file hashes, image decoding, metadata, common private-data markers, file-size limits, and runtime checksums. It produces repository-relative, sanitized output.
+The script validates the portable five-field v2 manifest, atlas dimensions and alpha, static WebP, required/empty cells, cell-edge margins, exact final crop equality, PNG/WebP pixel equality, approved source colors, archive file hashes, image decoding, metadata, common private-data markers, file-size limits, and runtime checksums. The regression tests also reject the real damaged v1.0.0 artifact. Reports use repository-relative paths.
 
 CI runs the same file checks. After changing the artwork, repeat the visual review too.
 
@@ -109,6 +117,8 @@ Use this checklist when preparing the next release.
 ## 中文：怎样审查
 
 机械校验和画面审查分开记录。尺寸正确，只说明文件能按预期分格，不能说明画得像、动作顺。
+
+上一版确实漏掉了描线变浅的问题：透明边缘清理把部分黑线混进了头发的浅色，PNG 和 WebP 又都沿用了这份错误，所以只比对两种格式发现不了。v1.0.1 已按清理前的原像素恢复，并重新看过全部 73 帧的浅、深背景。这次还加入了原始描线颜色检查，旧版图片会被回归测试拦下。金棕色的内部发丝线按参考保留，没有一律涂黑。
 
 每帧先对基准图，检查脸型、头身比例、帽子和头发轮廓，再检查发夹是否在观看者右侧、呆毛和蓝布是否在左侧。数清双手，查看袖子连接、眉毛重复、下巴变形，以及电脑是否多出一层键盘或屏盖。
 

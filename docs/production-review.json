@@ -1,8 +1,11 @@
 {
-  "description": "Production review results for the released blinking edition.",
-  "artwork_version": "accepted seated v3 blinking edition; awake experiment rolled back",
-  "master_png_sha256": "2a194646ee43d853660751f445c0ab19faabd82a33c32e9ed2afa17e7699c27e",
-  "measurement_policy": "Historical thresholded visible-boundary measurements; not identical to the raw nonzero-alpha bounding boxes in validation.json.",
+  "version": "v1.0.1",
+  "reviewed_on": "2026-10-22",
+  "description": "Fresh review of the restored blinking edition; prior review preserved under art/releases/v1.0.0.",
+  "artwork_version": "Approved seated blinking artwork, pre-cleanup colors restored",
+  "master_png_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
+  "atlas_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
+  "measurement_policy": "Alpha > 16 visible boundary, freshly measured on the v1.0.1 WebP.",
   "jump": {
     "idle_baseline": 195,
     "jump_baselines": [
@@ -61,10 +64,12 @@
     "look direction 067.5 accepted with a reviewed warning",
     "225->247.5 diff is a local outlier (1820 pixels vs neighbor average 1019)"
   ],
+  "outline_restoration_report": "outline-restoration.json",
+  "independent_frame_review": "repair-qa/independent-all-frames.json",
   "blind_review": {
-    "reviewer_type": "AI reviewers in the production workflow",
+    "reviewer_type": "Three independent AI agents, fresh unlabeled A/B comparisons from the repaired WebP",
     "reviewer_count": 3,
-    "aggregation": "final majority decision",
+    "aggregation": "Strict per-cell majority",
     "comparisons": 14,
     "ok": true,
     "pairs": [
@@ -90,15 +95,15 @@
         "axis": "horizontal",
         "gate": "review",
         "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "045",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-left",
           "expected": "screen-left",
           "source_direction": "315",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-right",
+          "expected": "screen-right",
+          "source_direction": "045",
           "pass": true
         }
       },
@@ -107,15 +112,15 @@
         "axis": "horizontal",
         "gate": "review",
         "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "292.5",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-right",
           "expected": "screen-right",
           "source_direction": "067.5",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-left",
+          "expected": "screen-left",
+          "source_direction": "292.5",
           "pass": true
         }
       },
@@ -124,15 +129,15 @@
         "axis": "horizontal",
         "gate": "hard",
         "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "270",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-right",
           "expected": "screen-right",
           "source_direction": "090",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-left",
+          "expected": "screen-left",
+          "source_direction": "270",
           "pass": true
         }
       },
@@ -141,15 +146,15 @@
         "axis": "horizontal",
         "gate": "review",
         "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "112.5",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-left",
           "expected": "screen-left",
           "source_direction": "247.5",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-right",
+          "expected": "screen-right",
+          "source_direction": "112.5",
           "pass": true
         }
       },
@@ -158,15 +163,15 @@
         "axis": "horizontal",
         "gate": "review",
         "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "135",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-left",
           "expected": "screen-left",
           "source_direction": "225",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-right",
+          "expected": "screen-right",
+          "source_direction": "135",
           "pass": true
         }
       },
@@ -175,15 +180,15 @@
         "axis": "horizontal",
         "gate": "review",
         "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "202.5",
-          "pass": true
-        },
-        "B": {
           "observed": "screen-right",
           "expected": "screen-right",
           "source_direction": "157.5",
+          "pass": true
+        },
+        "B": {
+          "observed": "screen-left",
+          "expected": "screen-left",
+          "source_direction": "202.5",
           "pass": true
         }
       },
@@ -192,15 +197,15 @@
         "axis": "vertical",
         "gate": "hard",
         "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "180",
-          "pass": true
-        },
-        "B": {
           "observed": "up",
           "expected": "up",
           "source_direction": "000",
+          "pass": true
+        },
+        "B": {
+          "observed": "down",
+          "expected": "down",
+          "source_direction": "180",
           "pass": true
         }
       },
@@ -226,15 +231,15 @@
         "axis": "vertical",
         "gate": "review",
         "A": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "045",
-          "pass": true
-        },
-        "B": {
           "observed": "down",
           "expected": "down",
           "source_direction": "135",
+          "pass": true
+        },
+        "B": {
+          "observed": "up",
+          "expected": "up",
+          "source_direction": "045",
           "pass": true
         }
       },
@@ -243,15 +248,15 @@
         "axis": "vertical",
         "gate": "review",
         "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "112.5",
-          "pass": true
-        },
-        "B": {
           "observed": "up",
           "expected": "up",
           "source_direction": "067.5",
+          "pass": true
+        },
+        "B": {
+          "observed": "down",
+          "expected": "down",
+          "source_direction": "112.5",
           "pass": true
         }
       },
@@ -260,15 +265,15 @@
         "axis": "vertical",
         "gate": "review",
         "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "202.5",
-          "pass": true
-        },
-        "B": {
           "observed": "up",
           "expected": "up",
           "source_direction": "337.5",
+          "pass": true
+        },
+        "B": {
+          "observed": "down",
+          "expected": "down",
+          "source_direction": "202.5",
           "pass": true
         }
       },
@@ -308,11 +313,12 @@
       }
     ]
   },
-  "visual_scope": "macOS desktop reviewed; Codex Dot mouse-following confirmed. Windows has not been visually tested.",
+  "visual_scope": "All 73 frames checked on light and dark backgrounds, plus native-size browser playback. Prior macOS/Dot behavior retained; Windows has not been visually tested.",
   "creation_credit": "GPT-6-Astra assisted planning, iteration, and review; raster images generated/edited with the built-in image generation feature.",
   "dot_behavior": {
     "supported": true,
     "head_follows_mouse": true,
     "evidence": "Confirmed by the project owner in use."
-  }
+  },
+  "earlier_review_correction": "The v1.0.0 review missed ink fading from edge cleanup. Comparing PNG and WebP alone could not detect a mistake already present in both."
 }

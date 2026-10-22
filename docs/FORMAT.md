@@ -18,7 +18,7 @@ The directory `pets/phoebe-chupi/` is the entire installable pet. Its `pet.json`
 
 `id` is a portable local identifier, not a cloud account's pet ID. `spritesheetPath` resolves within the pet directory. No plugin manifest, account binding, app database, signed media URL, or settings migration is required.
 
-The native import URI accepts an HTTPS image URL and an explicit `spriteVersionNumber=2`; see the [official command reference](https://learn.chatgpt.com/docs/reference/commands). The installer pins its public image URL to release `v1.0.0`. For a later release, update that pin and publish the corresponding tag together.
+The native import URI accepts an HTTPS image URL and an explicit `spriteVersionNumber=2`; see the [official command reference](https://learn.chatgpt.com/docs/reference/commands). The installer reads `VERSION` and pins its public image URL to that release, currently `v1.0.1`. Update `VERSION` and publish the corresponding tag together.
 
 ## Grid
 
@@ -73,7 +73,7 @@ If the app changes its playback speed, update the preview timing and review the 
 
 1. Keep the original high-resolution image-tool outputs separate from normalized cells.
 2. Use one shared character viewport and scale policy. Do not fit each frame's opaque bounding box independently; that turns small pose changes into body-size changes.
-3. Preserve alpha. Review on both light and dark backgrounds. Apply any edge cleanup consistently before the final encode.
+3. Preserve alpha and the original ink colors. Review on both light and dark backgrounds. Do not average neighboring fill colors into legitimate dark edge pixels. Native-alpha art that already passes the fringe check needs no chroma cleanup; see the [v1.0.1 repair](OUTLINE-REPAIR.md).
 4. Register ground contact and the laptop anchor using measured, justified offsets; never silently flip a left/right frame.
 5. Composite cells on a transparent 1536 × 2288 canvas. Leave the unused cells empty.
 6. Encode once to lossless WebP and compare decoded RGBA against the accepted PNG.

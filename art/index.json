@@ -2086,8 +2086,8 @@
     },
     {
       "id": "image-0107",
-      "path": "art/final/spritesheet.png",
-      "role": "accepted-final-atlas",
+      "path": "art/releases/v1.0.0/spritesheet.png",
+      "role": "historical-v1.0.0-atlas",
       "groups": [
         "seated-production"
       ],
@@ -2107,8 +2107,8 @@
     },
     {
       "id": "image-0108",
-      "path": "pets/phoebe-chupi/spritesheet.webp",
-      "role": "installed-runtime-atlas",
+      "path": "art/releases/v1.0.0/spritesheet.webp",
+      "role": "historical-v1.0.0-atlas",
       "groups": [
         "awake-experiment",
         "seated-production"

@@ -17,7 +17,8 @@ import webbrowser
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "pets" / "phoebe-chupi"
-RAW_URL = "https://raw.githubusercontent.com/RiomQAQ/phoebe-chupi-codex-pet/v1.0.0/pets/phoebe-chupi/spritesheet.webp"
+VERSION = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
+RAW_URL = f"https://raw.githubusercontent.com/RiomQAQ/phoebe-chupi-codex-pet/{VERSION}/pets/phoebe-chupi/spritesheet.webp"
 
 
 def install_url():
