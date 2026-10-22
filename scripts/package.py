@@ -31,7 +31,7 @@ def main():
     for name in ("art", "previews", "docs", "pets", "scripts", "tests", ".github"):
         files.extend((p, p.relative_to(ROOT).as_posix()) for p in sorted((ROOT / name).rglob("*"))
                      if p.is_file() and "__pycache__" not in p.parts)
-    for name in ("README.md", "README.zh-CN.md", "NOTICE.md", "ASSET-USAGE.md", "LICENSE", "CHECKSUMS.sha256", "requirements.txt", "VERSION", ".gitignore", ".gitattributes"):
+    for name in ("README.md", "README.zh-CN.md", "NOTICE.md", "ASSET-USAGE.md", "LICENSE", "LICENSE.zh-CN.md", "CHECKSUMS.sha256", "requirements.txt", "VERSION", ".gitignore", ".gitattributes"):
         files.append((ROOT / name, name))
     art_zip = out / f"phoebe-chupi-artwork-{VERSION}.zip"
     make_zip(art_zip, files, "phoebe-chupi-artwork")

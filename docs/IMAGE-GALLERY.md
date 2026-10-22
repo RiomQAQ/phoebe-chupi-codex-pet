@@ -1,20 +1,39 @@
-# Image archive / 图片档案
+# Image archive
 
-[English README](../README.md) · [中文说明](../README.zh-CN.md) · [Machine-readable index](../art/index.json)
+**English** · [简体中文](IMAGE-GALLERY.zh-CN.md) · [Documentation](README.md)
 
-All **742 unique source images**, representing **1290 working-file occurrences**, are included. Identical copies share one stored file. Newly rendered public previews and exact final-atlas frame crops are additional files.
+Browse **742 distinct source images**, representing **1,290 working-file occurrences**. Identical copies share one stored image; [art/index.json](../art/index.json) preserves their IDs, checksums, and source-name mappings.
 
-全部制作图片按阶段整理。旧稿、失败稿和已回退的试验都保留在档案中；安装文件只使用最终眨眼版。重复图片只保存一份，原文件名对应关系见 JSON 索引。第三方研究下载集和私人应用截图不属于制作图片，未转载。
+[Download all images and current guides](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/archive/refs/heads/main.zip) to browse the repository offline.
 
-The selected third-party turnaround and its three crops are marked `selected-third-party-reference`; they retain their original visible attribution and are not licensed as original project art.
+## Production images
 
-The original 742-image history is preserved. The [v1.0.1 repair](OUTLINE-REPAIR.md) adds the recovered pre-cleanup atlas, before/after details, light/dark review boards, and regenerated previews. Historical v1.0.0 atlases live in [art/releases/v1.0.0](../art/releases/v1.0.0), so updating the current runtime does not replace the archived originals.
+Gallery pages show a contact sheet and clickable originals. Their captions include both English and Chinese.
 
-| Stage / 阶段 | Images / 图片 | Browse / 浏览 |
+| Stage | Images | Gallery |
 | --- | ---: | --- |
-| Early concepts / 早期造型 | 6 | [Part 1](gallery/early-concept-01.md) |
-| Standing studies / 站姿试作 | 37 | [Part 1](gallery/standing-study-01.md) |
-| Seated production / 坐姿制作过程 | 489 | [Part 1](gallery/seated-production-01.md) · [Part 2](gallery/seated-production-02.md) · [Part 3](gallery/seated-production-03.md) · [Part 4](gallery/seated-production-04.md) · [Part 5](gallery/seated-production-05.md) · [Part 6](gallery/seated-production-06.md) · [Part 7](gallery/seated-production-07.md) · [Part 8](gallery/seated-production-08.md) · [Part 9](gallery/seated-production-09.md) · [Part 10](gallery/seated-production-10.md) · [Part 11](gallery/seated-production-11.md) |
-| Rolled-back awake experiment / 已回退的睁眼试验 | 192 | [Part 1](gallery/awake-experiment-01.md) · [Part 2](gallery/awake-experiment-02.md) · [Part 3](gallery/awake-experiment-03.md) · [Part 4](gallery/awake-experiment-04.md) |
-| Character samples / 角色感样张 | 14 | [Part 1](gallery/character-samples-01.md) |
-| Additional generation originals / 补充生成原图 | 4 | [Part 1](gallery/generation-originals-01.md) |
+| Early concepts | 6 | [Open](gallery/early-concept-01.md) |
+| Standing studies | 37 | [Open](gallery/standing-study-01.md) |
+| Seated production | 489 | [Part 1](gallery/seated-production-01.md) · [Part 2](gallery/seated-production-02.md) · [Part 3](gallery/seated-production-03.md) · [Part 4](gallery/seated-production-04.md) · [Part 5](gallery/seated-production-05.md) · [Part 6](gallery/seated-production-06.md) · [Part 7](gallery/seated-production-07.md) · [Part 8](gallery/seated-production-08.md) · [Part 9](gallery/seated-production-09.md) · [Part 10](gallery/seated-production-10.md) · [Part 11](gallery/seated-production-11.md) |
+| Unused open-eye study | 192 | [Part 1](gallery/awake-experiment-01.md) · [Part 2](gallery/awake-experiment-02.md) · [Part 3](gallery/awake-experiment-03.md) · [Part 4](gallery/awake-experiment-04.md) |
+| Character samples | 14 | [Open](gallery/character-samples-01.md) |
+| Additional generation originals | 4 | [Open](gallery/generation-originals-01.md) |
+
+Archive images document production stages; they do not all belong to the installed animation. The attributed community turnaround and its three crops are third-party references subject to the [artwork terms](../ASSET-USAGE.md#third-party-references).
+
+## Current artwork and previews
+
+| Material | Open |
+| --- | --- |
+| Canonical seated and carry poses | [Character anchors](../art/canonical) |
+| Distributed atlas | [Lossless WebP](../pets/phoebe-chupi/spritesheet.webp) · [PNG](../art/final/spritesheet.png) |
+| All 73 current cells | [Exact frame crops](../art/frames) |
+| Animation and head directions | [State sheet](../previews/contact-sheet.png) · [Direction sheet](../previews/directions.png) |
+| Light and dark playback | [All states](../previews/all-states.gif) · [Dark loops](../previews/dark) |
+| Native-size stills | [Five states](../previews/stills/five-states.png) |
+
+## Repair and release history
+
+The v1.0.1 repair adds [pre-cleanup source pixels](../art/repair/v1.0.1/source-before-cleanup.png), [before/after details](../art/repair/v1.0.1/before-after.png), and [light/dark review boards](../art/repair/v1.0.1/review-boards). These and regenerated final previews are additional to the 742-image source archive.
+
+The [v1.0.0 snapshots](../art/releases/v1.0.0) preserve the earlier atlases. Read the [repair guide](OUTLINE-REPAIR.md) for their relationship to the current image.

@@ -1,18 +1,33 @@
-# Attribution and provenance
+# Credits
 
-- **Character:** Phoebe / 菲比, *Wuthering Waves* /《鸣潮》, Kuro Games / 库洛游戏. This project is unofficial and unaffiliated with Kuro Games or OpenAI.
-- **Community interpretation:** Phoebe Chupi / 菲比啾比. Research leads associate the community Chupi work with **Binci**, including Arca posts and the public DCCon publisher **Binci1**. The relationship between those two handles was not independently established; see [SOURCES.md](docs/SOURCES.md) for the precise evidence and access limitations.
-- **Selected visual reference:** front/side/back community AI-derived image attributed to **蓝蓝铜离子**, [Bilibili BV1zzAAzPEVA](https://www.bilibili.com/video/BV1zzAAzPEVA/), marked as Doubao AI-generated. This was the user's chosen shape reference, not an official model sheet.
-- **Project production:** **GPT-6-Astra** assisted research, character and motion planning, prompt writing, iterative frame review, packaging, and documentation. Raster artwork was generated and edited with the **built-in image generation feature**.
-- **Human direction:** the project owner selected the turnaround, requested a coherent coding companion, reviewed the visible results, and chose the expressive blinking version over a later fully awake experiment.
-- **README organization inspiration:** [sherlidian01-web/phoebe-codex-pet](https://github.com/sherlidian01-web/phoebe-codex-pet), [HanaAyane/remielle-codex-pet](https://github.com/HanaAyane/remielle-codex-pet), and [legeling/awesome-codex-pet](https://github.com/legeling/awesome-codex-pet). Documentation and distribution scripts here were written for this repository; these links are not claims of asset inheritance or license compatibility.
+[English](#project) · [简体中文](#中文)
 
-The final sprite artwork was developed for this project. Existing pets were useful context, but their sprite sheets were not used as this release's output. Third-party character rights and reference attribution remain separate from the project's code license.
+## Project
 
-# 中文署名
+**Phoebe Chupi** was made with **GPT-6-Astra** for research, character and motion design, prompt development, iteration, review, packaging, and documentation. The built-in image generation tools generated and edited the raster artwork.
 
-角色来自库洛游戏《鸣潮》的菲比；造型采用社区「菲比啾比」二创方向。社区来源与选定三视图的作者线索详见来源文档，不将二创参考误标成官方设定。
+| Contribution | Credit |
+| --- | --- |
+| Original character | Phoebe from *Wuthering Waves*, Kuro Games. |
+| Community interpretation | Phoebe Chupi; Binci and Binci1 are community attribution leads, with their relationship unverified. |
+| Primary three-view reference | 蓝蓝铜离子, [Bilibili BV1zzAAzPEVA](https://www.bilibili.com/video/BV1zzAAzPEVA/), marked as Doubao AI-generated. |
+| Package and presentation references | [phoebe-codex-pet](https://github.com/sherlidian01-web/phoebe-codex-pet), [remielle-codex-pet](https://github.com/HanaAyane/remielle-codex-pet), [awesome-codex-pet](https://github.com/legeling/awesome-codex-pet). |
 
-本项目使用 **GPT-6-Astra 辅助制作与审查**，图片通过内置图像生成功能逐帧生成、编辑。
+The project sprite artwork was developed for this repository. Character and third-party reference rights remain with their respective rights holders. This is an unofficial fan project, unaffiliated with Kuro Games or OpenAI.
 
-用户负责提出方向、选择造型参考并验收可见效果，最后保留了有眨眼和眼神变化的版本。项目与库洛游戏、OpenAI 均无官方合作或授权关系。
+[Detailed sources](docs/SOURCES.md) · [Artwork usage](ASSET-USAGE.md) · [Code and documentation license](LICENSE)
+
+## 中文
+
+**菲比啾比**使用 **GPT-6-Astra** 辅助完成资料研究、角色与动作设计、提示词、迭代、审查、打包和文档。图片由内置图像生成功能生成、编辑。
+
+| 内容 | 署名 |
+| --- | --- |
+| 原始角色 | 库洛游戏《鸣潮》的菲比。 |
+| 社区形象 | 菲比啾比；Binci 和 Binci1 为社区署名线索，二者身份关联尚未核实。 |
+| 主要三视图参考 | 蓝蓝铜离子，[Bilibili BV1zzAAzPEVA](https://www.bilibili.com/video/BV1zzAAzPEVA/)，标注为豆包 AI 生成。 |
+| 打包与展示参考 | [phoebe-codex-pet](https://github.com/sherlidian01-web/phoebe-codex-pet)、[remielle-codex-pet](https://github.com/HanaAyane/remielle-codex-pet)、[awesome-codex-pet](https://github.com/legeling/awesome-codex-pet)。 |
+
+本项目的精灵图为本仓库制作。角色与第三方参考图的权利归各自权利人。本项目为非官方同人作品，与库洛游戏、OpenAI 无隶属或合作关系。
+
+[完整来源](docs/SOURCES.zh-CN.md) · [图片使用说明](ASSET-USAGE.md#中文) · [代码与文档许可](LICENSE.zh-CN.md)

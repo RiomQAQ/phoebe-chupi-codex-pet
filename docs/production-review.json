@@ -1,7 +1,7 @@
 {
   "version": "v1.0.1",
   "reviewed_on": "2026-10-22",
-  "description": "Fresh review of the restored blinking edition; prior review preserved under art/releases/v1.0.0.",
+  "description": "Production review of the restored v1.0.1 blinking edition.",
   "artwork_version": "Approved seated blinking artwork, pre-cleanup colors restored",
   "master_png_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
   "atlas_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
@@ -318,7 +318,7 @@
   "dot_behavior": {
     "supported": true,
     "head_follows_mouse": true,
-    "evidence": "Confirmed by the project owner in use."
+    "evidence": "Verified during use in Codex Dot on macOS."
   },
   "earlier_review_correction": "The v1.0.0 review missed ink fading from edge cleanup. Comparing PNG and WebP alone could not detect a mistake already present in both."
 }

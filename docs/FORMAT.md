@@ -1,10 +1,18 @@
-# Native v2 package format / 新版宠物结构
+# Sprite format
 
-[English README](../README.md) · [中文说明](../README.zh-CN.md)
+**English** · [简体中文](FORMAT.zh-CN.md) · [Documentation](README.md)
 
-## Portable runtime
+The pet uses a static, transparent v2 atlas. The app animates it by selecting cells; the WebP itself is not an animated image.
 
-The directory `pets/phoebe-chupi/` is the entire installable pet. Its `pet.json` is:
+## Package
+
+```text
+phoebe-chupi/
+├── pet.json
+└── spritesheet.webp
+```
+
+The portable manifest contains five fields:
 
 ```json
 {
@@ -16,29 +24,40 @@ The directory `pets/phoebe-chupi/` is the entire installable pet. Its `pet.json`
 }
 ```
 
-`id` is a portable local identifier, not a cloud account's pet ID. `spritesheetPath` resolves within the pet directory. No plugin manifest, account binding, app database, signed media URL, or settings migration is required.
-
-The native import URI accepts an HTTPS image URL and an explicit `spriteVersionNumber=2`; see the [official command reference](https://learn.chatgpt.com/docs/reference/commands). The installer reads `VERSION` and pins its public image URL to that release, currently `v1.0.1`. Update `VERSION` and publish the corresponding tag together.
+`id` identifies the local package. `spritesheetPath` is relative to the manifest. Account identifiers and application settings are not part of the package. The native import helper reads the release tag from `VERSION`; its URI parameters are described in [Install](INSTALL.md#use-native-import).
 
 ## Grid
 
 | Property | Value |
 | --- | --- |
-| Format | Static WebP with alpha, lossless encoding |
+| Image | Lossless WebP with alpha |
 | Atlas | 1536 × 2288 px |
 | Grid | 8 columns × 11 rows |
 | Cell | 192 × 208 px |
-| Standard rows | 0–8, 57 frames total |
-| Direction rows | 9–10, 16 look poses |
-| Used / unused | 73 / 15 |
+| Used cells | 73: 57 animation frames + 16 look poses |
+| Empty cells | 15, fully transparent |
 
-Rows are zero-indexed. Standard counts are `[6, 8, 8, 4, 5, 8, 6, 6, 6]`. Fill cells left to right; unused cells must have alpha zero throughout. The sheet itself is not an animated WebP; the renderer selects cells.
+Rows and columns are zero-indexed. Crop cell `(r, c)` with `(192c, 208r, 192(c+1), 208(r+1))`. Fill each row from the left. [animation-layout.json](../art/animation-layout.json) records the layout and preview durations.
 
-For row `r` and column `c`, crop `(192*c, 208*r, 192*(c+1), 208*(r+1))`. [art/animation-layout.json](../art/animation-layout.json) records the complete layout and preview durations. [previews/contact-sheet.png](../previews/contact-sheet.png) shows all standard frames; [previews/directions.png](../previews/directions.png) shows all look poses.
+## Animation states
+
+| Row | State | Frames | Behavior |
+| ---: | --- | ---: | --- |
+| 0 | `idle` | 6 | Seated breathing and blinking. |
+| 1 | `running-right` | 8 | Carrying the closed laptop right. |
+| 2 | `running-left` | 8 | Carrying the closed laptop left. |
+| 3 | `waving` | 4 | A one-handed seated greeting. |
+| 4 | `jumping` | 5 | A short seated hop and landing. |
+| 5 | `failed` | 8 | Asking for help, then recovering. |
+| 6 | `waiting` | 6 | Looking up for a reply. |
+| 7 | `running` | 6 | Working at the laptop. |
+| 8 | `review` | 6 | Checking the result. |
+
+`running` means task activity; left/right locomotion has separate rows. The [contact sheet](../previews/contact-sheet.png) shows every standard frame.
 
 ## Look directions
 
-In Codex Dot, these poses make the head follow the mouse. Angles are screen-space, clockwise from up. They describe the head/gaze direction while the seated body stays in place.
+In Dot, these poses turn the head toward the cursor while the body and laptop remain seated. Angles use screen coordinates, increasing clockwise from up in 22.5° steps.
 
 | Angle | Direction | Row / column |
 | ---: | --- | --- |
@@ -59,32 +78,20 @@ In Codex Dot, these poses make the head follow the mouse. Angles are screen-spac
 | 315 | Up-left | 10 / 6 |
 | 337.5 | Up-left | 10 / 7 |
 
-The blue hair clip stays on the viewer's right; the tuft and blue cloth stay on the viewer's left. Do not mirror a pose to make the opposite direction. The body, laptop, and ground contact should remain visually registered while the head/eyes indicate direction.
+The blue hair clip stays on viewer-right; the tuft and blue cloth stay on viewer-left. Opposite directions are drawn separately to preserve these features. See the [direction sheet](../previews/directions.png).
 
 ## Timing
 
-The runtime owns state selection and frame timing. Neither the manifest nor the preview layout file overrides it.
+The app controls state selection and playback. `pet.json` and the layout file do not override its scheduler.
 
-The locally reviewed desktop build `26.1007.71326` used idle durations `[1680, 660, 660, 840, 840, 1920]` ms, a 6.6 s cycle. These were six times the initial template preview's idle durations. This difference explains why an intermediate eye pose can be more noticeable in the app than in a fast preview. Other state durations and the illustrative 200 ms look-loop timing are listed in the layout JSON.
+The preview uses idle durations `[1680, 660, 660, 840, 840, 1920]` ms, a 6.6-second cycle observed in desktop build `26.1007.71326`. Each look pose is shown for 200 ms in the direction GIF. That loop demonstrates the available poses; Dot chooses them from cursor position.
 
-If the app changes its playback speed, update the preview timing and review the loops again.
+## Export rules
 
-## Assembly rules
+- Apply one shared viewport and scale policy. Fitting each frame to its own opaque bounds changes the character's apparent size.
+- Preserve the approved RGBA colors and alpha. Clean native-alpha artwork needs no neighbor-color averaging.
+- Register the body, laptop, and ground contact before assembly. Keep visible artwork inside each cell with a margin.
+- Leave unused cells completely transparent. Preserve both look rows.
+- Encode losslessly, compare decoded pixels with the PNG, and derive previews and frame crops from the distributed WebP.
 
-1. Keep the original high-resolution image-tool outputs separate from normalized cells.
-2. Use one shared character viewport and scale policy. Do not fit each frame's opaque bounding box independently; that turns small pose changes into body-size changes.
-3. Preserve alpha and the original ink colors. Review on both light and dark backgrounds. Do not average neighboring fill colors into legitimate dark edge pixels. Native-alpha art that already passes the fringe check needs no chroma cleanup; see the [v1.0.1 repair](OUTLINE-REPAIR.md).
-4. Register ground contact and the laptop anchor using measured, justified offsets; never silently flip a left/right frame.
-5. Composite cells on a transparent 1536 × 2288 canvas. Leave the unused cells empty.
-6. Encode once to lossless WebP and compare decoded RGBA against the accepted PNG.
-7. Render previews **from the distributed WebP**, validate that file, and compare its public-download checksum after publishing.
-
-## 中文要点
-
-安装目录只需要 `pet.json` 和 `spritesheet.webp`。版本字段必须是 `spriteVersionNumber: 2`。这不是插件，也不需要复制账号设置或云端宠物编号。
-
-整图为 1536 × 2288，每格 192 × 208，共 8 列 11 行。前 9 行是动作，最后 2 行是 16 个视线方向。不能删去末尾两行后仍称 v2，也不能把这张图当 v1 上传。
-
-角度从屏幕正上方开始，顺时针增加。左、右都指观看者看到的屏幕方向。头和眼神可以动，身体和电脑保持稳定；发夹、呆毛和蓝布不能镜像换边。
-
-所有帧共用缩放基准。逐格按不透明边界自动撑满，会让角色忽大忽小。先审查动作与比例，再排版、编码、比对 PNG/WebP 像素，最后检查实际下载的文件。播放速度由应用控制，预览 GIF 的时长不会写进宠物配置。
+The [review guide](REVIEW.md) defines the checks. The [outline repair](OUTLINE-REPAIR.md) explains why export color fidelity is checked separately from PNG/WebP equality.

@@ -1,19 +1,32 @@
-# v1.0.1 review evidence / 检查记录
+# Review evidence
 
-[Repair notes](../OUTLINE-REPAIR.md) · [Frame boards](../../art/repair/v1.0.1/review-boards)
+**English** · [简体中文](README.zh-CN.md) · [Review guide](../REVIEW.md)
 
-These reports cover the exact runtime WebP identified by its SHA-256. Paths are repository-relative.
+These reports cover the restored **v1.0.1** WebP. The atlas hash identifies the reviewed file; report paths are repository-relative.
 
-- `atlas.json`: grid, alpha, empty cells, chroma fringe and encoded file identity.
-- `frames.json`: standard-frame geometry and final crops.
-- `continuity.json`: adjacent head directions, silhouette continuity and the recorded local warning.
-- `chroma-preservation.json`: clean native alpha preserved without color averaging.
-- `direction-semantics.json`: all sixteen labeled directions and specific visual evidence.
-- `blind-reviewer-a.json`, `blind-reviewer-b.json`, `blind-reviewer-c.json`: independent answers, saved before revealing the answer key.
-- `blind-majority.json`, `blind-answer-key.json`, `blind-validation.json`: aggregation and comparison with the intended directions.
-- `independent-all-frames.json`: a separate visual review of all 73 frames on light/dark backgrounds.
-- `pet-quality.json`: final file identity, jump/landing measurement and head registration.
+## File and motion measurements
 
-These are AI-assisted reviews. The primary pass also checked the ordered frame boards, loops and timed browser playback. The earlier missed defect and the remaining subtle head poses are described in the repair notes.
+| Report | Records |
+| --- | --- |
+| [atlas.json](atlas.json) | Image identity, grid, cell population, alpha, and chroma fringe. |
+| [frames.json](frames.json) | Standard-frame geometry and final crops. |
+| [continuity.json](continuity.json) | Neighboring look poses, silhouette continuity, and the recorded local warning. |
+| [chroma-preservation.json](chroma-preservation.json) | Native alpha preserved without neighbor-color averaging. |
+| [pet-quality.json](pet-quality.json) | Final file identity, hop lift/landing, and head registration. |
 
-这里保留了独立审查者的原始判断、盲看答案与汇总、全帧检查、方向依据和文件检查结果。审查由 AI 辅助完成；没有把尺寸通过当作画面无误的证明。
+## Visual and direction reviews
+
+| Evidence | Records |
+| --- | --- |
+| [direction-semantics.json](direction-semantics.json) | Expected direction and visible landmarks for all sixteen poses. |
+| [Reviewer A](blind-reviewer-a.json) · [B](blind-reviewer-b.json) · [C](blind-reviewer-c.json) | Independent A/B answers saved before revealing the key. |
+| [blind-majority.json](blind-majority.json) | Strict per-cell majority aggregation. |
+| [blind-answer-key.json](blind-answer-key.json) | Intended directions and pair mapping. |
+| [blind-validation.json](blind-validation.json) | Comparison of majority answers with the key. |
+| [independent-all-frames.json](independent-all-frames.json) | Separate visual inspection of all 73 frames on light and dark backgrounds. |
+
+The reviewers were AI agents. The main review also inspected ordered frame boards, complete loops, and native-size browser playback. See the [visual checklist and limits](../REVIEW.md) for the acceptance criteria.
+
+## Inspect the images
+
+[Unlabeled pairs](../../art/repair/v1.0.1) · [Light/dark boards](../../art/repair/v1.0.1/review-boards) · [Direction sheet](../../previews/directions.png) · [Restoration report](../outline-restoration.json)
