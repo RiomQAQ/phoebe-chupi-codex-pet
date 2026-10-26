@@ -31,13 +31,21 @@ The folder contains two files: `pet.json` and `spritesheet.webp`. No plugin is r
 | :---: | :---: | :---: |
 | ![Idle and blinking](previews/idle.gif) | ![Working](previews/running.gif) | ![Waiting](previews/waiting.gif) |
 
-| Following the cursor in Dot | A small seated hop |
+| Carrying her laptop right | Carrying her laptop left | A small wave |
+| :---: | :---: | :---: |
+| ![Walking right](previews/running-right.gif) | ![Walking left](previews/running-left.gif) | ![Waving](previews/waving.gif) |
+
+| A small seated hop | Asking for help | Checking a result |
+| :---: | :---: | :---: |
+| ![Seated hop](previews/jumping.gif) | ![Needs help](previews/failed.gif) | ![Reviewing](previews/review.gif) |
+
+| Following the cursor in Dot | Hop and return |
 | :---: | :---: |
 | ![Sixteen head directions](previews/look-loop.gif) | ![Idle, hop, and return](previews/idle-jump-idle.gif) |
 
 The direction preview cycles through all sixteen poses. In Dot, the cursor chooses the pose. The app controls animation timing and task-state changes.
 
-The remaining states cover carrying her laptop left or right, waving, asking for help, and checking a result. Browse [all states](previews/all-states.gif) or the [frame layout](docs/FORMAT.md#animation-states).
+Browse the [complete animation](previews/all-states.gif) or the [frame layout](docs/FORMAT.md#animation-states) for all nine states.
 
 ## Compatibility
 

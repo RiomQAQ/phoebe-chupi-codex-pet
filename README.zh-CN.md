@@ -31,13 +31,21 @@
 | :---: | :---: | :---: |
 | ![待机与眨眼](previews/idle.gif) | ![工作](previews/running.gif) | ![等待](previews/waiting.gif) |
 
-| 在 Dot 里跟随鼠标 | 坐着小跳一下 |
+| 抱电脑向右走 | 抱电脑向左走 | 挥手打招呼 |
+| :---: | :---: | :---: |
+| ![向右走](previews/running-right.gif) | ![向左走](previews/running-left.gif) | ![挥手](previews/waving.gif) |
+
+| 坐着小跳一下 | 需要帮忙 | 检查结果 |
+| :---: | :---: | :---: |
+| ![坐姿小跳](previews/jumping.gif) | ![求助](previews/failed.gif) | ![检查](previews/review.gif) |
+
+| 在 Dot 里跟随鼠标 | 小跳后回到坐姿 |
 | :---: | :---: |
 | ![十六个转头方向](previews/look-loop.gif) | ![待机、小跳与落回原位](previews/idle-jump-idle.gif) |
 
 方向预览会依次展示 16 个姿态；在 Dot 中，姿态由鼠标位置决定。动画速度和任务状态切换由应用控制。
 
-其他动作包括抱电脑左右移动、挥手、求助和检查结果。可以查看[全部动作](previews/all-states.gif)或[逐行布局](docs/FORMAT.zh-CN.md#动作行)。
+九类动作也可以通过[完整动画](previews/all-states.gif)或[逐行布局](docs/FORMAT.zh-CN.md#动作行)查看。
 
 ## 适配范围
 
