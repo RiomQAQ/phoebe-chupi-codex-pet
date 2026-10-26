@@ -2,6 +2,8 @@
 
 [English](README.md) · **简体中文**
 
+[![Release 附件累计下载](https://img.shields.io/github/downloads/RiomQAQ/phoebe-chupi-codex-pet/total?label=%E7%B4%AF%E8%AE%A1%E4%B8%8B%E8%BD%BD&color=brightgreen)](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases "所有版本 Release 附件的累计下载次数")
+
 陪你写代码的 **Codex 桌面宠物与 Dot 伙伴**。菲比抱着电脑坐好，工作时会眨眼，在 Dot 里还会跟着鼠标转头。
 
 ![抱着电脑坐好的菲比啾比](previews/hero.png)

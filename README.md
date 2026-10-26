@@ -2,6 +2,8 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
+[![Total release downloads](https://img.shields.io/github/downloads/RiomQAQ/phoebe-chupi-codex-pet/total?label=total%20downloads&color=brightgreen)](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases "Release asset downloads across all versions")
+
 **Phoebe Chupi / 菲比啾比** is a coding companion for **Codex desktop and Dot**. She sits with her laptop, blinks while she works, and turns her head toward your cursor in Dot.
 
 ![Phoebe Chupi, seated with her laptop](previews/hero.png)
