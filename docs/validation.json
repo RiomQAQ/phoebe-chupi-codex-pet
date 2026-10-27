@@ -1,8 +1,8 @@
 {
   "ok": true,
   "errors": [],
-  "runtime_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
-  "runtime_bytes": 1910162,
+  "runtime_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "runtime_bytes": 1925336,
   "decoded_png_webp_pixels_equal": true,
   "atlas_size": [
     1536,
@@ -14,7 +14,24 @@
   ],
   "used_cells": 73,
   "transparent_unused_cells": 15,
+  "approved_artwork": {
+    "ok": true,
+    "mode": "approved_runtime",
+    "version": "v1.0.2",
+    "atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+    "atlas_bytes": 1925336,
+    "source_sha256": "097cef1ad416081a8a53cbdf31c59a8062912e3dd4723d516a4578cffc430cbc",
+    "approved_rgba_equal": true,
+    "source_pixel_mismatches": 0,
+    "standard_source_sha256": "79ce06935e3491201f7b6b1695480a49cc7bef7f17eaa5ec716e7ed56f478d4d",
+    "protected_standard_rows": 9,
+    "protected_standard_frames": 57,
+    "standard_pixel_mismatches": 0,
+    "source": "art/approved/v1.0.2/spritesheet.png",
+    "standard_source": "art/releases/v1.0.1/spritesheet.png"
+  },
   "outline_restoration": {
+    "scope": "historical_v1.0.1_snapshot",
     "version": "v1.0.1",
     "ok": true,
     "source_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
@@ -27,9 +44,9 @@
     "protected_dark_ink_pixels": 263885,
     "dark_ink_mismatches": 0
   },
-  "unique_archived_source_images": 742,
-  "image_files_checked": 886,
-  "text_files_scanned": 73,
+  "unique_archived_source_images": 832,
+  "image_files_checked": 998,
+  "text_files_scanned": 103,
   "bounds": [
     {
       "row": 0,
@@ -605,9 +622,9 @@
       "row": 9,
       "column": 0,
       "alpha_bbox": [
-        25,
-        45,
-        165,
+        23,
+        47,
+        166,
         197
       ]
     },
@@ -657,17 +674,17 @@
       "alpha_bbox": [
         25,
         46,
-        163,
-        197
+        165,
+        198
       ]
     },
     {
       "row": 9,
       "column": 6,
       "alpha_bbox": [
-        32,
+        28,
         47,
-        164,
+        165,
         197
       ]
     },
@@ -675,9 +692,9 @@
       "row": 9,
       "column": 7,
       "alpha_bbox": [
-        31,
-        43,
-        166,
+        24,
+        42,
+        168,
         197
       ]
     },
@@ -685,70 +702,70 @@
       "row": 10,
       "column": 0,
       "alpha_bbox": [
-        28,
+        24,
         41,
-        162,
-        195
+        166,
+        197
       ]
     },
     {
       "row": 10,
       "column": 1,
       "alpha_bbox": [
-        29,
-        43,
-        161,
-        195
+        26,
+        42,
+        165,
+        197
       ]
     },
     {
       "row": 10,
       "column": 2,
       "alpha_bbox": [
-        31,
-        44,
-        160,
-        195
+        25,
+        45,
+        164,
+        197
       ]
     },
     {
       "row": 10,
       "column": 3,
       "alpha_bbox": [
-        26,
-        48,
-        161,
-        195
+        30,
+        49,
+        163,
+        197
       ]
     },
     {
       "row": 10,
       "column": 4,
       "alpha_bbox": [
-        26,
-        48,
-        161,
-        195
+        29,
+        50,
+        163,
+        197
       ]
     },
     {
       "row": 10,
       "column": 5,
       "alpha_bbox": [
-        30,
-        47,
-        163,
-        195
+        28,
+        44,
+        166,
+        197
       ]
     },
     {
       "row": 10,
       "column": 6,
       "alpha_bbox": [
-        33,
+        30,
         47,
-        164,
-        195
+        165,
+        197
       ]
     },
     {
@@ -756,9 +773,9 @@
       "column": 7,
       "alpha_bbox": [
         28,
-        49,
-        162,
-        195
+        46,
+        166,
+        197
       ]
     }
   ],

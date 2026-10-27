@@ -2,13 +2,13 @@
 
 [English](IMAGE-GALLERY.md) · **简体中文** · [文档目录](README.zh-CN.md)
 
-档案收录 **742 张不同源图**，对应 **1,290 个工作文件实例**。相同图片只保存一份，[art/index.json](../art/index.json) 保留图片编号、校验值和原文件名对应关系。
+档案收录 **832 张不同源图**，对应 **1,447 个工作文件实例**。相同图片只保存一份，[art/index.json](../art/index.json) 保留图片编号、校验值和原文件名对应关系。
 
 可以[下载全部图片和当前指南](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/archive/refs/heads/main.zip)，离线浏览完整仓库。
 
 ## 制作图片
 
-每个目录页提供总览图和可点击的原图，条目说明同时包含中英文。
+每个目录页提供缩略预览和可点击的原图，条目说明同时包含中英文。同一源图可能出现在多个阶段。
 
 | 阶段 | 图片数 | 目录 |
 | --- | ---: | --- |
@@ -18,6 +18,7 @@
 | 未采用的睁眼试验 | 192 | [第 1 页](gallery/awake-experiment-01.md) · [第 2 页](gallery/awake-experiment-02.md) · [第 3 页](gallery/awake-experiment-03.md) · [第 4 页](gallery/awake-experiment-04.md) |
 | 角色样张 | 14 | [查看](gallery/character-samples-01.md) |
 | 补充生成原图 | 4 | [查看](gallery/generation-originals-01.md) |
+| 转头与脸型制作图 | 99 | [第 1 页](gallery/look-face-repair-01.md) · [第 2 页](gallery/look-face-repair-02.md) · [第 3 页](gallery/look-face-repair-03.md) |
 
 档案图片记录不同制作阶段，不会全部用于安装动画。保留署名的社区三视图及三张裁剪图属于第三方参考，适用[图片使用说明](../ASSET-USAGE.md#中文)。
 

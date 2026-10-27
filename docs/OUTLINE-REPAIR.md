@@ -44,13 +44,13 @@ See the [per-frame restoration report](outline-restoration.json), [review eviden
 
 ```sh
 python3 -m pip install -r requirements.txt
-python3 scripts/restore_outlines.py --build --report docs/outline-restoration.json
+python3 scripts/restore_outlines.py --build --output-dir output/outline-restore-v1.0.1
 python3 scripts/render_previews.py
 python3 scripts/validate.py --report docs/validation.json
 python3 -m unittest discover -s tests
 python3 scripts/package.py
 ```
 
-`--build` reads the frozen [pre-cleanup source](../art/repair/v1.0.1/source-before-cleanup.png). It re-exports those pixels without redrawing, resizing, or color averaging. [v1.0.0 snapshots](../art/releases/v1.0.0) remain available for comparison.
+`--build` reads the frozen [pre-cleanup source](../art/repair/v1.0.1/source-before-cleanup.png) and exports the historical repair into the chosen new directory. It preserves those pixels without redrawing, resizing, or color averaging. The installed package and current artwork stay in place. [v1.0.0 snapshots](../art/releases/v1.0.0) remain available for comparison.
 
 For future exports, preserve clean native alpha and check contour colors against the approved source. PNG/WebP equality remains an encoding check, alongside the source-color and visual checks.

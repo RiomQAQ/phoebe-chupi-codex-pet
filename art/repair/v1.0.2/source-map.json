@@ -1,0 +1,136 @@
+{
+  "version": "v1.0.2",
+  "runtime_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "artwork": "Complete-frame image generation, normalized with one shared viewport/scale and whole-cell translation registration. No face-region compositing or local face scaling.",
+  "standard_rows": "57frames unchanged from v1.0.1, including original blinking.",
+  "source_frames": [
+    {
+      "angle": "000",
+      "source_image_id": "image-0800",
+      "path": "art/archive/look-face-repair/0800-v05-000-attempt-01.png",
+      "source_sha256": "fc0247e779d0159c6e629cacb398d0b513a532a133cb3e9e03b74ebb20947bc3",
+      "published_sha256": "fc0247e779d0159c6e629cacb398d0b513a532a133cb3e9e03b74ebb20947bc3",
+      "final_cell": "art/frames/look/000.png"
+    },
+    {
+      "angle": "022.5",
+      "source_image_id": "image-0279",
+      "path": "art/source-frames/look/022.5.png",
+      "source_sha256": "2b54dc6b002cd2f01085aab647a03a2f68f5272e4e8c8dc47e9faf815eb7d553",
+      "published_sha256": "2b54dc6b002cd2f01085aab647a03a2f68f5272e4e8c8dc47e9faf815eb7d553",
+      "final_cell": "art/frames/look/022.5.png"
+    },
+    {
+      "angle": "045",
+      "source_image_id": "image-0277",
+      "path": "art/source-frames/look/045.png",
+      "source_sha256": "051e223c55bf5700e1cc22c408a8cb681ec05a0aef4908520155bad67eae9185",
+      "published_sha256": "051e223c55bf5700e1cc22c408a8cb681ec05a0aef4908520155bad67eae9185",
+      "final_cell": "art/frames/look/045.png"
+    },
+    {
+      "angle": "067.5",
+      "source_image_id": "image-0280",
+      "path": "art/source-frames/look/067.5.png",
+      "source_sha256": "a015b4c96d00f237808f85376b94dfd1ce33e58234ff34b9922c310da0ad4484",
+      "published_sha256": "a015b4c96d00f237808f85376b94dfd1ce33e58234ff34b9922c310da0ad4484",
+      "final_cell": "art/frames/look/067.5.png"
+    },
+    {
+      "angle": "090",
+      "source_image_id": "image-0078",
+      "path": "art/source-frames/look/090.png",
+      "source_sha256": "2c26e582de842d64b711327a9b1f3da517e58463f3c2523915730b1f9ba1cf8e",
+      "published_sha256": "2c26e582de842d64b711327a9b1f3da517e58463f3c2523915730b1f9ba1cf8e",
+      "final_cell": "art/frames/look/090.png"
+    },
+    {
+      "angle": "112.5",
+      "source_image_id": "image-0766",
+      "path": "art/archive/look-face-repair/0766-112.5-v1.png",
+      "source_sha256": "629583b3fc8e707d99be446974f392d9b07145d833163bad496c1de88cbea96d",
+      "published_sha256": "629583b3fc8e707d99be446974f392d9b07145d833163bad496c1de88cbea96d",
+      "final_cell": "art/frames/look/112.5.png"
+    },
+    {
+      "angle": "135",
+      "source_image_id": "image-0768",
+      "path": "art/archive/look-face-repair/0768-135-v2-down-anchor.png",
+      "source_sha256": "5c59db57e489ffbbc826b447f442f9adbd57a93367f1a006d7a3f57c88fa1028",
+      "published_sha256": "5c59db57e489ffbbc826b447f442f9adbd57a93367f1a006d7a3f57c88fa1028",
+      "final_cell": "art/frames/look/135.png"
+    },
+    {
+      "angle": "157.5",
+      "source_image_id": "image-0803",
+      "path": "art/archive/look-face-repair/0803-v05-157.5-157.5-return-from-right-v2-camera.png",
+      "source_sha256": "9589ac2fc04330e6918cd8a1efab1ed198a813eab62dc965511f4dd5cdec14b3",
+      "published_sha256": "9589ac2fc04330e6918cd8a1efab1ed198a813eab62dc965511f4dd5cdec14b3",
+      "final_cell": "art/frames/look/157.5.png"
+    },
+    {
+      "angle": "180",
+      "source_image_id": "image-0774",
+      "path": "art/archive/look-face-repair/0774-180-v3-camera.png",
+      "source_sha256": "6e2a9d253e3e3cecb498a54192463195cfe8ca8a411098c2918809639ab76eae",
+      "published_sha256": "6e2a9d253e3e3cecb498a54192463195cfe8ca8a411098c2918809639ab76eae",
+      "final_cell": "art/frames/look/180.png"
+    },
+    {
+      "angle": "202.5",
+      "source_image_id": "image-0769",
+      "path": "art/archive/look-face-repair/0769-157.5-v1.png",
+      "source_sha256": "851b5fc4afef8ba65a0093788d2966334156461cbfea450620e9d1a069ca9069",
+      "published_sha256": "851b5fc4afef8ba65a0093788d2966334156461cbfea450620e9d1a069ca9069",
+      "final_cell": "art/frames/look/202.5.png"
+    },
+    {
+      "angle": "225",
+      "source_image_id": "image-0778",
+      "path": "art/archive/look-face-repair/0778-225-v1-front-anchor.png",
+      "source_sha256": "18b1d12db6691cff509adad112d494d22bb67dc7f193c9c8053dd79a0779cf39",
+      "published_sha256": "18b1d12db6691cff509adad112d494d22bb67dc7f193c9c8053dd79a0779cf39",
+      "final_cell": "art/frames/look/225.png"
+    },
+    {
+      "angle": "247.5",
+      "source_image_id": "image-0807",
+      "path": "art/archive/look-face-repair/0807-v05-247.5-attempt01.png",
+      "source_sha256": "e3ddbaea3cd6d30f8a7d37eea924c1a953a9e046aaccba789c0e3e973b92d08f",
+      "published_sha256": "e3ddbaea3cd6d30f8a7d37eea924c1a953a9e046aaccba789c0e3e973b92d08f",
+      "final_cell": "art/frames/look/247.5.png"
+    },
+    {
+      "angle": "270",
+      "source_image_id": "image-0784",
+      "path": "art/archive/look-face-repair/0784-270-v5-hair.png",
+      "source_sha256": "bab69c08e63459e429e53697f337cb058e003c91481bde9e2d5f733405760dfa",
+      "published_sha256": "bab69c08e63459e429e53697f337cb058e003c91481bde9e2d5f733405760dfa",
+      "final_cell": "art/frames/look/270.png"
+    },
+    {
+      "angle": "292.5",
+      "source_image_id": "image-0830",
+      "path": "art/archive/look-face-repair/0830-v05-292.5-292.5-attempt-07-compact.png",
+      "source_sha256": "3f894a5f99ec6f7131bf54a7db037f6f3ae424936ed330881a5d4d53f63a6f34",
+      "published_sha256": "3f894a5f99ec6f7131bf54a7db037f6f3ae424936ed330881a5d4d53f63a6f34",
+      "final_cell": "art/frames/look/292.5.png"
+    },
+    {
+      "angle": "315",
+      "source_image_id": "image-0822",
+      "path": "art/archive/look-face-repair/0822-v05-315-315-attempt-03.png",
+      "source_sha256": "b62d8d0160fb31936c704a4c2049ad69ae76b0ca0adf24314c3691fa6efe2de9",
+      "published_sha256": "b62d8d0160fb31936c704a4c2049ad69ae76b0ca0adf24314c3691fa6efe2de9",
+      "final_cell": "art/frames/look/315.png"
+    },
+    {
+      "angle": "337.5",
+      "source_image_id": "image-0824",
+      "path": "art/archive/look-face-repair/0824-v05-337.5-337.5-attempt-01.png",
+      "source_sha256": "babfdd05e057ef7c19aa1de76e18ecdb95fadf519b2ae85cd3fb104a68a7b98b",
+      "published_sha256": "babfdd05e057ef7c19aa1de76e18ecdb95fadf519b2ae85cd3fb104a68a7b98b",
+      "final_cell": "art/frames/look/337.5.png"
+    }
+  ]
+}

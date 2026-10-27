@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Re-export approved pixels without the edge averaging that damaged the ink."""
+"""Audit and export the historical v1.0.1 outline restoration."""
 from __future__ import annotations
 
 import argparse
@@ -14,6 +14,7 @@ SOURCE_SHA256 = "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd
 PREVIOUS = ROOT / "art/releases/v1.0.0/spritesheet.png"
 PNG = ROOT / "art/final/spritesheet.png"
 WEBP = ROOT / "pets/phoebe-chupi/spritesheet.webp"
+HISTORICAL_WEBP = ROOT / "art/releases/v1.0.1/spritesheet.webp"
 
 
 def sha(path):
@@ -25,7 +26,7 @@ def load(path):
         return opened.convert("RGBA")
 
 
-def audit(atlas_path=WEBP):
+def audit(atlas_path=HISTORICAL_WEBP):
     source, previous, atlas = load(SOURCE), load(PREVIOUS), load(atlas_path)
     layout = json.loads((ROOT / "art/animation-layout.json").read_text())
     errors, frames = [], []
@@ -85,7 +86,14 @@ def audit(atlas_path=WEBP):
     }
 
 
-def build():
+def build(output_dir):
+    """Export historical pixels to a new destination, never the current runtime."""
+    output_dir = Path(output_dir).resolve()
+    if output_dir in {PNG.parent.resolve(), WEBP.parent.resolve()}:
+        raise ValueError("Historical restoration cannot overwrite current artwork/runtime")
+    png, webp = output_dir / "spritesheet.png", output_dir / "spritesheet.webp"
+    if png.exists() or webp.exists():
+        raise ValueError("Historical export destination already contains an atlas")
     if sha(SOURCE) != SOURCE_SHA256:
         raise ValueError("Pre-cleanup source checksum mismatch")
     source, previous = load(SOURCE), load(PREVIOUS)
@@ -93,22 +101,27 @@ def build():
         raise ValueError("Cannot restore from a source with changed geometry/alpha")
     # These are already approved normalized pixels, including clean transparency.
     # No drawing, recoloring, resizing, or matte averaging is needed.
-    PNG.parent.mkdir(parents=True, exist_ok=True)
-    source.save(PNG)
-    source.save(WEBP, format="WEBP", lossless=True, quality=100, method=6, exact=True)
-    if load(PNG).tobytes() != load(WEBP).tobytes():
+    output_dir.mkdir(parents=True, exist_ok=True)
+    source.save(png)
+    source.save(webp, format="WEBP", lossless=True, quality=100, method=6, exact=True)
+    if load(png).tobytes() != load(webp).tobytes():
         raise ValueError("Lossless encode did not preserve RGBA")
+    return webp
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--build", action="store_true", help="Rebuild the current PNG/WebP from approved pre-cleanup pixels")
-    parser.add_argument("--atlas", type=Path, default=WEBP, help="Atlas to audit (defaults to the shipped WebP)")
+    parser.add_argument("--build", action="store_true", help="Export historical v1.0.1 pixels to a new --output-dir")
+    parser.add_argument("--output-dir", type=Path, help="New directory for historical PNG/WebP export; existing atlases are never replaced")
+    parser.add_argument("--atlas", type=Path, help="Historical atlas to audit (defaults to the frozen v1.0.1 WebP)")
     parser.add_argument("--report", type=Path, help="Save the full per-frame report")
     args = parser.parse_args()
-    if args.build:
-        build()
-    report = audit(args.atlas)
+    if args.build and (args.output_dir is None or args.atlas is not None):
+        parser.error("--build requires --output-dir and cannot be combined with --atlas")
+    if args.output_dir is not None and not args.build:
+        parser.error("--output-dir requires --build")
+    atlas = build(args.output_dir) if args.build else (args.atlas or HISTORICAL_WEBP)
+    report = audit(atlas)
     if args.report:
         args.report.parent.mkdir(parents=True, exist_ok=True)
         args.report.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")

@@ -44,13 +44,13 @@
 
 ```sh
 python3 -m pip install -r requirements.txt
-python3 scripts/restore_outlines.py --build --report docs/outline-restoration.json
+python3 scripts/restore_outlines.py --build --output-dir output/outline-restore-v1.0.1
 python3 scripts/render_previews.py
 python3 scripts/validate.py --report docs/validation.json
 python3 -m unittest discover -s tests
 python3 scripts/package.py
 ```
 
-`--build` 从固定的[清理前原图](../art/repair/v1.0.1/source-before-cleanup.png)直接导出，不重画、不缩放，也不混合邻近颜色。[v1.0.0 快照](../art/releases/v1.0.0)保留用于对照。
+`--build` 从固定的[清理前原图](../art/repair/v1.0.1/source-before-cleanup.png)导出历史修复结果，存入指定的新目录。导出不重画、不缩放，也不混合邻近颜色，当前运行包和图片保持原样。[v1.0.0 快照](../art/releases/v1.0.0)保留用于对照。
 
 后续导出应保留干净的原生透明度，并对照认可原图检查轮廓颜色。PNG/WebP 一致性用于检查编码，还需要同时通过原图颜色比对和画面审查。

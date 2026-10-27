@@ -8,7 +8,8 @@ import json
 from pathlib import Path
 import re
 from PIL import Image, ImageSequence
-from restore_outlines import audit as audit_outlines
+from audit_artwork import audit as audit_artwork
+from restore_outlines import audit as audit_outlines, HISTORICAL_WEBP
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp", ".gif"}
@@ -78,8 +79,10 @@ def main():
             bounds.append({"row": row, "column": col, "alpha_bbox": list(box)})
     if (used, empty) != (73, 15):
         errors.append("Expected 73 used and 15 transparent cells")
-    outline_audit = audit_outlines(runtime)
-    errors.extend(outline_audit["errors"])
+    artwork_audit = audit_artwork(runtime)
+    errors.extend(artwork_audit["errors"])
+    outline_audit = audit_outlines(HISTORICAL_WEBP)
+    errors.extend(f"Historical v1.0.1: {error}" for error in outline_audit["errors"])
     archive = json.loads((ROOT / "art/index.json").read_text())
     seen = set()
     for record in archive["images"]:
@@ -134,7 +137,8 @@ def main():
         "decoded_png_webp_pixels_equal": not any("WebP pixels" in e for e in errors),
         "atlas_size": list(atlas.size), "cell_size": [192, 208],
         "used_cells": used, "transparent_unused_cells": empty,
-        "outline_restoration": {k: v for k, v in outline_audit.items() if k not in {"frames", "errors", "method"}},
+        "approved_artwork": {k: v for k, v in artwork_audit.items() if k not in {"frames", "errors", "method"}},
+        "outline_restoration": {"scope": "historical_v1.0.1_snapshot", **{k: v for k, v in outline_audit.items() if k not in {"frames", "errors", "method"}}},
         "unique_archived_source_images": len(seen),
         "image_files_checked": scanned_images, "text_files_scanned": scanned_text,
         "bounds": bounds,

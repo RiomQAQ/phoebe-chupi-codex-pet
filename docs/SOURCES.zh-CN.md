@@ -34,13 +34,17 @@
 | 资料 | 用途 |
 | --- | --- |
 | [官方导入命令](https://learn.chatgpt.com/docs/reference/commands#pets) | 宠物原生导入 URI 与 v2 参数。 |
-| [官方宠物指南](https://learn.chatgpt.com/docs/pets) | 桌面控制方式和网页上传要求。 |
+| [官方宠物指南](https://learn.chatgpt.com/docs/pets) | 应用控制方式和导入说明。 |
 | [phoebe-codex-pet](https://github.com/sherlidian01-web/phoebe-codex-pet) | 双语展示与动画预览。 |
 | [remielle-codex-pet](https://github.com/HanaAyane/remielle-codex-pet) | 安装结构与通用 v2 清单示例。 |
 | [awesome-codex-pet](https://github.com/legeling/awesome-codex-pet) | 图片目录导航和来源署名。 |
 
 ## 收录范围
 
-[图片档案](IMAGE-GALLERY.zh-CN.md)保留 742 张不同源图，[art/index.json](../art/index.json) 对应 1,290 个工作文件实例，包含生成帧、姿势研究、对照、未采用候选和保留署名的三视图。当前裁剪帧与修复证据另外收录。
+[图片档案](IMAGE-GALLERY.zh-CN.md)保留 832 张不同源图，[art/index.json](../art/index.json) 对应 1,447 个工作文件实例，包含生成帧、姿势研究、对照、未采用候选和保留署名的三视图。当前裁剪帧与修复证据另外收录。
+
+v1.0.2 使用内置图像生成功能重画了 12 张完整转头帧，另有 4 张沿用原画：`022.5`、`045`、`067.5` 和 `090`。修改保留了帽子设计，没有粘贴脸部或对脸部做局部变形。最新一轮细化覆盖 `000`、`157.5`、`247.5`、`292.5`、`315`、`337.5`，处理脸颊过窄，以及从左上注视姿态转回时脸部显得变大的问题。
+
+当前经过审查的基准为 [art/approved/v1.0.2/spritesheet.png](../art/approved/v1.0.2/spritesheet.png)，记录在 [art/approved-runtime.json](../art/approved-runtime.json)。前九行保留 v1.0.1 的 RGBA 像素。该版本保存在 [art/releases/v1.0.1](../art/releases/v1.0.1)，原有[描线修复检查记录](repair-qa/README.zh-CN.md)也继续保留。新的[转头修复检查记录](look-repair-qa/README.zh-CN.md)对应 v1.0.2。
 
 第三方研究合集保留来源链接。仓库收录制作图片和可复现的技术记录，便于检查宠物成品。

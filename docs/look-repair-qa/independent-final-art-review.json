@@ -1,0 +1,39 @@
+{
+  "candidate": "v1.0.2",
+  "atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "reviewer": "Independent artwork reviewer C",
+  "recorded_by": "Primary agent, from the independent reviewer message received in this review session.",
+  "verdict": "pass with pose-step warnings",
+  "blocking_defects": [],
+  "scope": "All16look poses decoded from the final WebP at native192x208 on light/dark backgrounds, plus critical neighbor chains. No interface or installed Dot review by this worker.",
+  "findings": [
+    "No blocking visible face-scale pop found in the full-v05-d artwork.",
+    "Near-eye, laptop and torso scale remain stable; changes concentrate in upward pitch, face projection and the revealing farther eye.",
+    "The largest remaining steps are in270->292.5->315. These are discrete pose changes rather than the previously conspicuous whole-face enlargement."
+  ],
+  "chains": [
+    {
+      "chain": "135->157.5->180",
+      "verdict": "pass",
+      "observation": "No comparable whole-face enlargement found."
+    },
+    {
+      "chain": "270->292.5->315",
+      "verdict": "warning",
+      "observation": "Most noticeable remaining discrete upward/return-to-viewer pose steps; near-eye, laptop and torso scale stay stable."
+    },
+    {
+      "chain": "337.5->000->022.5",
+      "verdict": "pass",
+      "observation": "No comparable whole-face enlargement found."
+    }
+  ],
+  "evidence": [
+    "art/repair/v1.0.2/review-boards/independent-c-all16-light.png",
+    "art/repair/v1.0.2/review-boards/independent-c-all16-dark.png",
+    "art/repair/v1.0.2/review-boards/independent-c-chain-down-light.png",
+    "art/repair/v1.0.2/review-boards/independent-c-chain-down-dark.png",
+    "art/repair/v1.0.2/review-boards/independent-c-chain-left-up-loop-light.png",
+    "art/repair/v1.0.2/review-boards/independent-c-chain-left-up-loop-dark.png"
+  ]
+}

@@ -41,34 +41,42 @@ First inspect the labeled direction sheet and ordered loop. Then use unlabeled A
 4. Save the answers before revealing the key, then aggregate by strict per-cell majority.
 5. Inspect any disagreement against the ordered sequence before accepting or repairing the pose.
 
-The v1.0.1 review used three AI reviewers. All fourteen majority comparisons passed. Individual answers, the key, and the full-frame review are in [review evidence](repair-qa/README.md).
+The v1.0.2 review used three independent reviewers and fresh unlabeled A/B pairs. All fourteen strict-majority comparisons passed. Individual answers, the key, and the validation are in [look repair evidence](look-repair-qa/README.md). The earlier v1.0.1 answers remain in the [historical review evidence](repair-qa/README.md).
 
 ## Current results
 
-These results apply to the **v1.0.1** runtime identified in [validation.json](validation.json) and [production-review.json](production-review.json).
+These results apply to the **v1.0.2** WebP, SHA-256 `c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6`. The [look repair evidence](look-repair-qa/README.md) records its quality checks, direction comparisons, and browser review scope.
 
 | Check | Result |
 | --- | --- |
 | Layout | 1536 × 2288; 73 occupied cells and 15 transparent cells. |
 | Export fidelity | PNG and lossless WebP have identical decoded RGBA pixels. |
 | Frame crops | All 73 crops match their atlas cells. |
-| Source-color fidelity | All 73 cells match the approved pre-cleanup source. |
-| Outline restoration | 88,948 visible RGB pixels restored; 263,885 dark-ink pixels checked with zero mismatches. |
+| Approved artwork | Runtime pixels match the reviewed v1.0.2 PNG baseline. |
+| Standard animations | All 57 frames in the first nine rows, including blinking, have the same RGBA pixels as v1.0.1. |
+| Look artwork | Twelve complete frames redrawn; original drawings reused for `022.5`, `045`, `067.5`, and `090`. Hat design preserved. |
+| Direction comparisons | Three fresh independent reviews; all 14 comparisons passed by strict majority. |
+| Quality gate | Official pet-quality script passed with reviewed direction and continuity warnings. |
 | Hop | 21 px peak lift; 0 px landing offset. |
-| Head registration | Maximum horizontal center drift 3.5 px; maximum width ratio 1.0625. |
-| Visual inspection | All 73 frames reviewed on light/dark backgrounds, plus a separate independent pass and native-size playback. |
-| Source archive | 742 distinct source images; 1,290 working-file occurrences indexed. |
+| Look registration | Maximum horizontal center drift 3.0 px; maximum width ratio 1.0859375. |
+| Browser inspection | Native 192 × 208 old/new stepping and sampled playback snapshots; details below. |
+| Source archive | 832 distinct source images; 1,447 working-file occurrences indexed. |
 
-Movement measurements use alpha > 16. The raw bounds in `validation.json` include any nonzero alpha; keep these two measurement policies distinct.
+The latest face refinements are `000`, `157.5`, `247.5`, `292.5`, `315`, and `337.5`. They address pinched cheeks and apparent face growth during the upward-left return. Each is a complete frame generated with the image tools, without face pasting or local face warps.
+
+Movement measurements use alpha > 16. The raw bounds in [validation.json](validation.json) include any nonzero alpha; keep these two measurement policies distinct. Registration and pixel-difference measurements help locate a transition to inspect; they do not establish facial consistency or smooth motion on their own.
+
+The current browser review checked `270 → 292.5 → 315 → 337.5 → 000` forward and backward at 1×, with 2× diagnostic views. Playback was sampled through successive screenshots, so this is not a continuous-video review. The large whole-face growth seen in earlier candidates was no longer obvious at native size; visible pose steps remain. v1.0.1 was checked in macOS desktop and Dot. The current revision has not been installed and checked in native Dot, and Windows has not been visually tested.
 
 ## Known limitations
 
 - `045` and `067.5` remain visually close.
-- `225 → 247.5` is a larger step than its immediate neighbors. These refinements are tracked in [issue #2](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/issues/2).
+- `225 → 247.5` and `270 → 292.5` remain larger discrete pose steps than their immediate neighbors. The latter includes an upward head lift; `292.5 → 315` also visibly opens the farther eye.
+- Dot chooses among sixteen discrete poses, so changes occur in visible angular steps.
 - Blink poses include partly closed and closed eyes. Reduced motion or app timing can hold one pose visibly.
-- macOS desktop and Dot behavior have been checked; Windows visual verification is pending.
+- Native Dot verification of v1.0.2 and Windows visual verification remain pending. Earlier direction feedback is preserved in [closed issue #2](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/issues/2).
 
-The [outline repair record](OUTLINE-REPAIR.md) explains the v1.0.0 cleanup error. Its lesson is part of the export check: comparing two formats does not detect a mistake already present in both.
+The [outline repair record](OUTLINE-REPAIR.md) explains the v1.0.0 cleanup error and v1.0.1 correction: 88,948 visible RGB pixels restored and 263,885 dark-ink pixels checked with zero mismatches. These are historical repair counts, not counts of new v1.0.2 artwork. The v1.0.1 snapshot remains in [art/releases/v1.0.1](../art/releases/v1.0.1). Its lesson remains part of the export check: comparing two formats does not detect a mistake already present in both.
 
 ## Run the file checks
 
@@ -79,9 +87,9 @@ python3 scripts/validate.py --report docs/validation.json
 python3 -m unittest discover -s tests
 ```
 
-The validator checks the five-field manifest, static v2 image, cell population and margins, PNG/WebP equality, final crops, source-color fidelity, archive hashes, decoding, metadata, common private-data markers, file sizes, and distribution checksums. Regression tests reject the actual damaged v1.0.0 atlas and check three reported hair pixels.
+The validator checks the five-field manifest, static v2 image, cell population and margins, PNG/WebP equality, final crops, approved-source fidelity, archive hashes, decoding, metadata, common private-data markers, file sizes, and distribution checksums. Regression tests preserve coverage of the damaged v1.0.0 atlas and the reported hair pixels, and check the approved runtime and frozen standard rows.
 
-The color guard uses the approved v1.0.1 source. An intentional artwork revision needs a newly reviewed baseline and checksum, with the historical source and regression case preserved. CI runs the file validator and regression tests; visual review remains a separate step.
+The current pixel guard reads [art/approved-runtime.json](../art/approved-runtime.json), checks the checksum of [art/approved/v1.0.2/spritesheet.png](../art/approved/v1.0.2/spritesheet.png), and compares its full RGBA pixels with the runtime. A separate guard keeps the first nine rows fixed to the v1.0.1 PNG, protecting all 57 standard frames and the transparent cells in those rows. An intentional artwork revision needs a newly reviewed baseline and checksum, with historical sources and regression cases preserved. CI runs the file validator and regression tests; visual review remains a separate step.
 
 ## Release checklist
 

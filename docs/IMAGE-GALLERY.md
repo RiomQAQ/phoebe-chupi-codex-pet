@@ -2,13 +2,13 @@
 
 **English** · [简体中文](IMAGE-GALLERY.zh-CN.md) · [Documentation](README.md)
 
-Browse **742 distinct source images**, representing **1,290 working-file occurrences**. Identical copies share one stored image; [art/index.json](../art/index.json) preserves their IDs, checksums, and source-name mappings.
+Browse **832 distinct source images**, representing **1,447 working-file occurrences**. Identical copies share one stored image; [art/index.json](../art/index.json) preserves their IDs, checksums, and source-name mappings.
 
 [Download all images and current guides](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/archive/refs/heads/main.zip) to browse the repository offline.
 
 ## Production images
 
-Gallery pages show a contact sheet and clickable originals. Their captions include both English and Chinese.
+Gallery pages provide thumbnail previews and clickable originals, with English and Chinese captions. Some images appear in more than one stage.
 
 | Stage | Images | Gallery |
 | --- | ---: | --- |
@@ -18,6 +18,7 @@ Gallery pages show a contact sheet and clickable originals. Their captions inclu
 | Unused open-eye study | 192 | [Part 1](gallery/awake-experiment-01.md) · [Part 2](gallery/awake-experiment-02.md) · [Part 3](gallery/awake-experiment-03.md) · [Part 4](gallery/awake-experiment-04.md) |
 | Character samples | 14 | [Open](gallery/character-samples-01.md) |
 | Additional generation originals | 4 | [Open](gallery/generation-originals-01.md) |
+| Look and face studies | 99 | [Part 1](gallery/look-face-repair-01.md) · [Part 2](gallery/look-face-repair-02.md) · [Part 3](gallery/look-face-repair-03.md) |
 
 Archive images document production stages; they do not all belong to the installed animation. The attributed community turnaround and its three crops are third-party references subject to the [artwork terms](../ASSET-USAGE.md#third-party-references).
 

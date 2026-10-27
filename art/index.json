@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "archive_date": "2026-10-19",
-  "unique_source_images": 742,
-  "source_alias_count": 1290,
-  "deduplication": "Identical source bytes are stored once; all sanitized project-relative aliases are retained. EXIF was stripped from one selected reference without changing RGBA pixels.",
-  "scope": "All project-created and selected working images from five production/sample stages, plus four referenced generation originals. External research download collections and private UI screenshots are excluded; see SOURCES.md.",
+  "unique_source_images": 832,
+  "source_alias_count": 1447,
+  "deduplication": "Identical source bytes are stored once; all sanitized project-relative aliases are retained. Privacy metadata is removed without changing decoded RGBA pixels.",
+  "scope": "Project production images, selected references, and look and face studies of the full character, including unused originals and normalized versions. Private UI captures, external download collections, and review-only diagnostics for these studies are excluded.",
   "images": [
     {
       "id": "image-0001",
@@ -243,7 +243,8 @@
       "role": "selected-third-party-reference",
       "groups": [
         "seated-production",
-        "standing-study"
+        "standing-study",
+        "look-face-repair"
       ],
       "width": 1792,
       "height": 1084,
@@ -256,7 +257,8 @@
         "production-v2/canonical/user-reference.png",
         "production-v2/references/reference-01.png",
         "production-v3/canonical/user-reference.png",
-        "production-v3/references/reference-01.png"
+        "production-v3/references/reference-01.png",
+        "look-face-repair/references/user-reference.png"
       ],
       "metadata_removed": [
         "exif"
@@ -899,7 +901,8 @@
       "role": "canonical-artwork",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -912,7 +915,8 @@
         "production-v3/canonical/seated-master-approved.png",
         "production-v3/canonical/seated-ready.png",
         "production-v3/raw-frames/idle/00.png",
-        "production-v4-awake/raw-frames/idle/00.png"
+        "production-v4-awake/raw-frames/idle/00.png",
+        "look-face-repair/references/seated-master-approved.png"
       ],
       "metadata_removed": []
     },
@@ -1533,7 +1537,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -1545,7 +1550,11 @@
       "aliases": [
         "production-v3/qa/look090-repair3-candidate.png",
         "production-v3/raw-frames/look/090.png",
-        "production-v4-awake/raw-frames/look/090.png"
+        "production-v4-awake/raw-frames/look/090.png",
+        "look-face-repair/selected-full-frames-v01/090.png",
+        "look-face-repair/selected-full-frames-v02/090.png",
+        "look-face-repair/selected-full-frames-v03/090.png",
+        "look-face-repair/selected-final/090.png"
       ],
       "metadata_removed": []
     },
@@ -1992,7 +2001,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -2004,7 +2014,10 @@
       "aliases": [
         "production-v3/qa/look000-root-candidate.png",
         "production-v3/raw-frames/look/000.png",
-        "production-v4-awake/raw-frames/look/000.png"
+        "production-v4-awake/raw-frames/look/000.png",
+        "look-face-repair/selected-full-frames-v01/000.png",
+        "look-face-repair/selected-full-frames-v02/000.png",
+        "look-face-repair/selected-full-frames-v03/000.png"
       ],
       "metadata_removed": []
     },
@@ -5556,7 +5569,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -5567,7 +5581,8 @@
       "bytes": 401295,
       "aliases": [
         "production-v3/raw-frames/look/315.png",
-        "production-v4-awake/raw-frames/look/315.png"
+        "production-v4-awake/raw-frames/look/315.png",
+        "look-face-repair/selected-full-frames-v01/315.png"
       ],
       "metadata_removed": []
     },
@@ -5619,7 +5634,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -5630,7 +5646,9 @@
       "bytes": 404215,
       "aliases": [
         "production-v3/raw-frames/look/337.5.png",
-        "production-v4-awake/raw-frames/look/337.5.png"
+        "production-v4-awake/raw-frames/look/337.5.png",
+        "look-face-repair/selected-full-frames-v01/337.5.png",
+        "look-face-repair/selected-full-frames-v02/337.5.png"
       ],
       "metadata_removed": []
     },
@@ -5703,7 +5721,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -5714,7 +5733,11 @@
       "bytes": 385150,
       "aliases": [
         "production-v3/raw-frames/look/045.png",
-        "production-v4-awake/raw-frames/look/045.png"
+        "production-v4-awake/raw-frames/look/045.png",
+        "look-face-repair/selected-full-frames-v01/045.png",
+        "look-face-repair/selected-full-frames-v02/045.png",
+        "look-face-repair/selected-full-frames-v03/045.png",
+        "look-face-repair/selected-final/045.png"
       ],
       "metadata_removed": []
     },
@@ -5745,7 +5768,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -5756,7 +5780,11 @@
       "bytes": 412103,
       "aliases": [
         "production-v3/raw-frames/look/022.5.png",
-        "production-v4-awake/raw-frames/look/022.5.png"
+        "production-v4-awake/raw-frames/look/022.5.png",
+        "look-face-repair/selected-full-frames-v01/022.5.png",
+        "look-face-repair/selected-full-frames-v02/022.5.png",
+        "look-face-repair/selected-full-frames-v03/022.5.png",
+        "look-face-repair/selected-final/022.5.png"
       ],
       "metadata_removed": []
     },
@@ -5766,7 +5794,8 @@
       "role": "accepted-source-frame",
       "groups": [
         "awake-experiment",
-        "seated-production"
+        "seated-production",
+        "look-face-repair"
       ],
       "width": 1024,
       "height": 1024,
@@ -5777,7 +5806,11 @@
       "bytes": 399030,
       "aliases": [
         "production-v3/raw-frames/look/067.5.png",
-        "production-v4-awake/raw-frames/look/067.5.png"
+        "production-v4-awake/raw-frames/look/067.5.png",
+        "look-face-repair/selected-full-frames-v01/067.5.png",
+        "look-face-repair/selected-full-frames-v02/067.5.png",
+        "look-face-repair/selected-full-frames-v03/067.5.png",
+        "look-face-repair/selected-final/067.5.png"
       ],
       "metadata_removed": []
     },
@@ -14888,6 +14921,1846 @@
         "generated-origin/4.png"
       ],
       "metadata_removed": []
+    },
+    {
+      "id": "image-0743",
+      "path": "art/archive/look-face-repair/0743-112.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e976aded969a6b60434d1cb21f55e3719f1718c052b19fb4d7a4673937fe7cb9",
+      "published_sha256": "20f1ef538dfe8b25e6f8ae60fab263ce9500c40a692a08de9c91adfebb7f67d0",
+      "bytes": 538412,
+      "aliases": [
+        "look-face-repair/generated-originals/112.5-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0744",
+      "path": "art/archive/look-face-repair/0744-135-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "2108c86a1c438c64dcc48d3862fbee385dde2cdc4bb0bccc865ae11e63032c89",
+      "published_sha256": "5a27270fbd5507e6808d1f6eee1832317adf6d4c0fee9533a86bf5e831ecfd1d",
+      "bytes": 535048,
+      "aliases": [
+        "look-face-repair/generated-originals/135-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0745",
+      "path": "art/archive/look-face-repair/0745-135-v2-down-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "14f93efecb3e7d4963b8016bbf2b2eb3bb01dd1ad653b24acaae293700c76a79",
+      "published_sha256": "e78a63219948f66e9aad7954f3d0fa5761930737c0287705ef351dd4cab5f5b7",
+      "bytes": 547374,
+      "aliases": [
+        "look-face-repair/generated-originals/135-v2-down-anchor.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0746",
+      "path": "art/archive/look-face-repair/0746-157.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "21b33f70ad9f3e4840bb6c4f57c335ba2cd5a402bc0d1244d66c11372251c7ad",
+      "published_sha256": "378fbea68ccb17da3ea7e84b28f4f2b7712acd5a4598864f319ca430118ebc1b",
+      "bytes": 566107,
+      "aliases": [
+        "look-face-repair/generated-originals/157.5-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0747",
+      "path": "art/archive/look-face-repair/0747-157.5-v2-right-ref.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "efc6555cff4fbdc24089c3696ad69ca825937c869ee9653f3ede074017f0a9f5",
+      "published_sha256": "48ae93ac081d87e6636ad375893d6f13cff56517b431ea9a7a7f829adf561b98",
+      "bytes": 546243,
+      "aliases": [
+        "look-face-repair/generated-originals/157.5-v2-right-ref.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0748",
+      "path": "art/archive/look-face-repair/0748-157.5-v3-original-pose.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "5295e4c1f85c6a767c46941ce524c4743def036491a8befc1f36377f0f626957",
+      "published_sha256": "0ba56ef1683a132f0798a3b001015298784dc008c17493bc416258999761e190",
+      "bytes": 574339,
+      "aliases": [
+        "look-face-repair/generated-originals/157.5-v3-original-pose.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0749",
+      "path": "art/archive/look-face-repair/0749-180-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "eff02010fa3dd56365e827b1ab6256a07d50763049e234e4ca24d919ebb13644",
+      "published_sha256": "ab26ae1107ee6846b4dc19457a7c74a0948745cc67c0985cac82862483381ec9",
+      "bytes": 566891,
+      "aliases": [
+        "look-face-repair/generated-originals/180-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0750",
+      "path": "art/archive/look-face-repair/0750-180-v2-hat.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "9b70b832945978d447f45dfa8d665fe7e70381c5f820a9f26eae4a9b8fd9cd2f",
+      "published_sha256": "293d9f80d97bfdfeef1683612fdfc01eb6c6cf46ff11f3096748fc9d86627afe",
+      "bytes": 563635,
+      "aliases": [
+        "look-face-repair/generated-originals/180-v2-hat.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0751",
+      "path": "art/archive/look-face-repair/0751-180-v3-oval.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6f882c7478dee37c53a62e623fffbe33a6a31b2e9974fb5b9242769c81c4b930",
+      "published_sha256": "15733c148829119a1261d06922cc93984f28430f895565f20b8e2ad1784f0f53",
+      "bytes": 724688,
+      "aliases": [
+        "look-face-repair/generated-originals/180-v3-oval.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0752",
+      "path": "art/archive/look-face-repair/0752-202.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e072f4db251203a8a3dd5fb715f3ea93c70ec1b3bc82220a812b121800ed10df",
+      "published_sha256": "847d49e7a62b358c05042e1779abbe709eae0889a7cec8c37d06788a1ab8a958",
+      "bytes": 539084,
+      "aliases": [
+        "look-face-repair/generated-originals/202.5-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0753",
+      "path": "art/archive/look-face-repair/0753-202.5-v2-down-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e18db0a50c4b2647830131b6954a2c22ff6edf4a5bb05b8686a27aee10e10006",
+      "published_sha256": "40cc4029d589bc5bd3e95544d1ad421ce7a6b1217307eea429f3a597552f7f84",
+      "bytes": 556026,
+      "aliases": [
+        "look-face-repair/generated-originals/202.5-v2-down-anchor.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0754",
+      "path": "art/archive/look-face-repair/0754-225-v1-front-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "084af58c9b16085d8b4ab55b5385eea9acaac80ccabb73ba65b420c848939721",
+      "published_sha256": "53ae3655acad31eeff0a190f976b2bda698896153800260cc935bd2e3756bd9b",
+      "bytes": 569949,
+      "aliases": [
+        "look-face-repair/generated-originals/225-v1-front-anchor.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0755",
+      "path": "art/archive/look-face-repair/0755-247.5-v2-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "0e05d8a49fd6b230e864c2fcfb028eb86ddfecb81773226d6757d3b6f248e1e6",
+      "published_sha256": "bc4891198351edd5fdc0c746a844cb7414e60cde51b674fd5a02388f2695f19c",
+      "bytes": 505136,
+      "aliases": [
+        "look-face-repair/generated-originals/247.5-v2-continuity.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0756",
+      "path": "art/archive/look-face-repair/0756-247.5-v3-counterpart-rejected.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "3deebb1424c54744d39790e9ab43d3f2c6630bf1963f96a3e84ef6f1d78c4d03",
+      "published_sha256": "32a81b109a36296b266c84bfec36ead2c3d327dc4acad44132cf399f1315b321",
+      "bytes": 540366,
+      "aliases": [
+        "look-face-repair/generated-originals/247.5-v3-counterpart-rejected.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0757",
+      "path": "art/archive/look-face-repair/0757-270-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6060775094fd5f62e555f5580a3a065af0c8abbda0991e5b0f840aa2e094e0df",
+      "published_sha256": "48424d585eca2379abb411a2beb70b3dd696ccbd0e877d48bd503f60463c557c",
+      "bytes": 538873,
+      "aliases": [
+        "look-face-repair/generated-originals/270-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0758",
+      "path": "art/archive/look-face-repair/0758-270-v2-hat.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6f2176224de6366b2be878aac0351e2b414eb30cfe60e3c6e68a0364aa18dc1f",
+      "published_sha256": "a74153d8c4921dc6169ec0af255b66504ea8452df2a832df22b0109f72d046b8",
+      "bytes": 530457,
+      "aliases": [
+        "look-face-repair/generated-originals/270-v2-hat.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0759",
+      "path": "art/archive/look-face-repair/0759-270-v3-rejected-scale.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "2aa1ec382afeb7c7bd405a4ca0188d85fed47e2e0f4269ac285814872a10b2e7",
+      "published_sha256": "eaccd8a5410e3ddfdfffe5c410ef5e322fd7377cf9d2d163df84c4a791def2c0",
+      "bytes": 690528,
+      "aliases": [
+        "look-face-repair/generated-originals/270-v3-rejected-scale.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0760",
+      "path": "art/archive/look-face-repair/0760-270-v4-right-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "5f8414d55d8d34871bebc5544e82dfb140013829189e670790fca8d6185b51e3",
+      "published_sha256": "1b00996aecdd291305247ea48de8da74273cc00a55a2b4b5bacf1fb813b3ab71",
+      "bytes": 519725,
+      "aliases": [
+        "look-face-repair/generated-originals/270-v4-right-anchor.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0761",
+      "path": "art/archive/look-face-repair/0761-270-v5-hair.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "ff7c1fb243b9fc99bc7a12bea0b755a73bcbda0972983d6fb96913c59ed456f8",
+      "published_sha256": "925835eb4dfc2fd4ab4477b48f643b898772554015c50a4ea6059f3150c03c67",
+      "bytes": 513555,
+      "aliases": [
+        "look-face-repair/generated-originals/270-v5-hair.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0762",
+      "path": "art/archive/look-face-repair/0762-292.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "263b712289f18dde19cd14014b20d1ffa1d57219215a214184b9608f8c7e0723",
+      "published_sha256": "636b94b62369d346e692ca69d6c90af90fb80687c20ce0961cd5c3c49e9df0c0",
+      "bytes": 494996,
+      "aliases": [
+        "look-face-repair/generated-originals/292.5-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0763",
+      "path": "art/archive/look-face-repair/0763-292.5-v2-hair.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "36b0b61b6424846dcfd3512d08c51ac7a3d2aea122e36a4c70db959e4c846cda",
+      "published_sha256": "0b22e5974546e28f5ba9b9d180b19bf8eed5f420a725c059f7dba450f315c297",
+      "bytes": 699324,
+      "aliases": [
+        "look-face-repair/generated-originals/292.5-v2-hair.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0764",
+      "path": "art/archive/look-face-repair/0764-315-v1-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "1d9c19eaf0a5508c1755eb42e73822a6f3c6e2ae1f9b3e590ae84864f516b3fe",
+      "published_sha256": "01494753cffa789b1c4da2fc281b491bd8212e64991371a32acf787e133ec89b",
+      "bytes": 556658,
+      "aliases": [
+        "look-face-repair/generated-originals/315-v1-continuity.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0765",
+      "path": "art/archive/look-face-repair/0765-337.5-v1-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "4b709aa29894bc991dbdd7deb9b1b6ae7ed09b850459254083973435d5aef191",
+      "published_sha256": "d275812a9a7cf7e4da1ccff029f5f74d0eb7dd428ac6b52bf2581fe548376a49",
+      "bytes": 508174,
+      "aliases": [
+        "look-face-repair/generated-originals/337.5-v1-continuity.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0766",
+      "path": "art/archive/look-face-repair/0766-112.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "629583b3fc8e707d99be446974f392d9b07145d833163bad496c1de88cbea96d",
+      "published_sha256": "629583b3fc8e707d99be446974f392d9b07145d833163bad496c1de88cbea96d",
+      "bytes": 386062,
+      "aliases": [
+        "look-face-repair/raw-frames/look/112.5-v1.png",
+        "look-face-repair/selected-full-frames-v01/112.5.png",
+        "look-face-repair/selected-full-frames-v02/112.5.png",
+        "look-face-repair/selected-full-frames-v03/112.5.png",
+        "look-face-repair/selected-final/112.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0767",
+      "path": "art/archive/look-face-repair/0767-135-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e16cd65ce7613b759bbb9bb65a05b6014200d96a441449aebe0ab0578fe9b916",
+      "published_sha256": "e16cd65ce7613b759bbb9bb65a05b6014200d96a441449aebe0ab0578fe9b916",
+      "bytes": 384874,
+      "aliases": [
+        "look-face-repair/raw-frames/look/135-v1.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0768",
+      "path": "art/archive/look-face-repair/0768-135-v2-down-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "5c59db57e489ffbbc826b447f442f9adbd57a93367f1a006d7a3f57c88fa1028",
+      "published_sha256": "5c59db57e489ffbbc826b447f442f9adbd57a93367f1a006d7a3f57c88fa1028",
+      "bytes": 394392,
+      "aliases": [
+        "look-face-repair/raw-frames/look/135-v2-down-anchor.png",
+        "look-face-repair/selected-full-frames-v01/135.png",
+        "look-face-repair/selected-full-frames-v02/135.png",
+        "look-face-repair/selected-full-frames-v03/135.png",
+        "look-face-repair/selected-final/135.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0769",
+      "path": "art/archive/look-face-repair/0769-157.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "851b5fc4afef8ba65a0093788d2966334156461cbfea450620e9d1a069ca9069",
+      "published_sha256": "851b5fc4afef8ba65a0093788d2966334156461cbfea450620e9d1a069ca9069",
+      "bytes": 411549,
+      "aliases": [
+        "look-face-repair/raw-frames/look/157.5-v1.png",
+        "look-face-repair/selected-full-frames-v01/202.5.png",
+        "look-face-repair/selected-full-frames-v02/202.5.png",
+        "look-face-repair/selected-full-frames-v03/202.5.png",
+        "look-face-repair/selected-final/202.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0770",
+      "path": "art/archive/look-face-repair/0770-157.5-v2-right-ref.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "36b5fff5065022efd76beefc86aae72cb01b8c8bf5d97f96c033be8af41f8baf",
+      "published_sha256": "36b5fff5065022efd76beefc86aae72cb01b8c8bf5d97f96c033be8af41f8baf",
+      "bytes": 392108,
+      "aliases": [
+        "look-face-repair/raw-frames/look/157.5-v2-right-ref.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0771",
+      "path": "art/archive/look-face-repair/0771-157.5-v3-original-pose.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "bbf33863c34f2b4230e795c375e2b460d1dc92abd28952dd26f8dcffc464a013",
+      "published_sha256": "bbf33863c34f2b4230e795c375e2b460d1dc92abd28952dd26f8dcffc464a013",
+      "bytes": 413847,
+      "aliases": [
+        "look-face-repair/raw-frames/look/157.5-v3-original-pose.png",
+        "look-face-repair/selected-full-frames-v01/157.5.png",
+        "look-face-repair/selected-full-frames-v02/157.5.png",
+        "look-face-repair/selected-full-frames-v03/157.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0772",
+      "path": "art/archive/look-face-repair/0772-180-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "fb6450ae51a88b331b1172f0cb4989e31cd1c60da7ef2ee546346e19179bda4f",
+      "published_sha256": "fb6450ae51a88b331b1172f0cb4989e31cd1c60da7ef2ee546346e19179bda4f",
+      "bytes": 417947,
+      "aliases": [
+        "look-face-repair/raw-frames/look/180-v1.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0773",
+      "path": "art/archive/look-face-repair/0773-180-v2-hat.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "88937403b47fd12c6111e7a67c4af05dfba82fa898cf37b585a6514764c6c690",
+      "published_sha256": "88937403b47fd12c6111e7a67c4af05dfba82fa898cf37b585a6514764c6c690",
+      "bytes": 415071,
+      "aliases": [
+        "look-face-repair/raw-frames/look/180-v2-hat.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0774",
+      "path": "art/archive/look-face-repair/0774-180-v3-camera.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6e2a9d253e3e3cecb498a54192463195cfe8ca8a411098c2918809639ab76eae",
+      "published_sha256": "6e2a9d253e3e3cecb498a54192463195cfe8ca8a411098c2918809639ab76eae",
+      "bytes": 404247,
+      "aliases": [
+        "look-face-repair/raw-frames/look/180-v3-camera.png",
+        "look-face-repair/selected-full-frames-v01/180.png",
+        "look-face-repair/selected-full-frames-v02/180.png",
+        "look-face-repair/selected-full-frames-v03/180.png",
+        "look-face-repair/selected-final/180.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0775",
+      "path": "art/archive/look-face-repair/0775-180-v3-oval.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "219a07673eea800e29548e361a36d9dbfdc0d35d8d69a54abd34a77a90d8453e",
+      "published_sha256": "219a07673eea800e29548e361a36d9dbfdc0d35d8d69a54abd34a77a90d8453e",
+      "bytes": 517370,
+      "aliases": [
+        "look-face-repair/raw-frames/look/180-v3-oval.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0776",
+      "path": "art/archive/look-face-repair/0776-202.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "3ede0d4af51bf539c7d0cfc37d0eb33bcb53bab3f505af7a92d4d707c4870a26",
+      "published_sha256": "3ede0d4af51bf539c7d0cfc37d0eb33bcb53bab3f505af7a92d4d707c4870a26",
+      "bytes": 381892,
+      "aliases": [
+        "look-face-repair/raw-frames/look/202.5-v1.png",
+        "look-face-repair/selected-full-frames-v01/247.5.png",
+        "look-face-repair/selected-full-frames-v02/247.5.png",
+        "look-face-repair/selected-full-frames-v03/247.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0777",
+      "path": "art/archive/look-face-repair/0777-202.5-v2-down-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "19e81060c176a159514691f26439bad76f73dc02a6d323fa08e335642311398b",
+      "published_sha256": "19e81060c176a159514691f26439bad76f73dc02a6d323fa08e335642311398b",
+      "bytes": 408863,
+      "aliases": [
+        "look-face-repair/raw-frames/look/202.5-v2-down-anchor.png",
+        "look-face-repair/selected-full-frames-v01/225.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0778",
+      "path": "art/archive/look-face-repair/0778-225-v1-front-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "18b1d12db6691cff509adad112d494d22bb67dc7f193c9c8053dd79a0779cf39",
+      "published_sha256": "18b1d12db6691cff509adad112d494d22bb67dc7f193c9c8053dd79a0779cf39",
+      "bytes": 406078,
+      "aliases": [
+        "look-face-repair/raw-frames/look/225-v1-front-anchor.png",
+        "look-face-repair/selected-full-frames-v02/225.png",
+        "look-face-repair/selected-full-frames-v03/225.png",
+        "look-face-repair/selected-final/225.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0779",
+      "path": "art/archive/look-face-repair/0779-247.5-v2-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "43f232f5135ed11c8184002bee0aff95e9d4abfe747e6a3312569bb258e676c3",
+      "published_sha256": "43f232f5135ed11c8184002bee0aff95e9d4abfe747e6a3312569bb258e676c3",
+      "bytes": 368849,
+      "aliases": [
+        "look-face-repair/raw-frames/look/247.5-v2-continuity.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0780",
+      "path": "art/archive/look-face-repair/0780-270-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "bb9f9ac16ceed1fe68e8f77d2f2807c68b058a2f80ef46a53e1eb1dab119b3f9",
+      "published_sha256": "bb9f9ac16ceed1fe68e8f77d2f2807c68b058a2f80ef46a53e1eb1dab119b3f9",
+      "bytes": 389352,
+      "aliases": [
+        "look-face-repair/raw-frames/look/270-v1.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0781",
+      "path": "art/archive/look-face-repair/0781-270-v2-hat.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "d1d44da9b95dabb261e23232558802834a858803a9e6f39ded5db3dda42edd38",
+      "published_sha256": "d1d44da9b95dabb261e23232558802834a858803a9e6f39ded5db3dda42edd38",
+      "bytes": 387054,
+      "aliases": [
+        "look-face-repair/raw-frames/look/270-v2-hat.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0782",
+      "path": "art/archive/look-face-repair/0782-270-v3-rejected-scale.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "2768e9f4952ee02fc8014abd342a1eac9a5984e0277d084f11cd7f90badf34ea",
+      "published_sha256": "2768e9f4952ee02fc8014abd342a1eac9a5984e0277d084f11cd7f90badf34ea",
+      "bytes": 491335,
+      "aliases": [
+        "look-face-repair/raw-frames/look/270-v3-rejected-scale.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0783",
+      "path": "art/archive/look-face-repair/0783-270-v4-right-anchor.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "338869869e6338b1e3afcd2f5d16d5fd7315505ec11231eec0da63771fb29ec6",
+      "published_sha256": "338869869e6338b1e3afcd2f5d16d5fd7315505ec11231eec0da63771fb29ec6",
+      "bytes": 375594,
+      "aliases": [
+        "look-face-repair/raw-frames/look/270-v4-right-anchor.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0784",
+      "path": "art/archive/look-face-repair/0784-270-v5-hair.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "bab69c08e63459e429e53697f337cb058e003c91481bde9e2d5f733405760dfa",
+      "published_sha256": "bab69c08e63459e429e53697f337cb058e003c91481bde9e2d5f733405760dfa",
+      "bytes": 375963,
+      "aliases": [
+        "look-face-repair/raw-frames/look/270-v5-hair.png",
+        "look-face-repair/selected-full-frames-v01/270.png",
+        "look-face-repair/selected-full-frames-v02/270.png",
+        "look-face-repair/selected-full-frames-v03/270.png",
+        "look-face-repair/selected-final/270.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0785",
+      "path": "art/archive/look-face-repair/0785-292.5-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "8e40a9911dd05c09803cd0de9802a08509ba333b087845fce1ce1907ac8e665a",
+      "published_sha256": "8e40a9911dd05c09803cd0de9802a08509ba333b087845fce1ce1907ac8e665a",
+      "bytes": 361505,
+      "aliases": [
+        "look-face-repair/raw-frames/look/292.5-v1.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0786",
+      "path": "art/archive/look-face-repair/0786-292.5-v2-camera.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "056c200957d2f55db4233d2c9ee672e21fcb56bdb4f5e411fa06b5f248c0af96",
+      "published_sha256": "056c200957d2f55db4233d2c9ee672e21fcb56bdb4f5e411fa06b5f248c0af96",
+      "bytes": 351368,
+      "aliases": [
+        "look-face-repair/raw-frames/look/292.5-v2-camera.png",
+        "look-face-repair/selected-full-frames-v01/292.5.png",
+        "look-face-repair/selected-full-frames-v02/292.5.png",
+        "look-face-repair/selected-full-frames-v03/292.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0787",
+      "path": "art/archive/look-face-repair/0787-292.5-v2-hair.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "188d7d7082493f290dbddc7b8c9b750cf880f7a3a888a62ca513fba4657d2c7d",
+      "published_sha256": "188d7d7082493f290dbddc7b8c9b750cf880f7a3a888a62ca513fba4657d2c7d",
+      "bytes": 510615,
+      "aliases": [
+        "look-face-repair/raw-frames/look/292.5-v2-hair.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0788",
+      "path": "art/archive/look-face-repair/0788-315-v1-camera.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "84fa990ebc04844fdccd93fcd9484bdaa9ae45285924bc66a34a43e177a83fbe",
+      "published_sha256": "84fa990ebc04844fdccd93fcd9484bdaa9ae45285924bc66a34a43e177a83fbe",
+      "bytes": 357049,
+      "aliases": [
+        "look-face-repair/raw-frames/look/315-v1-camera.png",
+        "look-face-repair/selected-full-frames-v02/315.png",
+        "look-face-repair/selected-full-frames-v03/315.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0789",
+      "path": "art/archive/look-face-repair/0789-315-v1-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "ae1c5d067cfaca8b3e9a6c366311f38393af9c8097a5cbd288edf65c5e1b435f",
+      "published_sha256": "ae1c5d067cfaca8b3e9a6c366311f38393af9c8097a5cbd288edf65c5e1b435f",
+      "bytes": 404302,
+      "aliases": [
+        "look-face-repair/raw-frames/look/315-v1-continuity.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0790",
+      "path": "art/archive/look-face-repair/0790-337.5-v1-continuity.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "a884f2f891ed1ad4a0c7452f9d8046c79bc20911a0648ea2572a67cc6f790cfa",
+      "published_sha256": "a884f2f891ed1ad4a0c7452f9d8046c79bc20911a0648ea2572a67cc6f790cfa",
+      "bytes": 374568,
+      "aliases": [
+        "look-face-repair/raw-frames/look/337.5-v1-continuity.png",
+        "look-face-repair/selected-full-frames-v03/337.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0791",
+      "path": "art/archive/look-face-repair/0791-reference-current-stored-atlas.png",
+      "role": "production-reference",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1536,
+      "height": 2288,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
+      "published_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
+      "bytes": 2652256,
+      "aliases": [
+        "look-face-repair/references/current-stored-atlas.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0792",
+      "path": "art/archive/look-face-repair/0792-v04-157.5-157.5-from-down-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "3b69b6a33a75e5c022402189c08d2901eb791122a0bc10b54c19fc55276fb718",
+      "published_sha256": "55b3e26f70c37deefd8ea73546cc4437fb7a0dcc2b64a4e5b7aab876437796be",
+      "bytes": 649904,
+      "aliases": [
+        "look-face-repair/revision-v04/157.5/generated-originals/157.5-from-down-v1.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0793",
+      "path": "art/archive/look-face-repair/0793-v04-157.5-157.5-from-down-v2-unused.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "25f7a18eb721d6114cafcc34252a2f12353816c9b54dfb3a0ec3594f068f856f",
+      "published_sha256": "1cbc41f859b30cf744fb928722acbd492896cc19f89db90005157d9b53879176",
+      "bytes": 582914,
+      "aliases": [
+        "look-face-repair/revision-v04/157.5/generated-originals/157.5-from-down-v2-unused.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0794",
+      "path": "art/archive/look-face-repair/0794-v04-157.5-157.5-from-down-v1.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "8a7c68c72f0f72cfe7a99df0490b0034b93423aefd22ae1c03888eb93917caf1",
+      "published_sha256": "8a7c68c72f0f72cfe7a99df0490b0034b93423aefd22ae1c03888eb93917caf1",
+      "bytes": 468218,
+      "aliases": [
+        "look-face-repair/revision-v04/157.5/raw-frames/157.5-from-down-v1.png",
+        "look-face-repair/revision-v05/157.5/raw-frames/draft-v1.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0795",
+      "path": "art/archive/look-face-repair/0795-v04-247.5-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "c1063724f0466d88a0a1a7d5b796a0392ed5258fda44a78d0af827afd266b903",
+      "published_sha256": "570406a59ea945e3a15fd6eb12374cc2e5da0e60d8fbf9a71886a1a3f38ee3ce",
+      "bytes": 499485,
+      "aliases": [
+        "look-face-repair/revision-v04/247.5/generated-originals/attempt-01.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0796",
+      "path": "art/archive/look-face-repair/0796-v04-247.5-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "f2e80c6ad0f491de204b4742dace26767e59acdad4683104a242417fe5994546",
+      "published_sha256": "2f161692f0f85a42fc94340383bdc3fd9484df8c30262f3e2d394cd8d64474c3",
+      "bytes": 499821,
+      "aliases": [
+        "look-face-repair/revision-v04/247.5/generated-originals/attempt-02.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0797",
+      "path": "art/archive/look-face-repair/0797-v04-247.5-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "eaba4e1d0160a1f666064ea1d0a8a1b781b3cb339b3c2f31d90c7033428c3bdc",
+      "published_sha256": "eaba4e1d0160a1f666064ea1d0a8a1b781b3cb339b3c2f31d90c7033428c3bdc",
+      "bytes": 366066,
+      "aliases": [
+        "look-face-repair/revision-v04/247.5/raw-frames/attempt-01.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0798",
+      "path": "art/archive/look-face-repair/0798-v04-247.5-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "ef7b9199eaa525b955375aaa8127bb37e3bbc3cd9da0d46427402f86440865e2",
+      "published_sha256": "ef7b9199eaa525b955375aaa8127bb37e3bbc3cd9da0d46427402f86440865e2",
+      "bytes": 369953,
+      "aliases": [
+        "look-face-repair/revision-v04/247.5/raw-frames/attempt-02.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0799",
+      "path": "art/archive/look-face-repair/0799-v05-000-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e9ae7ab2b966cdcda1c55eedc0c0721d82a223d02ddcf88fb3367ebda1656324",
+      "published_sha256": "39959509fcea33368cfe518a74efc6c36ca153d20d9a9818ec98120f223c1d9b",
+      "bytes": 560360,
+      "aliases": [
+        "look-face-repair/revision-v05/000/generated-originals/attempt-01.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0800",
+      "path": "art/archive/look-face-repair/0800-v05-000-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "fc0247e779d0159c6e629cacb398d0b513a532a133cb3e9e03b74ebb20947bc3",
+      "published_sha256": "fc0247e779d0159c6e629cacb398d0b513a532a133cb3e9e03b74ebb20947bc3",
+      "bytes": 417477,
+      "aliases": [
+        "look-face-repair/revision-v05/000/raw-frames/attempt-01.png",
+        "look-face-repair/selected-final/000.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0801",
+      "path": "art/archive/look-face-repair/0801-v05-157.5-157.5-return-from-right-v2.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "31ec4b46455f6aee824a2674325432f636886ada29a98fe0eb8c4da26adb0a01",
+      "published_sha256": "c2f9a7d289d333a2b685f1e86c962ffea5106d57c349be96240f5be3217666df",
+      "bytes": 671777,
+      "aliases": [
+        "look-face-repair/revision-v05/157.5/generated-originals/157.5-return-from-right-v2.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0802",
+      "path": "art/archive/look-face-repair/0802-v05-157.5-157.5-small-right-v1-rejected.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e11ded79c7f5973203b73d53ce84c0eb71dd0d9b2016b92e0af707601d495662",
+      "published_sha256": "8b9ce81afc7468ba12d5a2c65a1edb633540e404122d5e25c205303348fadd21",
+      "bytes": 557532,
+      "aliases": [
+        "look-face-repair/revision-v05/157.5/generated-originals/157.5-small-right-v1-rejected.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0803",
+      "path": "art/archive/look-face-repair/0803-v05-157.5-157.5-return-from-right-v2-camera.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "9589ac2fc04330e6918cd8a1efab1ed198a813eab62dc965511f4dd5cdec14b3",
+      "published_sha256": "9589ac2fc04330e6918cd8a1efab1ed198a813eab62dc965511f4dd5cdec14b3",
+      "bytes": 435446,
+      "aliases": [
+        "look-face-repair/revision-v05/157.5/raw-frames/157.5-return-from-right-v2-camera.png",
+        "look-face-repair/selected-final/157.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0804",
+      "path": "art/archive/look-face-repair/0804-v05-157.5-157.5-return-from-right-v2.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6271ef8577bb36470aaf1b6de551d2071ad081ce3a57593c4ad8dac875540841",
+      "published_sha256": "6271ef8577bb36470aaf1b6de551d2071ad081ce3a57593c4ad8dac875540841",
+      "bytes": 484071,
+      "aliases": [
+        "look-face-repair/revision-v05/157.5/raw-frames/157.5-return-from-right-v2.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0805",
+      "path": "art/archive/look-face-repair/0805-v05-157.5-draft-v2.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "0bf2c337eeb0e651dd981341317ffeff26c9228707757a2df0e94feda7fb5279",
+      "published_sha256": "0bf2c337eeb0e651dd981341317ffeff26c9228707757a2df0e94feda7fb5279",
+      "bytes": 420214,
+      "aliases": [
+        "look-face-repair/revision-v05/157.5/raw-frames/draft-v2.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0806",
+      "path": "art/archive/look-face-repair/0806-v05-247.5-attempt01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "3d0f3c28de2313640864e9e111aa28cfb1c2cb2e1544edfcb3a746bc8279631f",
+      "published_sha256": "4cbc8658ba3f5645a7e17e07d74d045f47a4aaab2c565e5ec8ba5c07cd9be971",
+      "bytes": 535584,
+      "aliases": [
+        "look-face-repair/revision-v05/247.5/generated-originals/attempt01.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0807",
+      "path": "art/archive/look-face-repair/0807-v05-247.5-attempt01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e3ddbaea3cd6d30f8a7d37eea924c1a953a9e046aaccba789c0e3e973b92d08f",
+      "published_sha256": "e3ddbaea3cd6d30f8a7d37eea924c1a953a9e046aaccba789c0e3e973b92d08f",
+      "bytes": 388303,
+      "aliases": [
+        "look-face-repair/revision-v05/247.5/raw-frames/attempt01.png",
+        "look-face-repair/selected-final/247.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0808",
+      "path": "art/archive/look-face-repair/0808-v05-292.5-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "8f6891f9dc5c99d3dd2584e804fb58a21b70aecb71e975400d4b4ce8a22cfae1",
+      "published_sha256": "ab6458501a1909fa7f95878dcffb20548105e56b66c39c119ea1e8988f2c7322",
+      "bytes": 504668,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-01.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0809",
+      "path": "art/archive/look-face-repair/0809-v05-292.5-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "35a62cabac114004c5f253da4ecf84ef9760b90bc89c209cd83e2fb23b14ccad",
+      "published_sha256": "6ca0df357b1c4ae99c73ed0937b608ccc6481cdfaf07a9e5dfc79cfde4b360e1",
+      "bytes": 517427,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-02.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0810",
+      "path": "art/archive/look-face-repair/0810-v05-292.5-attempt-03.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "2e7c800a56f070a60b9bbb5a3f13324f1f882fe01fcc926a811d16b189e59200",
+      "published_sha256": "96de41ce1354305958704e2e68f27edc407c5cd370f587d19dd246d1a04459ec",
+      "bytes": 517818,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-03.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0811",
+      "path": "art/archive/look-face-repair/0811-v05-292.5-attempt-04.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "c1e85a021b08746675b82fd5de84be6b117868571bad6cf1024fe039c0a2f216",
+      "published_sha256": "d10b4b3602fe083c1baa5240e0bbf5ba5820d7ee7ccba05d482d8d8abceb5628",
+      "bytes": 628049,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-04.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0812",
+      "path": "art/archive/look-face-repair/0812-v05-292.5-292.5-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "90257163a8e21a36cde1e0be1279735d00fdfb49d016b113b27c6d87fa634778",
+      "published_sha256": "90257163a8e21a36cde1e0be1279735d00fdfb49d016b113b27c6d87fa634778",
+      "bytes": 370797,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-01.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0813",
+      "path": "art/archive/look-face-repair/0813-v05-292.5-292.5-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "a9c8fe5956c83a21b838232648e138e85783ab8382d3bea6394464856c221ff4",
+      "published_sha256": "a9c8fe5956c83a21b838232648e138e85783ab8382d3bea6394464856c221ff4",
+      "bytes": 379731,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-02.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0814",
+      "path": "art/archive/look-face-repair/0814-v05-292.5-292.5-attempt-03.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "8d97bb6cf450160312060d24fe195b3077822986e4ed1b6bb8a8782f70fe403a",
+      "published_sha256": "8d97bb6cf450160312060d24fe195b3077822986e4ed1b6bb8a8782f70fe403a",
+      "bytes": 379252,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-03.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0815",
+      "path": "art/archive/look-face-repair/0815-v05-292.5-292.5-attempt-04-camera.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "72c10746490b92f37ec4c2ef9811fb2d23fb678c1b8c19b5bc874302f27370f7",
+      "published_sha256": "72c10746490b92f37ec4c2ef9811fb2d23fb678c1b8c19b5bc874302f27370f7",
+      "bytes": 421956,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-04-camera.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0816",
+      "path": "art/archive/look-face-repair/0816-v05-292.5-292.5-attempt-04.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e8d28e06faa8c6524dff128ece24066397d7b3fc62787097e1cdd8a443e0c96d",
+      "published_sha256": "e8d28e06faa8c6524dff128ece24066397d7b3fc62787097e1cdd8a443e0c96d",
+      "bytes": 455930,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-04.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0817",
+      "path": "art/archive/look-face-repair/0817-v05-315-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "65b2d25be9cd140ab9c0b1ecd1408953c62b4bd5d9536e6430c51225ab670b1d",
+      "published_sha256": "570032f8e217d5ea5ed29648ec842837fe88439ba2d98310ef4d24d22a20f23a",
+      "bytes": 541749,
+      "aliases": [
+        "look-face-repair/revision-v05/315/generated-originals/attempt-01.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0818",
+      "path": "art/archive/look-face-repair/0818-v05-315-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "6b1d5cf8060c9b30013d18a6039ecc8aae69f33cb87994890b0d616390fada6f",
+      "published_sha256": "e3d36ebf067e69b53f39ed26b7746ef024609739b1545e79f2b0c2292178c773",
+      "bytes": 521277,
+      "aliases": [
+        "look-face-repair/revision-v05/315/generated-originals/attempt-02.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0819",
+      "path": "art/archive/look-face-repair/0819-v05-315-attempt-03.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "84fb58093747a23085e7246325bd9c227dc962bf58779a3349324b1b66c1c827",
+      "published_sha256": "2186526fd207c0fb8abbcf28ae5bcdde29bbca2be31cb0e134b54a44e070d49b",
+      "bytes": 553754,
+      "aliases": [
+        "look-face-repair/revision-v05/315/generated-originals/attempt-03.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0820",
+      "path": "art/archive/look-face-repair/0820-v05-315-315-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "8eebf4a4744d1f4d97881e5a00c182ef3d28cc5bc5bb4c9ce339383c344f64e9",
+      "published_sha256": "8eebf4a4744d1f4d97881e5a00c182ef3d28cc5bc5bb4c9ce339383c344f64e9",
+      "bytes": 395355,
+      "aliases": [
+        "look-face-repair/revision-v05/315/raw-frames/315-attempt-01.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0821",
+      "path": "art/archive/look-face-repair/0821-v05-315-315-attempt-02.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "5c9faf2b7de6001cd39e2cdc52df4258b58685315116fd25e444c8070a51215f",
+      "published_sha256": "5c9faf2b7de6001cd39e2cdc52df4258b58685315116fd25e444c8070a51215f",
+      "bytes": 386477,
+      "aliases": [
+        "look-face-repair/revision-v05/315/raw-frames/315-attempt-02.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0822",
+      "path": "art/archive/look-face-repair/0822-v05-315-315-attempt-03.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "b62d8d0160fb31936c704a4c2049ad69ae76b0ca0adf24314c3691fa6efe2de9",
+      "published_sha256": "b62d8d0160fb31936c704a4c2049ad69ae76b0ca0adf24314c3691fa6efe2de9",
+      "bytes": 406008,
+      "aliases": [
+        "look-face-repair/revision-v05/315/raw-frames/315-attempt-03.png",
+        "look-face-repair/selected-final/315.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0823",
+      "path": "art/archive/look-face-repair/0823-v05-337.5-attempt-01-recovered.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "9b9b70d4def10dd6e245bc3cf6217df661d5fcbd787a374dbe3b27299758aecd",
+      "published_sha256": "74ebf838455a4424d32aa1234466dcae0854dd952324c57b63ee84124d234015",
+      "bytes": 554760,
+      "aliases": [
+        "look-face-repair/revision-v05/337.5/generated-originals/attempt-01-recovered.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0824",
+      "path": "art/archive/look-face-repair/0824-v05-337.5-337.5-attempt-01.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "babfdd05e057ef7c19aa1de76e18ecdb95fadf519b2ae85cd3fb104a68a7b98b",
+      "published_sha256": "babfdd05e057ef7c19aa1de76e18ecdb95fadf519b2ae85cd3fb104a68a7b98b",
+      "bytes": 411638,
+      "aliases": [
+        "look-face-repair/revision-v05/337.5/raw-frames/337.5-attempt-01.png",
+        "look-face-repair/selected-final/337.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0825",
+      "path": "art/archive/look-face-repair/0825-v05-292.5-attempt-05-aligned-endpoints.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "1c6933d6ea9e83f59c2a86d4acd9180a09c0a768ec6a576477393f98b3cee71b",
+      "published_sha256": "1632225364bbbfa76d93a8ddf491a71ac16fcedf966385993a582b61ab118134",
+      "bytes": 518174,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-05-aligned-endpoints.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0826",
+      "path": "art/archive/look-face-repair/0826-v05-292.5-attempt-06-toward-viewer.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "c9f3d05325fa3e0e93ce1819d215df4cc3302b0b16b44228c12f62ba8475a551",
+      "published_sha256": "758233db0b368ae1fa45c980dfbb05462827dd9d5f918524520138393135a8bc",
+      "bytes": 564129,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-06-toward-viewer.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0827",
+      "path": "art/archive/look-face-repair/0827-v05-292.5-attempt-07-compact.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e6a4f06396f35f873a8b39a70fa668172c5b038850e128739e6079be46283380",
+      "published_sha256": "de562536b49875e89a21ac89fc0087d39f1e0d6c6d02a7aaae08a9461e4d02b4",
+      "bytes": 578084,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/generated-originals/attempt-07-compact.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0828",
+      "path": "art/archive/look-face-repair/0828-v05-292.5-292.5-attempt-05.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "f9e9d2d5c86dcfdee71ea0b93b67496235732a578c04702f92d4209cd440217f",
+      "published_sha256": "f9e9d2d5c86dcfdee71ea0b93b67496235732a578c04702f92d4209cd440217f",
+      "bytes": 376242,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-05.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0829",
+      "path": "art/archive/look-face-repair/0829-v05-292.5-292.5-attempt-06.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "93765d6ed0f6b2257b7b9c8130b1fc50ef259440b216aa8de49fad44144d2df8",
+      "published_sha256": "93765d6ed0f6b2257b7b9c8130b1fc50ef259440b216aa8de49fad44144d2df8",
+      "bytes": 409158,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-06.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0830",
+      "path": "art/archive/look-face-repair/0830-v05-292.5-292.5-attempt-07-compact.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "3f894a5f99ec6f7131bf54a7db037f6f3ae424936ed330881a5d4d53f63a6f34",
+      "published_sha256": "3f894a5f99ec6f7131bf54a7db037f6f3ae424936ed330881a5d4d53f63a6f34",
+      "bytes": 419123,
+      "aliases": [
+        "look-face-repair/revision-v05/292.5/raw-frames/292.5-attempt-07-compact.png",
+        "look-face-repair/selected-final/292.5.png"
+      ],
+      "metadata_removed": []
+    },
+    {
+      "id": "image-0831",
+      "path": "art/archive/look-face-repair/0831-v05-315-attempt-04-midpoint.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "e1eb70a898bd20068376c1a53ca2cf8c24370e97dcdc94e562c2014f41b5f54a",
+      "published_sha256": "fe50d6de57eaf2c5106b156fb2fc579fe17afa0f703083fb0f132d8825a7c5a4",
+      "bytes": 610341,
+      "aliases": [
+        "look-face-repair/revision-v05/315/generated-originals/attempt-04-midpoint.png"
+      ],
+      "metadata_removed": [
+        "c2pa"
+      ]
+    },
+    {
+      "id": "image-0832",
+      "path": "art/archive/look-face-repair/0832-v05-315-315-attempt-04-midpoint.png",
+      "role": "production-history",
+      "groups": [
+        "look-face-repair"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "frames": 1,
+      "source_sha256": "4d54ce9525bacb7fbe876404ff1dc1238bc1985e1e63014e89d22edf74e89d05",
+      "published_sha256": "4d54ce9525bacb7fbe876404ff1dc1238bc1985e1e63014e89d22edf74e89d05",
+      "bytes": 454124,
+      "aliases": [
+        "look-face-repair/revision-v05/315/raw-frames/315-attempt-04-midpoint.png"
+      ],
+      "metadata_removed": []
     }
-  ]
+  ],
+  "updated_date": "2026-10-28"
 }

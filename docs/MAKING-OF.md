@@ -67,13 +67,19 @@ A local edit can change another feature. Review the whole frame again after each
 
 ## 5. Add Dot head turns
 
-Create up `000`, right `090`, down `180`, and left `270` first. Once those read clearly without labels, add the intermediate directions in 22.5° steps.
+Create up `000`, right `090`, down `180`, and left `270` first. Once those read clearly without labels, add the intermediate directions in 22.5° steps. The result is sixteen discrete poses selected by cursor direction.
 
 Keep the seated body, laptop, feet, and camera registered. Head rotation, eye direction, and the visible hat crown communicate the look; this is not a full-body turnaround.
 
 ![Sixteen head directions](../previews/directions.png)
 
 Review the clockwise sequence, its `337.5 → 000` join, and unlabeled horizontal/vertical pairs. The [review guide](REVIEW.md#direction-review) describes the comparison procedure.
+
+Watch the face against the fixed laptop. Cheek width, eye spacing, eye size, and the space above the chin should change gradually as the head turns. Compare each intermediate with both neighbors. Include the return from a look pose to idle, where an elongated face can be easier to spot.
+
+When a narrow side face suddenly opens into a broad front view, redraw the complete intermediate from a good endpoint. Keep the head, face, fringe, and attached accessories moving together. A direction can be recognizable while its face still changes size, so review direction and motion separately.
+
+In v1.0.2, twelve complete look frames were redrawn with the image generation tools. Four original drawings were reused: `022.5`, `045`, `067.5`, and `090`. The latest face refinements are `000`, `157.5`, `247.5`, `292.5`, `315`, and `337.5`, addressing pinched cheeks and apparent face growth on the upward-left return. The hat design stays consistent. No face was pasted in or locally warped.
 
 ## 6. Normalize and assemble
 
@@ -83,11 +89,15 @@ Inspect alpha and contour colors on light and dark backgrounds. Preserve clean n
 
 Assemble the **1536 × 2288** atlas with 73 occupied and 15 transparent cells. Export a lossless WebP and compare it with the approved PNG. Derive the final frame crops and previews from that WebP.
 
+For v1.0.2, all 57 standard frames, including blinking, keep the exact v1.0.1 RGBA pixels. A frozen comparison of the first nine rows protects those actions and their unused cells while the final two look rows change.
+
 ## 7. Review the finished motion
 
 Inspect each loop at native size and at the expected playback speed. Check the loop boundaries, the laptop through every pose, and the hop's return to the seated baseline. Review the look sequence on both backgrounds.
 
 Use the [visual checklist and current results](REVIEW.md) alongside the file checks. Correct dimensions do not establish drawing quality, and PNG/WebP equality does not detect a color mistake already present in both files.
+
+The v1.0.2 direction comparisons passed all 14 strict-majority checks across three fresh independent reviews. Native 192 × 208 browser stepping and sampled playback snapshots also checked the face-scale repair. `045` and `067.5` remain close, and `225 → 247.5` and `270 → 292.5` retain larger pose steps. The current revision has not been checked in native Dot; the earlier desktop and Dot checks apply to v1.0.1. The [look repair evidence](look-repair-qa/README.md) records that scope.
 
 ## 8. Validate and package
 
@@ -103,8 +113,8 @@ python3 scripts/package.py
 
 The package script produces a two-file pet ZIP, a complete artwork ZIP, and `SHA256SUMS.txt` in `dist/`. An optional MP4 preview uses `python3 scripts/render_previews.py --mp4` and requires FFmpeg.
 
-Before publishing, update the approved baseline and checksums for any intentional artwork changes, keep the version tag and `VERSION` aligned, and check attribution. After publishing, verify the public file against the local validated artifact.
+An intentional artwork revision needs a reviewed PNG baseline and checksum before publishing. v1.0.2 uses [art/approved/v1.0.2/spritesheet.png](../art/approved/v1.0.2/spritesheet.png), with its source record and frozen standard-row reference in [art/approved-runtime.json](../art/approved-runtime.json). Keep historical baselines and regression cases, align the version tag with `VERSION`, and check attribution. After publishing, verify the public file against the local validated artifact.
 
 ## Production archive
 
-The [image archive](IMAGE-GALLERY.md) preserves **742 distinct source images**, mapping **1,290 working-file occurrences**. It includes references, accepted frames, comparison boards, rejected candidates, and the unused eye-expression study. Exact current-atlas crops and repair evidence are included separately.
+The [image archive](IMAGE-GALLERY.md) preserves **832 distinct source images**, mapping **1,447 working-file occurrences**. It includes references, accepted frames, comparison boards, rejected candidates, the unused eye-expression study, and the look and face studies. Exact current-atlas crops and repair evidence are included separately. The [v1.0.1 snapshot](../art/releases/v1.0.1) and its [outline-repair evidence](repair-qa/README.md) remain available as production history.

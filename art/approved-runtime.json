@@ -1,0 +1,12 @@
+{
+  "version": "v1.0.2",
+  "source": {
+    "path": "art/approved/v1.0.2/spritesheet.png",
+    "sha256": "097cef1ad416081a8a53cbdf31c59a8062912e3dd4723d516a4578cffc430cbc"
+  },
+  "standard_source": {
+    "path": "art/releases/v1.0.1/spritesheet.png",
+    "sha256": "79ce06935e3491201f7b6b1695480a49cc7bef7f17eaa5ec716e7ed56f478d4d",
+    "rows": 9
+  }
+}

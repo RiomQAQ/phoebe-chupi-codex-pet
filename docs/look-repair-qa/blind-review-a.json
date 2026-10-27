@@ -1,0 +1,89 @@
+{
+  "reviewer": "A",
+  "pairs": [
+    {
+      "reason": "A's face and eye line turn toward the right edge of the hair; B's face turns toward the left edge, with the far eye compressed on that side.",
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left"
+    },
+    {
+      "reason": "A has the face shifted left and more hair visible on the right; B has the face shifted right and more hair visible on the left.",
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right"
+    },
+    {
+      "reason": "A's right-side eye is narrower and the face approaches the right hair contour; B shows the mirrored leftward face placement and narrower left-side eye.",
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left"
+    },
+    {
+      "reason": "A's eyes, mouth, and cheek cluster toward screen-right; B's features cluster toward screen-left with the opposite cheek and hair exposure.",
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left"
+    },
+    {
+      "reason": "Despite the lowered head pitch, A's face points left with a narrower left-side eye; B points right with a narrower right-side eye.",
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right"
+    },
+    {
+      "reason": "A's face sits toward the right side of the hair and the right-side eye is compressed; B's face sits toward the left with the left-side eye compressed.",
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left"
+    },
+    {
+      "reason": "A's face and eye line angle to the right under the brim; B's face and eye line angle to the left, with opposite visible cheek and hair widths.",
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left"
+    },
+    {
+      "reason": "A has a raised face, open eyes high beneath the fringe, and little crown visible; B lowers the face toward the laptop and exposes substantially more hat crown.",
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "reason": "A's face tilts downward beneath a broad visible hat crown; B lifts the chin and eye line with a much flatter crown silhouette.",
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up"
+    },
+    {
+      "reason": "A's face is raised and the eyes sit higher in the head; B's face drops toward the laptop beneath more visible crown and a lowered fringe.",
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "reason": "A shows a lifted chin and upward face angle; B brings the facial features lower and closer to the laptop, with more top surface of the hat visible.",
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down"
+    },
+    {
+      "reason": "A has a bowed head, lowered eye line, and broad hat crown; B raises the face and eye line with much less crown visible.",
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up"
+    },
+    {
+      "reason": "A's head bends toward the laptop and the crown is seen from above; B lifts the chin, with a higher eye line and narrower visible crown.",
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up"
+    },
+    {
+      "reason": "A's face and chin are raised with a relatively flat hat crown; B's face sits lower under the fringe and the hat shows more top surface.",
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down"
+    }
+  ]
+}

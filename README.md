@@ -12,9 +12,11 @@
 
 Made with **GPT-6-Astra** and the built-in image generation tools. Based on the community's Phoebe Chupi interpretation of Phoebe from *Wuthering Waves*.
 
+**v1.0.2** redraws twelve look poses to keep the cheeks and face size more consistent during head turns. All 57 standard animation frames, including blinking, are unchanged from v1.0.1. The hat design is preserved. See the [review results](docs/REVIEW.md#current-results) for the checks and remaining pose steps.
+
 ## Get started
 
-1. Download **[phoebe-chupi-v1.0.1.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.1/phoebe-chupi-v1.0.1.zip)** and extract it.
+1. Download **[phoebe-chupi-v1.0.2.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.2/phoebe-chupi-v1.0.2.zip)** and extract it.
 2. Put the `phoebe-chupi` folder inside your Codex `pets` directory:
 
    | Platform | Directory |
@@ -45,7 +47,7 @@ The folder contains two files: `pet.json` and `spritesheet.webp`. No plugin is r
 | :---: | :---: |
 | ![Sixteen head directions](previews/look-loop.gif) | ![Idle, hop, and return](previews/idle-jump-idle.gif) |
 
-The direction preview cycles through all sixteen poses. In Dot, the cursor chooses the pose. The app controls animation timing and task-state changes.
+The direction preview cycles through sixteen discrete poses. In Dot, the cursor chooses the pose. Some changes between poses remain visible. The app controls animation timing and task-state changes.
 
 Browse the [complete animation](previews/all-states.gif) or the [frame layout](docs/FORMAT.md#animation-states) for all nine states.
 
@@ -53,12 +55,14 @@ Browse the [complete animation](previews/all-states.gif) or the [frame layout](d
 
 | Surface | Status |
 | --- | --- |
-| Codex desktop on macOS | Installed and visually checked. |
-| Codex Dot | Supports cursor-following head turns. |
+| Codex desktop on macOS | Custom v2 pet package. |
+| Codex Dot | Sixteen cursor-following head poses. |
 | Windows desktop | Portable package provided; visual verification pending. |
-| Web upload | The documented uploader accepts v1 sheets; use a v2-capable import flow for this package. |
+| Image import or upload | Use an app and import flow with custom v2 pet support. |
 
 This package uses a **1536 × 2288** v2 sheet. Your app must support custom v2 pets. See [installation and compatibility](docs/INSTALL.md#compatibility) for details.
+
+v1.0.2 was reviewed in a native-size browser preview. Its native Dot and Windows visual checks are still pending; v1.0.1 was checked on macOS desktop and Dot.
 
 ## Explore the project
 
@@ -69,9 +73,9 @@ This package uses a **1536 × 2288** v2 sheet. Your app must support custom v2 p
 | [Prompt examples](docs/PROMPTS.md) | Start with reusable character, motion, repair, and review prompts. |
 | [Sprite format](docs/FORMAT.md) | Look up manifest fields, animation rows, directions, and timing. |
 | [Review and validation](docs/REVIEW.md) | Inspect visual quality, reproduce file checks, and read the current results. |
-| [Image archive](docs/IMAGE-GALLERY.md) | Browse 742 source images, studies, individual frames, and experiments. |
+| [Image archive](docs/IMAGE-GALLERY.md) | Browse 832 source images, studies, individual frames, and experiments. |
 
-Every guide has a Chinese edition. The [documentation index](docs/README.md) includes sources, credits, and the v1.0.1 [hair-outline repair](docs/OUTLINE-REPAIR.md).
+Every guide has a Chinese edition. The [documentation index](docs/README.md) includes sources, credits, the current [look repair evidence](docs/look-repair-qa/README.md), and the historical v1.0.1 [hair-outline repair](docs/OUTLINE-REPAIR.md).
 
 ## Credits and license
 

@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "incremental_new_unique": 8,
+  "incremental_new_aliases": 24,
+  "cumulative_new_unique_since_742": 90,
+  "total_unique_images": 832,
+  "total_aliases": 1447,
+  "group_unique_images": 99,
+  "gallery_pages": 3,
+  "scanned_source_occurrences": 157,
+  "final_selected_aliases": 16,
+  "final_selected_source": "art/repair/v1.0.2/source-map.json",
+  "source_pixel_checks": {
+    "source_and_saved_PIL_verify": true,
+    "every_scanned_source_rgba_preserved": true,
+    "every_new_saved_file_hash_verified": true
+  },
+  "metadata_removed_this_increment": {
+    "c2pa": 4
+  },
+  "cumulative_c2pa_removed_new_files": 43,
+  "local_links_checked": 387,
+  "gallery_files_match_incremental_generator": true,
+  "private_text_scan_passed": true,
+  "old_742_record_and_history_preservation": "reused initial verification; append script also preserves every prior record except additive groups/aliases",
+  "newest_sources_confirmed": [
+    "revision-v05/292.5/generated-originals/attempt-05-aligned-endpoints.png",
+    "revision-v05/292.5/generated-originals/attempt-06-toward-viewer.png",
+    "revision-v05/292.5/generated-originals/attempt-07-compact.png",
+    "revision-v05/292.5/raw-frames/292.5-attempt-05.png",
+    "revision-v05/292.5/raw-frames/292.5-attempt-06.png",
+    "revision-v05/292.5/raw-frames/292.5-attempt-07-compact.png",
+    "revision-v05/315/generated-originals/attempt-04-midpoint.png",
+    "revision-v05/315/raw-frames/315-attempt-04-midpoint.png"
+  ],
+  "omitted_in_scope_images": [],
+  "intentional_exclusions": [
+    "mutable selected-full-frames-v05",
+    "diagnostic qa/previews",
+    "prompts and tool provenance JSON",
+    "private UI captures",
+    "earlier run/local-repair composites"
+  ]
+}

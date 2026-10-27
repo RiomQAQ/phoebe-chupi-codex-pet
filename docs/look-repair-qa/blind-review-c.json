@@ -1,0 +1,89 @@
+{
+  "reviewer": "C",
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's face is shifted toward the right edge of the hair opening; B's face is shifted left, with the opposite cheek and hair spacing."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's eyes, nose, and exposed cheek sit left within the head silhouette; B's facial features sit toward the right side."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A shows the face near the right hair boundary and more hair on its left; B reverses that face placement."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's facial center and visible cheek point right beneath the brim; B's facial center and cheek point left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "Although both heads are lowered, A's face is visibly displaced left within the hair, while B's is displaced right."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's rightward face placement leaves more hair beside the left cheek; B's face placement and cheek spacing favor the left."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "The lowered faces remain offset in opposite directions: A toward the right hair edge and B toward the left."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A has a raised, more exposed face beneath a flatter visible crown; B shows more hat top and a face tucked lower under the brim."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A exposes a broad hat crown and lowers the face toward the body; B raises the face and shows less of the crown top."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face is lifted and open below the brim; B's face sits lower and more tucked beneath a larger visible hat top."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "The difference is moderate: A's face is higher beneath a flatter crown, while B's facial center drops beneath a broader crown top."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A's broad visible crown and lowered facial placement indicate a downward pitch; B's face is raised with less hat top exposed."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A lowers its face close to the laptop and exposes the hat top; B lifts the face farther above the body beneath a shallower visible crown."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "The pitch difference is subtle but readable: A's face is higher and lifted, while B's face sits lower beneath a more exposed hat crown."
+    }
+  ]
+}
