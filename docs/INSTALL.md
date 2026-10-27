@@ -50,7 +50,7 @@ v1.0.2 changes the look poses. All 57 standard frames, including blinking, retai
 
 | Surface | Support |
 | --- | --- |
-| macOS desktop | v1.0.1 installation and visual behavior verified. v1.0.2 checked in a native-size browser preview. |
+| macOS desktop | v1.0.2 local installation and app image readback verified. Native visual checks pending. |
 | Codex Dot | Sixteen head poses support cursor-following gaze. v1.0.2 has not been checked in native Dot. |
 | Windows desktop | v2 package and import helper provided; visual verification pending. |
 | Image import or upload | Use an app with custom v2 pet support and follow its import flow. See the [official guide](https://learn.chatgpt.com/docs/pets) for app controls. |

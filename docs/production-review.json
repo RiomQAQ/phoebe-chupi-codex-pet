@@ -91,7 +91,7 @@
     "337.5"
   ],
   "direction_majority": "14 of14 comparisons passed in three fresh isolated reviews",
-  "visual_scope": "Native192x208 direction boards, light/dark neighbor chains, and browser forward/reverse stepping with screenshot samples of the live loop. Standard57-frame visual verification reused because every RGBA pixel is unchanged. This revision was not installed in native Dot; Windows visual verification pending.",
+  "visual_scope": "Native 192x208 direction boards, light/dark neighbor chains, and browser forward/reverse stepping with screenshot samples of the live loop. Standard 57-frame visual verification reused because every RGBA pixel is unchanged. Local installation and app image readback are verified; native Dot and Windows visual checks remain pending.",
   "remaining_pose_steps": [
     "225->247.5",
     "270->292.5"
@@ -99,5 +99,6 @@
   "evidence": "docs/look-repair-qa/README.md",
   "unique_source_images": 832,
   "source_alias_count": 1447,
-  "independent_artwork_review": "docs/look-repair-qa/independent-final-art-review.json"
+  "independent_artwork_review": "docs/look-repair-qa/independent-final-art-review.json",
+  "installation_verification": "docs/look-repair-qa/installation-verification.json"
 }

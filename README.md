@@ -62,7 +62,7 @@ Browse the [complete animation](previews/all-states.gif) or the [frame layout](d
 
 This package uses a **1536 × 2288** v2 sheet. Your app must support custom v2 pets. See [installation and compatibility](docs/INSTALL.md#compatibility) for details.
 
-v1.0.2 was reviewed in a native-size browser preview. Its native Dot and Windows visual checks are still pending; v1.0.1 was checked on macOS desktop and Dot.
+v1.0.2 was reviewed in a native-size browser preview. Local installation and the app's stored image have also been verified against the release. Native Dot and Windows visual checks are still pending; v1.0.1 was checked on macOS desktop and Dot.
 
 ## Explore the project
 

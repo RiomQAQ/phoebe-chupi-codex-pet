@@ -15,6 +15,7 @@ The reviewed WebP is identified by SHA-256 `c00941ef64ce87b76b60f84da2f5dd004514
 | [Browser review](ui-visual-review.json) | Native-size forward/reverse stepping and samples of the live loop. |
 | [Face comparisons](face-continuity-before-after.json) | Fixed-coordinate measurements before and after the six latest face corrections. |
 | [Protected actions](protected-standard-rows.json) | Exact RGBA equality for the nine standard rows. |
+| [Installation and readback](installation-verification.json) | Updated local files and the existing active app pet entry; stored pixels match the release. |
 | [Atlas validation](atlas-validation.json) · [frame review](standard-frame-review.json) | Grid, population, transparency, components, and frame geometry. |
 | [Continuity](look-continuity.json) · [quality gate](pet-quality.json) | Neighboring silhouette changes, head registration, and hop lift/landing. |
 | [Native alpha](chroma-native-alpha.json) | Preservation of the generated ink and alpha without color averaging. |
@@ -30,6 +31,6 @@ Three isolated AI reviewers classified randomized, unlabeled A/B pairs before se
 
 ## Limits
 
-The pet has sixteen discrete look poses. The `225 → 247.5` yaw and `270 → 292.5` upward lift remain more noticeable than their immediate neighbors. The revised upper-left sequence was checked against the anchored laptop and body for the reported face-size jump. Browser playback was sampled through screenshots and paused stepping; this revision has not been installed in native Dot. Windows visual verification is also pending.
+The pet has sixteen discrete look poses. The `225 → 247.5` yaw and `270 → 292.5` upward lift remain more noticeable than their immediate neighbors. The revised upper-left sequence was checked against the anchored laptop and body for the reported face-size jump. Browser playback was sampled through screenshots and paused stepping. Local installation and app image readback are verified; native Dot and Windows visual checks remain pending.
 
 The earlier [v1.0.1 evidence](../repair-qa/README.md) and [release snapshot](../../art/releases/v1.0.1) remain available for comparison.
