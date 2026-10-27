@@ -60,13 +60,16 @@ These results apply to the **v1.0.2** WebP, SHA-256 `c00941ef64ce87b76b60f84da2f
 | Hop | 21 px peak lift; 0 px landing offset. |
 | Look registration | Maximum horizontal center drift 3.0 px; maximum width ratio 1.0859375. |
 | Browser inspection | Native 192 × 208 old/new stepping and sampled playback snapshots; details below. |
+| Installation and readback | Local files and the existing active app pet entry updated; stored RGBA pixels match the release. |
 | Source archive | 832 distinct source images; 1,447 working-file occurrences indexed. |
 
 The latest face refinements are `000`, `157.5`, `247.5`, `292.5`, `315`, and `337.5`. They address pinched cheeks and apparent face growth during the upward-left return. Each is a complete frame generated with the image tools, without face pasting or local face warps.
 
 Movement measurements use alpha > 16. The raw bounds in [validation.json](validation.json) include any nonzero alpha; keep these two measurement policies distinct. Registration and pixel-difference measurements help locate a transition to inspect; they do not establish facial consistency or smooth motion on their own.
 
-The current browser review checked `270 → 292.5 → 315 → 337.5 → 000` forward and backward at 1×, with 2× diagnostic views. Playback was sampled through successive screenshots, so this is not a continuous-video review. The large whole-face growth seen in earlier candidates was no longer obvious at native size; visible pose steps remain. v1.0.1 was checked in macOS desktop and Dot. The current revision has not been installed and checked in native Dot, and Windows has not been visually tested.
+The current browser review checked `270 → 292.5 → 315 → 337.5 → 000` forward and backward at 1×, with 2× diagnostic views. Playback was sampled through successive screenshots, so this is not a continuous-video review. The large whole-face growth seen in earlier candidates was no longer obvious at native size; visible pose steps remain. v1.0.1 was checked in macOS desktop and Dot.
+
+The [installation record](look-repair-qa/installation-verification.json) confirms that the local files and existing active app pet entry were updated to v1.0.2. The app returns a PNG whose decoded RGBA pixels match the release WebP; the existing pet entry, active selection, and all 57 standard frames were preserved. Native Dot and Windows visual verification remain pending.
 
 ## Known limitations
 

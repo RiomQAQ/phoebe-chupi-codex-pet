@@ -1,0 +1,19 @@
+{
+  "version": "v1.0.2",
+  "verification_date": "2026-10-28",
+  "release_atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "local_installation": {
+    "installed_atlas_matches_release": true,
+    "existing_manifest_preserved": true,
+    "previous_version_backed_up": true
+  },
+  "app_readback": {
+    "encoding": "PNG",
+    "encoded_file_sha256": "c43c9f05c05b1c6e8f6037651f35f69ca875ce1e62f8684a3fc102f90771a418",
+    "decoded_rgba_matches_release": true,
+    "existing_pet_record_preserved": true,
+    "active_selection_preserved": true
+  },
+  "original57standard_frames_and_blinks_rgba_preserved": true,
+  "native_dot_visual_verification": "pending"
+}
