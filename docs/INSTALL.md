@@ -2,11 +2,11 @@
 
 **English** · [简体中文](INSTALL.zh-CN.md) · [Documentation](README.md)
 
-Use a desktop app with custom v2 pets enabled. The current pet package is **v1.0.1**.
+Use a desktop app with custom v2 pets enabled. The current pet package is **v1.0.2**.
 
 ## Install locally
 
-1. Download [phoebe-chupi-v1.0.1.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.1/phoebe-chupi-v1.0.1.zip).
+1. Download [phoebe-chupi-v1.0.2.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.2/phoebe-chupi-v1.0.2.zip).
 2. Extract the `phoebe-chupi` folder into `~/.codex/pets/` on macOS or `%USERPROFILE%\.codex\pets\` on Windows. If you set `CODEX_HOME`, use its `pets` subdirectory.
 3. In **Settings → Pets** or **Mini & Pets**, refresh the list and select **Phoebe Chupi · Coding Companion**.
 
@@ -44,16 +44,20 @@ For a local pet, back up its folder outside `pets`, then replace **only `sprites
 
 For a cloud-imported pet, update the image on the existing entry through the app's supported update flow. Creating another entry gives it a separate identity.
 
+v1.0.2 changes the look poses. All 57 standard frames, including blinking, retain the exact v1.0.1 RGBA pixels.
+
 ## Compatibility
 
 | Surface | Support |
 | --- | --- |
-| macOS desktop | Installation and visual behavior verified. |
-| Codex Dot | Sixteen head poses support cursor-following gaze. |
+| macOS desktop | v1.0.1 installation and visual behavior verified. v1.0.2 checked in a native-size browser preview. |
+| Codex Dot | Sixteen head poses support cursor-following gaze. v1.0.2 has not been checked in native Dot. |
 | Windows desktop | v2 package and import helper provided; visual verification pending. |
-| Web uploader | The [official guide](https://learn.chatgpt.com/docs/pets) specifies 1536 × 1872 sheets. This 1536 × 2288 v2 package requires a v2-capable import flow. |
+| Image import or upload | Use an app with custom v2 pet support and follow its import flow. See the [official guide](https://learn.chatgpt.com/docs/pets) for app controls. |
 
 Local desktop files and cloud uploads are separate installations. Menu names and feature availability can vary by app build. This package does not include an IDE-extension pet integration.
+
+The look animation uses sixteen discrete drawings. Some pose steps remain visible, particularly `225 → 247.5` and `270 → 292.5`. See the [review scope and limitations](REVIEW.md#known-limitations).
 
 ## Troubleshooting
 

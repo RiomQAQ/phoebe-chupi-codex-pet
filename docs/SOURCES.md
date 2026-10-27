@@ -34,13 +34,17 @@ These studies inform the new drawings. Video frames and bulk sticker downloads a
 | Reference | Use |
 | --- | --- |
 | [Official import commands](https://learn.chatgpt.com/docs/reference/commands#pets) | Native pet-import URI and v2 parameter. |
-| [Official Pets guide](https://learn.chatgpt.com/docs/pets) | Desktop controls and web-upload requirements. |
+| [Official Pets guide](https://learn.chatgpt.com/docs/pets) | App controls and import guidance. |
 | [phoebe-codex-pet](https://github.com/sherlidian01-web/phoebe-codex-pet) | Bilingual presentation and animation previews. |
 | [remielle-codex-pet](https://github.com/HanaAyane/remielle-codex-pet) | Installation structure and portable v2 manifest example. |
 | [awesome-codex-pet](https://github.com/legeling/awesome-codex-pet) | Gallery navigation and source attribution. |
 
 ## Archived material
 
-The [image archive](IMAGE-GALLERY.md) preserves 742 distinct source images, with 1,290 working-file occurrences mapped in [art/index.json](../art/index.json). It includes generated frames, pose studies, comparisons, unused candidates, and the attributed three-view reference. Current frame crops and repair evidence are additional files.
+The [image archive](IMAGE-GALLERY.md) preserves 832 distinct source images, with 1,447 working-file occurrences mapped in [art/index.json](../art/index.json). It includes generated frames, pose studies, comparisons, unused candidates, and the attributed three-view reference. Current frame crops and repair evidence are additional files.
+
+For v1.0.2, twelve look drawings were redrawn as complete frames with the built-in image generation tools. Four original drawings were reused: `022.5`, `045`, `067.5`, and `090`. The revisions preserve the hat design and use no pasted faces or local face warps. The latest six face refinements cover `000`, `157.5`, `247.5`, `292.5`, `315`, and `337.5`; they address pinched cheeks and apparent face growth during the return from an upward-left look.
+
+The current reviewed baseline is [art/approved/v1.0.2/spritesheet.png](../art/approved/v1.0.2/spritesheet.png), recorded in [art/approved-runtime.json](../art/approved-runtime.json). The first nine rows retain the v1.0.1 RGBA pixels. That release is preserved in [art/releases/v1.0.1](../art/releases/v1.0.1), with its original [outline-repair evidence](repair-qa/README.md). The new [look repair evidence](look-repair-qa/README.md) documents v1.0.2.
 
 Third-party research collections remain linked at their sources. The repository contains the production artwork and reproducible technical records needed to inspect the pet.

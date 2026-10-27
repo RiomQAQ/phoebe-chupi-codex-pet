@@ -1,0 +1,69 @@
+{
+  "ok": true,
+  "atlas": "pets/phoebe-chupi/spritesheet.webp",
+  "encoded_bytes": 1925336,
+  "sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "jump": {
+    "idle_baseline": 195,
+    "jump_baselines": [
+      195,
+      180,
+      174,
+      190,
+      195
+    ],
+    "airborne_lift_pixels": 21,
+    "landing_delta_pixels": 0
+  },
+  "look_registration": {
+    "neutral_center_x": 95.0,
+    "look_centers_x": [
+      94.5,
+      93.5,
+      92.0,
+      92.0,
+      92.5,
+      95.5,
+      96.0,
+      95.5,
+      95.0,
+      95.5,
+      94.5,
+      96.0,
+      96.0,
+      96.5,
+      97.5,
+      97.0
+    ],
+    "look_widths": [
+      139,
+      133,
+      128,
+      128,
+      131,
+      135,
+      132,
+      139,
+      138,
+      135,
+      135,
+      128,
+      130,
+      133,
+      131,
+      134
+    ],
+    "maximum_center_drift_pixels": 3.0,
+    "maximum_width_ratio": 1.0859375
+  },
+  "errors": [],
+  "warnings": [
+    "look direction 022.5 accepted with a reviewed warning",
+    "look direction 067.5 accepted with a reviewed warning",
+    "look direction 112.5 accepted with a reviewed warning",
+    "look direction 202.5 accepted with a reviewed warning",
+    "look direction 292.5 accepted with a reviewed warning",
+    "225->247.5 diff is a local outlier (1987 pixels vs neighbor average 932)",
+    "270->292.5 diff is a local outlier (1946 pixels vs neighbor average 938)"
+  ]
+}

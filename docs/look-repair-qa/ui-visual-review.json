@@ -1,0 +1,25 @@
+{
+  "candidate": "v1.0.2",
+  "atlasSha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "verdict": "pass for reviewed face-scale issue, with visible pose steps",
+  "scope": "Chrome local preview, 1× native previous preview/current side-by-side. Reviewed 270→292.5→315→337.5→000; forward and backward paused stepping; sampled automatic forward playback; 2× diagnostic.",
+  "observations": {
+    "270→292.5": "The eyes and face rise as the head looks upward. A visible pose step remains, but the eye shapes and sizes remain broadly comparable and the chin rises with the face against a steady laptop. At 1× this reads more as a head lift than the conspicuous whole-face growth seen in earlier candidates.",
+    "292.5→315": "The farther eye opens wider and the face turns more frontal; the face broadens modestly. The eye separation and mouth shift along with the turn. There is no similarly conspicuous whole-face enlargement at native size.",
+    "315→337.5→000": "The face turns toward center, and the 337.5→000 seam remains materially steadier than the prior preview.",
+    "reverse": "The same pairs were checked in reverse with the previous-frame control; the upward pose step is visible but the face does not appear to collapse in scale.",
+    "playback": "Automatic playback ran and successive snapshots showed 292.5, 315 and 337.5. This screenshot-based inspection sampled the live loop rather than providing a continuous visual recording."
+  },
+  "residual": "The 270→292.5 lift is a noticeable discrete pose step; 292.5→315 includes visible widening of the farther eye. These are judged acceptable direction and pose changes at 1×, not a claim of perfectly smooth motion.",
+  "evidence": [
+    "ui-native-270.jpg",
+    "ui-native-292-5.jpg",
+    "ui-native-315.jpg"
+  ],
+  "reused": "The parent reports only 292.5 changed relative to full-v05-b, with other atlas pixels and preview controls unchanged. Prior checks of other directions, four-quadrant follow, idle/blink, themes and 2× responsive layout were not repeated.",
+  "limitations": [
+    "Browser preview only; candidate was not installed or checked in native Dot.",
+    "Actual playback was sampled via screenshots; no continuous video was observed or recorded."
+  ],
+  "preview": "art/repair/v1.0.2/review.html"
+}

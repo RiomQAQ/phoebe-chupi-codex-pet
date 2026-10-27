@@ -5,7 +5,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from restore_outlines import audit, load, SOURCE, PREVIOUS, WEBP
+from restore_outlines import audit, build, load, sha, SOURCE, PREVIOUS, WEBP, HISTORICAL_WEBP
 
 
 class OutlineRegression(unittest.TestCase):
@@ -16,7 +16,7 @@ class OutlineRegression(unittest.TestCase):
         self.assertTrue(result["alpha_and_pose_registration_unchanged"])
 
     def test_reported_hair_pixels_are_restored(self):
-        expected, repaired, previous = load(SOURCE), load(WEBP), load(PREVIOUS)
+        expected, repaired, current, previous = load(SOURCE), load(HISTORICAL_WEBP), load(WEBP), load(PREVIOUS)
         for row, col, x, y, rgb in [
             (0, 0, 37, 180, (0, 0, 0)),
             (1, 3, 155, 73, (7, 0, 0)),
@@ -25,11 +25,18 @@ class OutlineRegression(unittest.TestCase):
             position = (col * 192 + x, row * 208 + y)
             self.assertEqual(repaired.getpixel(position), expected.getpixel(position))
             self.assertEqual(repaired.getpixel(position)[:3], rgb)
+            self.assertEqual(current.getpixel(position), expected.getpixel(position))
             self.assertNotEqual(previous.getpixel(position)[:3], rgb)
 
     def test_all_pose_and_blink_geometry_is_preserved(self):
-        self.assertEqual(load(PREVIOUS).getchannel("A").tobytes(), load(WEBP).getchannel("A").tobytes())
-        self.assertTrue(audit(WEBP)["ok"])
+        self.assertEqual(load(PREVIOUS).getchannel("A").tobytes(), load(HISTORICAL_WEBP).getchannel("A").tobytes())
+        self.assertEqual(sha(HISTORICAL_WEBP), "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2")
+        self.assertTrue(audit(HISTORICAL_WEBP)["ok"])
+
+    def test_historical_export_cannot_replace_runtime_or_frozen_release(self):
+        for destination in (WEBP.parent, ROOT / "art/final", HISTORICAL_WEBP.parent):
+            with self.subTest(destination=destination), self.assertRaises(ValueError):
+                build(destination)
 
 
 if __name__ == "__main__":

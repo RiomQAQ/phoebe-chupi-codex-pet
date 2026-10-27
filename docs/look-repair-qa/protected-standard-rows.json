@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "region": [
+    0,
+    0,
+    1536,
+    1872
+  ],
+  "standard_rows_rgba_identical": true,
+  "old_rgba_sha256": "dadc6354df1e6dcead1da315b13bf3734921e60ea11ce9e7014cd607a83b0502",
+  "new_rgba_sha256": "dadc6354df1e6dcead1da315b13bf3734921e60ea11ce9e7014cd607a83b0502",
+  "includes_original_blinks_and_all_nine_standard_states": true
+}

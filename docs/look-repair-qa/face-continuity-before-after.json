@@ -1,0 +1,1432 @@
+{
+  "candidate": "v1.0.2",
+  "atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "method": "Fixed native192ROI and color thresholds. Axis-aligned skin/purple projections are supporting evidence, affected by yaw/pitch/roll; actual paired visual and motion review determine acceptance.",
+  "standard_rows_rgba_identical": true,
+  "directions": [
+    {
+      "angle": "000",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          98,
+          125,
+          136
+        ],
+        "skin_width": 67,
+        "skin_height": 39,
+        "purple_boxes": [
+          [
+            66,
+            112,
+            82,
+            121
+          ],
+          [
+            103,
+            112,
+            119,
+            121
+          ]
+        ],
+        "purple_sizes": [
+          [
+            17,
+            10
+          ],
+          [
+            17,
+            10
+          ]
+        ],
+        "iris_center_gap": 37.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          63,
+          103,
+          125,
+          137
+        ],
+        "skin_width": 63,
+        "skin_height": 35,
+        "purple_boxes": [
+          [
+            69,
+            116,
+            84,
+            124
+          ],
+          [
+            105,
+            116,
+            121,
+            124
+          ]
+        ],
+        "purple_sizes": [
+          [
+            16,
+            9
+          ],
+          [
+            17,
+            9
+          ]
+        ],
+        "iris_center_gap": 36.5
+      }
+    },
+    {
+      "angle": "022.5",
+      "changed_from_v1.0.1": false,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          71,
+          103,
+          131,
+          136
+        ],
+        "skin_width": 61,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            79,
+            115,
+            96,
+            124
+          ],
+          [
+            115,
+            114,
+            128,
+            123
+          ]
+        ],
+        "purple_sizes": [
+          [
+            18,
+            10
+          ],
+          [
+            14,
+            10
+          ]
+        ],
+        "iris_center_gap": 34.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          71,
+          103,
+          131,
+          136
+        ],
+        "skin_width": 61,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            79,
+            115,
+            96,
+            124
+          ],
+          [
+            115,
+            114,
+            128,
+            123
+          ]
+        ],
+        "purple_sizes": [
+          [
+            18,
+            10
+          ],
+          [
+            14,
+            10
+          ]
+        ],
+        "iris_center_gap": 34.0
+      }
+    },
+    {
+      "angle": "045",
+      "changed_from_v1.0.1": false,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          79,
+          103,
+          130,
+          137
+        ],
+        "skin_width": 52,
+        "skin_height": 35,
+        "purple_boxes": [
+          [
+            87,
+            118,
+            102,
+            128
+          ],
+          [
+            120,
+            114,
+            127,
+            123
+          ]
+        ],
+        "purple_sizes": [
+          [
+            16,
+            11
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "iris_center_gap": 29.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          79,
+          103,
+          130,
+          137
+        ],
+        "skin_width": 52,
+        "skin_height": 35,
+        "purple_boxes": [
+          [
+            87,
+            118,
+            102,
+            128
+          ],
+          [
+            120,
+            114,
+            127,
+            123
+          ]
+        ],
+        "purple_sizes": [
+          [
+            16,
+            11
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "iris_center_gap": 29.0
+      }
+    },
+    {
+      "angle": "067.5",
+      "changed_from_v1.0.1": false,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          80,
+          107,
+          130,
+          140
+        ],
+        "skin_width": 51,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            88,
+            121,
+            103,
+            131
+          ],
+          [
+            120,
+            117,
+            127,
+            125
+          ]
+        ],
+        "purple_sizes": [
+          [
+            16,
+            11
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "iris_center_gap": 28.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          80,
+          107,
+          130,
+          140
+        ],
+        "skin_width": 51,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            88,
+            121,
+            103,
+            131
+          ],
+          [
+            120,
+            117,
+            127,
+            125
+          ]
+        ],
+        "purple_sizes": [
+          [
+            16,
+            11
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "iris_center_gap": 28.0
+      }
+    },
+    {
+      "angle": "090",
+      "changed_from_v1.0.1": false,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          77,
+          110,
+          132,
+          141
+        ],
+        "skin_width": 56,
+        "skin_height": 32,
+        "purple_boxes": [
+          [
+            85,
+            125,
+            101,
+            134
+          ],
+          [
+            119,
+            123,
+            127,
+            132
+          ]
+        ],
+        "purple_sizes": [
+          [
+            17,
+            10
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "iris_center_gap": 30.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          77,
+          110,
+          132,
+          141
+        ],
+        "skin_width": 56,
+        "skin_height": 32,
+        "purple_boxes": [
+          [
+            85,
+            125,
+            101,
+            134
+          ],
+          [
+            119,
+            123,
+            127,
+            132
+          ]
+        ],
+        "purple_sizes": [
+          [
+            17,
+            10
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "iris_center_gap": 30.0
+      }
+    },
+    {
+      "angle": "112.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          81,
+          117,
+          133,
+          143
+        ],
+        "skin_width": 53,
+        "skin_height": 27,
+        "purple_boxes": [
+          [
+            94,
+            129,
+            107,
+            138
+          ],
+          [
+            123,
+            129,
+            128,
+            136
+          ]
+        ],
+        "purple_sizes": [
+          [
+            14,
+            10
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "iris_center_gap": 25.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          81,
+          117,
+          133,
+          143
+        ],
+        "skin_width": 53,
+        "skin_height": 27,
+        "purple_boxes": [
+          [
+            94,
+            129,
+            107,
+            138
+          ],
+          [
+            123,
+            129,
+            128,
+            136
+          ]
+        ],
+        "purple_sizes": [
+          [
+            14,
+            10
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "iris_center_gap": 25.0
+      }
+    },
+    {
+      "angle": "135",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          76,
+          116,
+          130,
+          144
+        ],
+        "skin_width": 55,
+        "skin_height": 29,
+        "purple_boxes": [
+          [
+            88,
+            131,
+            100,
+            138
+          ],
+          [
+            118,
+            132,
+            124,
+            138
+          ]
+        ],
+        "purple_sizes": [
+          [
+            13,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "iris_center_gap": 27.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          76,
+          116,
+          130,
+          144
+        ],
+        "skin_width": 55,
+        "skin_height": 29,
+        "purple_boxes": [
+          [
+            88,
+            131,
+            100,
+            138
+          ],
+          [
+            118,
+            132,
+            124,
+            138
+          ]
+        ],
+        "purple_sizes": [
+          [
+            13,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "iris_center_gap": 27.0
+      }
+    },
+    {
+      "angle": "157.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          78,
+          121,
+          128,
+          143
+        ],
+        "skin_width": 51,
+        "skin_height": 23,
+        "purple_boxes": [
+          [
+            86,
+            135,
+            99,
+            140
+          ],
+          [
+            115,
+            134,
+            124,
+            139
+          ]
+        ],
+        "purple_sizes": [
+          [
+            14,
+            6
+          ],
+          [
+            10,
+            6
+          ]
+        ],
+        "iris_center_gap": 27.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          73,
+          114,
+          130,
+          143
+        ],
+        "skin_width": 58,
+        "skin_height": 30,
+        "purple_boxes": [
+          [
+            85,
+            130,
+            97,
+            137
+          ],
+          [
+            117,
+            131,
+            124,
+            137
+          ]
+        ],
+        "purple_sizes": [
+          [
+            13,
+            8
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "iris_center_gap": 29.5
+      }
+    },
+    {
+      "angle": "180",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          121,
+          123,
+          144
+        ],
+        "skin_width": 64,
+        "skin_height": 24,
+        "purple_boxes": [
+          [
+            68,
+            131,
+            80,
+            138
+          ],
+          [
+            102,
+            133,
+            115,
+            139
+          ]
+        ],
+        "purple_sizes": [
+          [
+            13,
+            8
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "iris_center_gap": 34.5
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          121,
+          123,
+          144
+        ],
+        "skin_width": 64,
+        "skin_height": 24,
+        "purple_boxes": [
+          [
+            68,
+            131,
+            80,
+            138
+          ],
+          [
+            102,
+            133,
+            115,
+            139
+          ]
+        ],
+        "purple_sizes": [
+          [
+            13,
+            8
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "iris_center_gap": 34.5
+      }
+    },
+    {
+      "angle": "202.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          120,
+          117,
+          144
+        ],
+        "skin_width": 58,
+        "skin_height": 25,
+        "purple_boxes": [
+          [
+            65,
+            131,
+            75,
+            137
+          ],
+          [
+            95,
+            133,
+            107,
+            140
+          ]
+        ],
+        "purple_sizes": [
+          [
+            11,
+            7
+          ],
+          [
+            13,
+            8
+          ]
+        ],
+        "iris_center_gap": 31.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          120,
+          117,
+          144
+        ],
+        "skin_width": 58,
+        "skin_height": 25,
+        "purple_boxes": [
+          [
+            65,
+            131,
+            75,
+            137
+          ],
+          [
+            95,
+            133,
+            107,
+            140
+          ]
+        ],
+        "purple_sizes": [
+          [
+            11,
+            7
+          ],
+          [
+            13,
+            8
+          ]
+        ],
+        "iris_center_gap": 31.0
+      }
+    },
+    {
+      "angle": "225",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          118,
+          112,
+          144
+        ],
+        "skin_width": 54,
+        "skin_height": 27,
+        "purple_boxes": [
+          [
+            63,
+            128,
+            71,
+            135
+          ],
+          [
+            89,
+            134,
+            101,
+            141
+          ]
+        ],
+        "purple_sizes": [
+          [
+            9,
+            8
+          ],
+          [
+            13,
+            8
+          ]
+        ],
+        "iris_center_gap": 28.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          118,
+          112,
+          144
+        ],
+        "skin_width": 54,
+        "skin_height": 27,
+        "purple_boxes": [
+          [
+            63,
+            128,
+            71,
+            135
+          ],
+          [
+            89,
+            134,
+            101,
+            141
+          ]
+        ],
+        "purple_sizes": [
+          [
+            9,
+            8
+          ],
+          [
+            13,
+            8
+          ]
+        ],
+        "iris_center_gap": 28.0
+      }
+    },
+    {
+      "angle": "247.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          117,
+          107,
+          144
+        ],
+        "skin_width": 48,
+        "skin_height": 28,
+        "purple_boxes": [
+          [
+            63,
+            127,
+            69,
+            134
+          ],
+          [
+            85,
+            131,
+            97,
+            139
+          ]
+        ],
+        "purple_sizes": [
+          [
+            7,
+            8
+          ],
+          [
+            13,
+            9
+          ]
+        ],
+        "iris_center_gap": 25.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          113,
+          109,
+          141
+        ],
+        "skin_width": 51,
+        "skin_height": 29,
+        "purple_boxes": [
+          [
+            63,
+            123,
+            70,
+            131
+          ],
+          [
+            87,
+            127,
+            101,
+            135
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            9
+          ],
+          [
+            15,
+            9
+          ]
+        ],
+        "iris_center_gap": 27.5
+      }
+    },
+    {
+      "angle": "270",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": false,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          111,
+          109,
+          141
+        ],
+        "skin_width": 51,
+        "skin_height": 31,
+        "purple_boxes": [
+          [
+            62,
+            122,
+            69,
+            130
+          ],
+          [
+            86,
+            125,
+            101,
+            133
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            9
+          ],
+          [
+            16,
+            9
+          ]
+        ],
+        "iris_center_gap": 28.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          111,
+          109,
+          141
+        ],
+        "skin_width": 51,
+        "skin_height": 31,
+        "purple_boxes": [
+          [
+            62,
+            122,
+            69,
+            130
+          ],
+          [
+            86,
+            125,
+            101,
+            133
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            9
+          ],
+          [
+            16,
+            9
+          ]
+        ],
+        "iris_center_gap": 28.0
+      }
+    },
+    {
+      "angle": "292.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          58,
+          107,
+          102,
+          140
+        ],
+        "skin_width": 45,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            61,
+            115,
+            68,
+            125
+          ],
+          [
+            82,
+            119,
+            95,
+            131
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            11
+          ],
+          [
+            14,
+            13
+          ]
+        ],
+        "iris_center_gap": 24.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          53,
+          103,
+          109,
+          136
+        ],
+        "skin_width": 57,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            59,
+            111,
+            66,
+            121
+          ],
+          [
+            83,
+            113,
+            97,
+            126
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            11
+          ],
+          [
+            15,
+            14
+          ]
+        ],
+        "iris_center_gap": 27.5
+      }
+    },
+    {
+      "angle": "315",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          60,
+          108,
+          106,
+          141
+        ],
+        "skin_width": 47,
+        "skin_height": 34,
+        "purple_boxes": [
+          [
+            64,
+            115,
+            71,
+            125
+          ],
+          [
+            86,
+            120,
+            98,
+            132
+          ]
+        ],
+        "purple_sizes": [
+          [
+            8,
+            11
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "iris_center_gap": 24.5
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          56,
+          100,
+          116,
+          135
+        ],
+        "skin_width": 61,
+        "skin_height": 36,
+        "purple_boxes": [
+          [
+            62,
+            111,
+            73,
+            120
+          ],
+          [
+            90,
+            110,
+            106,
+            123
+          ]
+        ],
+        "purple_sizes": [
+          [
+            12,
+            10
+          ],
+          [
+            17,
+            14
+          ]
+        ],
+        "iris_center_gap": 30.5
+      }
+    },
+    {
+      "angle": "337.5",
+      "changed_from_v1.0.1": true,
+      "changed_from_previous_preview": true,
+      "before": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          59,
+          106,
+          112,
+          141
+        ],
+        "skin_width": 54,
+        "skin_height": 36,
+        "purple_boxes": [
+          [
+            64,
+            115,
+            74,
+            125
+          ],
+          [
+            91,
+            122,
+            105,
+            131
+          ]
+        ],
+        "purple_sizes": [
+          [
+            11,
+            11
+          ],
+          [
+            15,
+            10
+          ]
+        ],
+        "iris_center_gap": 29.0
+      },
+      "after": {
+        "profile": "native192",
+        "roi": [
+          42,
+          90,
+          146,
+          150
+        ],
+        "skin_bbox": [
+          57,
+          100,
+          119,
+          136
+        ],
+        "skin_width": 63,
+        "skin_height": 37,
+        "purple_boxes": [
+          [
+            63,
+            111,
+            76,
+            120
+          ],
+          [
+            94,
+            112,
+            110,
+            122
+          ]
+        ],
+        "purple_sizes": [
+          [
+            14,
+            10
+          ],
+          [
+            17,
+            11
+          ]
+        ],
+        "iris_center_gap": 32.5
+      }
+    }
+  ]
+}

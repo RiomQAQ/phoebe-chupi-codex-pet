@@ -71,6 +71,25 @@ One transparent-background frame; the seated body does not rotate with the head.
 
 Establish the cardinal directions first, then fill the intermediate poses. Compare each new pose with both neighbors.
 
+## Repair a face-size jump
+
+Use a good neighboring pose as the edit target. Keep the failed frame for comparison rather than carrying its distorted proportions into the next attempt.
+
+```text
+Generate one complete transparent frame between the two supplied accepted poses.
+Use the first pose as the exact body, laptop, camera, and character-size anchor.
+Rotate the head, face, fringe, and attached accessories together by a small step.
+Keep the original eye artwork, cheek proportions, eye spacing, and short chin.
+Let perspective change gradually toward the second pose.
+
+Keep the torso, hands, laptop, seated legs, and feet in place. Preserve the
+existing hat design. No head-only resizing, pasted face pieces, new eye
+patterns, camera zoom, or fitting the character independently to the canvas.
+Output the entire connected character as one frame.
+```
+
+Compare the result at native size with both neighbors and idle. Check whether the face still seems to grow while the laptop stays still.
+
 ## Review frames and motion
 
 Provide the canonical poses, neighboring frames, native-size stills, and the actual loops.

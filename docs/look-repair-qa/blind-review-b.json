@@ -1,0 +1,89 @@
+{
+  "reviewer": "B",
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's face and nose turn toward the right edge; B's face is shifted toward the left with more hair behind its right cheek."
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A shows its face toward the left side of the hair; B's nose and cheeks point toward the right."
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's facial features gather toward the right cheek; B's features gather toward the left cheek."
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A has a right-facing nose and cheek outline; B's nose and exposed face point left."
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A's exposed face sits on the left with more hair behind the right cheek; B has the opposite facial shift."
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's mouth and facial center sit right of the body; B's facial center and nose turn left."
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A's face turns toward the right cheek; B's features turn toward the left with more hair visible on the right."
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eyes and face sit high beneath a thin crown; B shows more crown from above and lowers its eyes and chin."
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A shows the hat top and a lowered face; B lifts its eyes and chin under a shallower visible crown."
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A has raised eyes and an upward facial tilt; B shows more hat top with its face lowered toward the laptop."
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A's eye line and chin tilt upward; B's eye line sits lower and its hat crown is viewed more from above."
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A exposes the broad top of the hat and lowers its face; B raises the face and shows less of the hat top."
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A's eyes and chin angle down under a visible hat top; B's face is raised beneath a flatter crown profile."
+    },
+    {
+      "pair": "vertical-7",
+      "A": "up",
+      "B": "down",
+      "reason": "A's face and eyes lift toward the brim; B lowers its facial features and shows more of the crown's upper surface."
+    }
+  ]
+}

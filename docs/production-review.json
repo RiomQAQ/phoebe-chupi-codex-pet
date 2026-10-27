@@ -1,324 +1,103 @@
 {
-  "version": "v1.0.1",
-  "reviewed_on": "2026-10-22",
-  "description": "Production review of the restored v1.0.1 blinking edition.",
-  "artwork_version": "Approved seated blinking artwork, pre-cleanup colors restored",
-  "master_png_sha256": "f251ad33412857d1c02d42a506a4fdfff8b8b430ff564e28cc2c2526309aadd2",
-  "atlas_sha256": "e1971a5c89d073739c4956e04292249385eb47298dd8ce873deb1be6aaf3bdf2",
-  "measurement_policy": "Alpha > 16 visible boundary, freshly measured on the v1.0.1 WebP.",
-  "jump": {
-    "idle_baseline": 195,
-    "jump_baselines": [
-      195,
-      180,
-      174,
-      190,
-      195
-    ],
-    "airborne_lift_pixels": 21,
-    "landing_delta_pixels": 0
-  },
-  "look_registration": {
-    "neutral_center_x": 95.0,
-    "look_centers_x": [
-      95.0,
-      93.5,
-      92.0,
-      92.0,
-      92.5,
-      94.5,
-      98.0,
-      98.0,
-      95.0,
-      95.0,
-      95.5,
-      93.5,
-      93.5,
-      96.5,
-      98.5,
-      95.0
-    ],
-    "look_widths": [
-      136,
-      133,
-      128,
-      128,
-      131,
-      133,
-      128,
-      130,
-      134,
-      132,
-      129,
-      135,
-      135,
-      133,
-      131,
-      134
-    ],
-    "maximum_center_drift_pixels": 3.5,
-    "maximum_width_ratio": 1.0625
-  },
-  "accepted_visual_warnings": [
-    "look direction 045 accepted with a reviewed warning",
-    "look direction 067.5 accepted with a reviewed warning",
-    "225->247.5 diff is a local outlier (1820 pixels vs neighbor average 1019)"
-  ],
-  "outline_restoration_report": "outline-restoration.json",
-  "independent_frame_review": "repair-qa/independent-all-frames.json",
-  "blind_review": {
-    "reviewer_type": "Three independent AI agents, fresh unlabeled A/B comparisons from the repaired WebP",
-    "reviewer_count": 3,
-    "aggregation": "Strict per-cell majority",
-    "comparisons": 14,
+  "version": "v1.0.2",
+  "workflow": "GPT-6-Astra and built-in image generation",
+  "atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "approved_source": "art/approved/v1.0.2/spritesheet.png",
+  "source_map": "art/repair/v1.0.2/source-map.json",
+  "file_quality": {
     "ok": true,
-    "pairs": [
-      {
-        "pair": "horizontal-1",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "337.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "022.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-2",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "315",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "045",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-3",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "067.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "292.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-4",
-        "axis": "horizontal",
-        "gate": "hard",
-        "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "090",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "270",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-5",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "247.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "112.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-6",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "225",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "135",
-          "pass": true
-        }
-      },
-      {
-        "pair": "horizontal-7",
-        "axis": "horizontal",
-        "gate": "review",
-        "A": {
-          "observed": "screen-right",
-          "expected": "screen-right",
-          "source_direction": "157.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "screen-left",
-          "expected": "screen-left",
-          "source_direction": "202.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-1",
-        "axis": "vertical",
-        "gate": "hard",
-        "A": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "000",
-          "pass": true
-        },
-        "B": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "180",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-2",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "157.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "022.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-3",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "135",
-          "pass": true
-        },
-        "B": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "045",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-4",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "067.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "112.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-5",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "337.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "202.5",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-6",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "315",
-          "pass": true
-        },
-        "B": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "225",
-          "pass": true
-        }
-      },
-      {
-        "pair": "vertical-7",
-        "axis": "vertical",
-        "gate": "review",
-        "A": {
-          "observed": "down",
-          "expected": "down",
-          "source_direction": "247.5",
-          "pass": true
-        },
-        "B": {
-          "observed": "up",
-          "expected": "up",
-          "source_direction": "292.5",
-          "pass": true
-        }
-      }
+    "atlas": "pets/phoebe-chupi/spritesheet.webp",
+    "encoded_bytes": 1925336,
+    "sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+    "jump": {
+      "idle_baseline": 195,
+      "jump_baselines": [
+        195,
+        180,
+        174,
+        190,
+        195
+      ],
+      "airborne_lift_pixels": 21,
+      "landing_delta_pixels": 0
+    },
+    "look_registration": {
+      "neutral_center_x": 95.0,
+      "look_centers_x": [
+        94.5,
+        93.5,
+        92.0,
+        92.0,
+        92.5,
+        95.5,
+        96.0,
+        95.5,
+        95.0,
+        95.5,
+        94.5,
+        96.0,
+        96.0,
+        96.5,
+        97.5,
+        97.0
+      ],
+      "look_widths": [
+        139,
+        133,
+        128,
+        128,
+        131,
+        135,
+        132,
+        139,
+        138,
+        135,
+        135,
+        128,
+        130,
+        133,
+        131,
+        134
+      ],
+      "maximum_center_drift_pixels": 3.0,
+      "maximum_width_ratio": 1.0859375
+    },
+    "errors": [],
+    "warnings": [
+      "look direction 022.5 accepted with a reviewed warning",
+      "look direction 067.5 accepted with a reviewed warning",
+      "look direction 112.5 accepted with a reviewed warning",
+      "look direction 202.5 accepted with a reviewed warning",
+      "look direction 292.5 accepted with a reviewed warning",
+      "225->247.5 diff is a local outlier (1987 pixels vs neighbor average 932)",
+      "270->292.5 diff is a local outlier (1946 pixels vs neighbor average 938)"
     ]
   },
-  "visual_scope": "All 73 frames checked on light and dark backgrounds, plus native-size browser playback. Prior macOS/Dot behavior retained; Windows has not been visually tested.",
-  "creation_credit": "GPT-6-Astra assisted planning, iteration, and review; raster images generated/edited with the built-in image generation feature.",
-  "dot_behavior": {
-    "supported": true,
-    "head_follows_mouse": true,
-    "evidence": "Verified during use in Codex Dot on macOS."
-  },
-  "earlier_review_correction": "The v1.0.0 review missed ink fading from edge cleanup. Comparing PNG and WebP alone could not detect a mistake already present in both."
+  "protected_standard_frames": 57,
+  "standard_rows_rgba_identical_to_v1.0.1": true,
+  "look_frames_redrawn": 12,
+  "original_look_drawings_reused": [
+    "022.5",
+    "045",
+    "067.5",
+    "090"
+  ],
+  "latest_face_refinements": [
+    "000",
+    "157.5",
+    "247.5",
+    "292.5",
+    "315",
+    "337.5"
+  ],
+  "direction_majority": "14 of14 comparisons passed in three fresh isolated reviews",
+  "visual_scope": "Native192x208 direction boards, light/dark neighbor chains, and browser forward/reverse stepping with screenshot samples of the live loop. Standard57-frame visual verification reused because every RGBA pixel is unchanged. This revision was not installed in native Dot; Windows visual verification pending.",
+  "remaining_pose_steps": [
+    "225->247.5",
+    "270->292.5"
+  ],
+  "evidence": "docs/look-repair-qa/README.md",
+  "unique_source_images": 832,
+  "source_alias_count": 1447,
+  "independent_artwork_review": "docs/look-repair-qa/independent-final-art-review.json"
 }

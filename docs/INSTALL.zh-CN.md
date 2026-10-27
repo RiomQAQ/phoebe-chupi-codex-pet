@@ -2,11 +2,11 @@
 
 [English](INSTALL.md) · **简体中文** · [文档目录](README.zh-CN.md)
 
-应用需要支持自定义 v2 宠物。当前宠物安装包为 **v1.0.1**。
+应用需要支持自定义 v2 宠物。当前宠物安装包为 **v1.0.2**。
 
 ## 本地安装
 
-1. 下载 [phoebe-chupi-v1.0.1.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.1/phoebe-chupi-v1.0.1.zip)。
+1. 下载 [phoebe-chupi-v1.0.2.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.2/phoebe-chupi-v1.0.2.zip)。
 2. 把解压后的 `phoebe-chupi` 文件夹放进 macOS 的 `~/.codex/pets/`，或 Windows 的 `%USERPROFILE%\.codex\pets\`。设置过 `CODEX_HOME` 的，使用该目录下的 `pets` 子目录。
 3. 打开**设置 → Pets／Mini 与虚拟宠物**，刷新列表，选择 **Phoebe Chupi · Coding Companion**。
 
@@ -44,16 +44,20 @@ python3 scripts/install.py
 
 云端导入的宠物应通过应用支持的更新流程替换原条目的图片。新建条目会得到另一份独立身份。
 
+v1.0.2 修改了转头姿态。57 张标准动作帧（含眨眼）的 RGBA 像素与 v1.0.1 完全一致。
+
 ## 兼容性
 
 | 使用场景 | 支持情况 |
 | --- | --- |
-| macOS 桌面端 | 已验证安装与画面表现。 |
-| Codex Dot | 16 个头部姿态用于跟随鼠标方向。 |
+| macOS 桌面端 | 已验证 v1.0.1 的安装与画面表现。v1.0.2 已在原生尺寸的浏览器预览中检查。 |
+| Codex Dot | 16 个头部姿态用于跟随鼠标方向。v1.0.2 尚未在原生 Dot 中检查。 |
 | Windows 桌面端 | 提供 v2 文件和导入脚本，画面尚未实测。 |
-| 网页上传器 | [官方指南](https://learn.chatgpt.com/docs/pets)要求 1536 × 1872。本包为 1536 × 2288，需使用支持 v2 的导入方式。 |
+| 图片导入或上传 | 使用支持自定义 v2 宠物的应用，并按其导入流程操作。应用控制方式见[官方指南](https://learn.chatgpt.com/docs/pets)。 |
 
 本地桌面文件和云端上传是两份独立安装。菜单名称和功能开放情况可能随应用版本变化。本包未提供 IDE 扩展中的宠物集成。
+
+转头动作由 16 张离散姿态组成，部分切换仍有可见跳变，尤其是 `225 → 247.5` 和 `270 → 292.5`。详见[审查范围与限制](REVIEW.zh-CN.md#已知限制)。
 
 ## 常见问题
 

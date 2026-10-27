@@ -1,0 +1,135 @@
+{
+  "candidate": "v1.0.2",
+  "atlas_sha256": "c00941ef64ce87b76b60f84da2f5dd0045147ad82017cccf349d2a21330106c6",
+  "reviewer": "Primary agent: complete native-size direction board, exact cells and anchored-face comparisons; independent UI and art reviews are separate reports.",
+  "evidence": [
+    "previews/directions.png",
+    "previews/look-loop.gif",
+    "previews/look-dark.gif",
+    "art/repair/v1.0.2/review.html",
+    "docs/look-repair-qa/ui-visual-review.json",
+    "docs/look-repair-qa/independent-final-art-review.json",
+    "docs/look-repair-qa/blind-validation.json"
+  ],
+  "directions": [
+    {
+      "label": "000",
+      "expected": "up",
+      "observed": "Raised front-facing gaze",
+      "reason": "Both original oval eyes point above the resting line. Cheeks stay symmetric and compact; the shorter eye-to-chin space now joins337.5 without an enlarged face.",
+      "verdict": "pass"
+    },
+    {
+      "label": "022.5",
+      "expected": "up-right",
+      "observed": "Mostly up, lightly toward screen-right",
+      "reason": "The lifted eye surfaces and small rightward face offset provide separate vertical and horizontal cues. The horizontal cue is subtle.",
+      "verdict": "warning"
+    },
+    {
+      "label": "045",
+      "expected": "up-right",
+      "observed": "Up and screen-right",
+      "reason": "The far eye and cheek narrow with rightward yaw while the gaze lifts; fringe and brim follow the head.",
+      "verdict": "pass"
+    },
+    {
+      "label": "067.5",
+      "expected": "up-right",
+      "observed": "Mostly screen-right with a small upward component",
+      "reason": "The stronger near/far-eye contrast and cheek projection point right. The lifted eye line remains visible, though this pose is close to045.",
+      "verdict": "warning"
+    },
+    {
+      "label": "090",
+      "expected": "right",
+      "observed": "Screen-right",
+      "reason": "The head, cheek, nose/mouth center and whole eye surfaces turn together toward screen-right. The near eye remains the established purple oval.",
+      "verdict": "pass"
+    },
+    {
+      "label": "112.5",
+      "expected": "down-right",
+      "observed": "Screen-right with light downward pitch",
+      "reason": "Rightward face projection persists; more hat crown and a lower face line indicate a small downward component.",
+      "verdict": "warning"
+    },
+    {
+      "label": "135",
+      "expected": "down-right",
+      "observed": "Down and screen-right",
+      "reason": "The crown top is exposed and the face approaches the laptop while eye-width asymmetry keeps a clear rightward yaw.",
+      "verdict": "pass"
+    },
+    {
+      "label": "157.5",
+      "expected": "down-right",
+      "observed": "Mostly down with light screen-right yaw",
+      "reason": "The intermediate cheek projection returns gradually toward the frontal down pose; the crown remains visible and the face/eye center stays slightly right.",
+      "verdict": "pass"
+    },
+    {
+      "label": "180",
+      "expected": "down",
+      "observed": "Front-facing downward gaze",
+      "reason": "The crown top is exposed, the face shortens with pitch and the eyes look down toward the laptop. Both eyes remain open with the same construction.",
+      "verdict": "pass"
+    },
+    {
+      "label": "202.5",
+      "expected": "down-left",
+      "observed": "Mostly down with light screen-left yaw",
+      "reason": "The lowered face and exposed crown continue180; the face center and near/far-eye difference begin the leftward turn. The horizontal component is small.",
+      "verdict": "warning"
+    },
+    {
+      "label": "225",
+      "expected": "down-left",
+      "observed": "Down and screen-left",
+      "reason": "The lowered face line and crown support down; cheek and eye-surface projection support screen-left. Hands/laptop remain attached.",
+      "verdict": "pass"
+    },
+    {
+      "label": "247.5",
+      "expected": "down-left",
+      "observed": "Mostly screen-left with light downward pitch",
+      "reason": "The cheek and eye widths retain the leftward projection of270 while the lower eye line and hat top supply a small down component. The face no longer pinches narrower than both adjacent poses.",
+      "verdict": "pass"
+    },
+    {
+      "label": "270",
+      "expected": "left",
+      "observed": "Screen-left",
+      "reason": "Leftward cheek projection, mouth center and near/far-eye widths agree. The body and laptop keep their seated registration.",
+      "verdict": "pass"
+    },
+    {
+      "label": "292.5",
+      "expected": "up-left",
+      "observed": "Screen-left with an upward head lift",
+      "reason": "The chin and eye line rise together while the far eye stays compressed by left yaw. Its compact cheeks bridge270 and315; the step remains visibly discrete at1×.",
+      "verdict": "warning"
+    },
+    {
+      "label": "315",
+      "expected": "up-left",
+      "observed": "Up and screen-left, turning toward the viewer",
+      "reason": "The eyes lift and the face remains left of center. The farther eye opens with the return toward frontal projection; the laptop and feet do not enlarge.",
+      "verdict": "pass"
+    },
+    {
+      "label": "337.5",
+      "expected": "up-left",
+      "observed": "Mostly up, lightly screen-left",
+      "reason": "The leftward component becomes smaller, both eye surfaces open toward the viewer and the compact face width approaches000 without the old face-scale jump.",
+      "verdict": "pass"
+    }
+  ],
+  "continuity_review": {
+    "135->157.5->180": "The intermediate cheeks/eyes no longer pinch into a tiny flattened face before returning to frontal down. Body/laptop size and visible foot baseline stay stable.",
+    "225->247.5->270": "The local silhouette-difference warning remains. Static review shows a stronger yaw step, with a compact face and intact black outline; final independent native review covers this pair.",
+    "270->292.5->315": "Native browser stepping finds a visible upward pose step and far-eye reopening, without the prior conspicuous whole-face enlargement.",
+    "315->337.5->000": "The face opens gradually as yaw returns toward frontal; eye-to-chin space and cheek scale now join the up anchor more consistently.",
+    "limits": "Sixteen discrete look poses. Browser playback was sampled with screenshots and paused forward/reverse stepping; this revision has not been installed in native Dot."
+  }
+}
