@@ -1,74 +1,139 @@
-# Install and update
+# Install and Update Guide
 
-**English** · [简体中文](INSTALL.zh-CN.md) · [Documentation](README.md)
+**English** · [简体中文](INSTALL.zh-CN.md) · [Documentation Index](README.md)
 
-Use a desktop app with custom v2 pets enabled. The current pet package is **v1.0.2**.
+Phoebe Chupi uses the portable **Codex v2 custom pet format**, and the current release is **v1.0.2**. The entire package consists of just two files (`pet.json` and `spritesheet.webp`) and requires no plugins or background daemons.
+
+![Five core states at native 192 × 208 pixel scale](../previews/stills/five-states.png)
+
+---
+
+## Choosing an Installation Method
+
+Codex supports two independent ways to add a custom pet—**Local Folder Installation** and **Native URI Import**:
+
+```text
+Choose Your Setup Flow
+ │
+ ├─► Option A: Local Folder Install (Recommended — offline-ready & easiest to update)
+ │     └─► Place phoebe-chupi/ inside ~/.codex/pets/
+ │         How it works: Reads the local lossless WebP directly; update anytime by replacing spritesheet.webp
+ │
+ └─► Option B: Native URI Import (Official app import link)
+       └─► Run python3 scripts/install.py to trigger the import URI
+           How it works: Fetches the pinned Release image over HTTPS and registers an app-managed entry
+```
+
+---
 
 ## Install locally
 
-1. Download [phoebe-chupi-v1.0.2.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.2/phoebe-chupi-v1.0.2.zip).
-2. Extract the `phoebe-chupi` folder into `~/.codex/pets/` on macOS or `%USERPROFILE%\.codex\pets\` on Windows. If you set `CODEX_HOME`, use its `pets` subdirectory.
-3. In **Settings → Pets** or **Mini & Pets**, refresh the list and select **Phoebe Chupi · Coding Companion**.
+### Method 1: Manual ZIP Extraction (Fastest)
 
-Check the resulting structure:
+1. Download **[phoebe-chupi-v1.0.2.zip](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/releases/download/v1.0.2/phoebe-chupi-v1.0.2.zip)** and extract it.
+2. Move the `phoebe-chupi` folder into your Codex `pets` directory:
 
-```text
-<Codex home>/pets/phoebe-chupi/
-├── pet.json
-└── spritesheet.webp
-```
+   | Platform / Setup | Target `pets` Directory |
+   | --- | --- |
+   | **macOS** | `~/.codex/pets/` |
+   | **Windows** | `%USERPROFILE%\.codex\pets\` |
+   | **Custom `CODEX_HOME`** | `<CODEX_HOME>/pets/` |
 
-With a complete repository checkout, you can also run:
+3. Open Codex desktop **Settings → Pets** (or **Mini & Pets**), click **Refresh**, and select **Phoebe Chupi · Coding Companion**.
+
+> **Folder Structure Check (Avoid Extra Nesting)**
+>
+> ```text
+> ✅ Correct layout (both files live directly inside phoebe-chupi/):
+> <Codex home>/pets/
+> └── phoebe-chupi/
+>     ├── pet.json
+>     └── spritesheet.webp
+>
+> ❌ Common archive-extractor mistake (an extra outer folder hides the pet from discovery):
+> <Codex home>/pets/
+> └── phoebe-chupi-v1.0.2/
+>     └── phoebe-chupi/
+>         ├── pet.json
+>         └── spritesheet.webp
+> ```
+
+### Method 2: One-Line CLI Copy
+
+From a complete repository checkout, run the installation helper:
 
 ```sh
 python3 scripts/install.py --local
 ```
 
-On Windows, use `py` in place of `python3`. To choose a directory, add `--pets-dir PATH`. The helper copies the two files and preserves any different existing installation.
+- **Windows**: Replace `python3` with `py` (`py scripts/install.py --local`).
+- **Custom destination**: Pass `--pets-dir PATH`.
+- **Overwrite protection**: The script copies only `pet.json` and `spritesheet.webp` and refuses to overwrite an existing installation if its files differ, keeping any local customizations safe.
+
+---
 
 ## Use native import
 
-From a complete repository checkout, run:
+To import Phoebe through the [official Codex pet-install URI](https://learn.chatgpt.com/docs/reference/commands#pets), run from a repository checkout:
 
 ```sh
 python3 scripts/install.py
 ```
 
-Complete the import in the app and choose the pet. To copy the link instead of opening it, run `python3 scripts/install.py --print-url`.
+The script builds and opens the official import URI pinned to the release tag in `VERSION` (`v1.0.2`). Confirm the import prompt inside Codex and select the pet.
 
-The helper uses the [official pet-install URI](https://learn.chatgpt.com/docs/reference/commands#pets): an HTTPS image URL, the pet name and description, and `spriteVersionNumber=2`. The image URL is pinned to the release named in `VERSION`.
+- **Print the URI without opening it**:
+  ```sh
+  python3 scripts/install.py --print-url
+  ```
+- **URI parameters**: The generated link passes the pinned HTTPS release image URL, the display name (`Phoebe Chupi · Coding Companion`), the description, and `spriteVersionNumber=2`.
+
+---
 
 ## Update an existing installation
 
-For a local pet, back up its folder outside `pets`, then replace **only `spritesheet.webp`** with the new file. Keep the existing `pet.json` to preserve its name and identity. Refresh the pet list after the replacement.
+When upgrading from an earlier release (`v1.0.0` or `v1.0.1`) to `v1.0.2`, follow the flow below so your pet's identity and selection state stay intact:
 
-For a cloud-imported pet, update the image on the existing entry through the app's supported update flow. Creating another entry gives it a separate identity.
+```text
+In-Place Local Upgrade (Preserves Pet Identity)
+  1. Back up your existing ~/.codex/pets/phoebe-chupi/ folder OUTSIDE the pets/ directory
+     (Leaving a backup folder inside pets/ will register a duplicate pet entry!)
+  2. Replace ONLY spritesheet.webp inside ~/.codex/pets/phoebe-chupi/
+  3. Keep the existing pet.json untouched ──► Refresh the pet list in Codex Settings
+```
 
-v1.0.2 changes the look poses. All 57 standard frames, including blinking, retain the exact v1.0.1 RGBA pixels.
+- **Local folder installations**: Back up the folder outside `pets/`, then replace **only `spritesheet.webp`**. Keeping your original `pet.json` preserves the pet's local identity.
+- **Cloud / URI-imported pets**: Update the image on the existing entry through the app's supported update flow rather than creating a brand-new entry (which would assign a separate identity).
+- **What changed in v1.0.2**: `v1.0.2` updates 12 head-turn poses in rows 9–10. All 57 standard animation frames across rows 0–8 (including blinking) retain the exact `v1.0.1` RGBA pixels byte for byte.
+
+---
 
 ## Compatibility
 
-| Surface | Support |
+| Surface | Support & Verification Status |
 | --- | --- |
-| macOS desktop | v1.0.2 local installation and app image readback verified. Native visual checks pending. |
-| Codex Dot | Sixteen head poses support cursor-following gaze. v1.0.2 has not been checked in native Dot. |
-| Windows desktop | v2 package and import helper provided; visual verification pending. |
-| Image import or upload | Use an app with custom v2 pet support and follow its import flow. See the [official guide](https://learn.chatgpt.com/docs/pets) for app controls. |
+| **macOS desktop** | **Supported**. `v1.0.2` local installation and app image readback verified byte-for-byte against the distributed WebP (see [Installation Verification Record](look-repair-qa/installation-verification.json)). |
+| **Codex Dot** | **16 cursor-following head poses**. Selects gaze poses in `22.5°` clockwise increments (`v1.0.1` verified in native Dot; `v1.0.2` checked via native 1× browser stepping, with native Dot check pending). |
+| **Windows desktop** | **Portable v2 package & helper provided**. Uses the exact same two-file layout; native Windows visual capture is pending. |
+| **Image import or upload** | Supported on app builds with custom v2 pet support; see the [Official Pets Guide](https://learn.chatgpt.com/docs/pets) for app controls. |
 
-Local desktop files and cloud uploads are separate installations. Menu names and feature availability can vary by app build. This package does not include an IDE-extension pet integration.
+- **Discrete head-turn steps**: Because Dot selects from sixteen discrete drawings rather than continuous 3D interpolation, wider transitions—especially `225° → 247.5°` and `270° → 292.5°`—remain visible as discrete pose steps. See [Review Scope & Known Limitations](REVIEW.md#known-limitations).
+- **Native 1× scale vs zoomed inspection**: Each cell is designed for **192 × 208 px** native playback:
 
-The look animation uses sixteen discrete drawings. Some pose steps remain visible, particularly `225 → 247.5` and `270 → 292.5`. See the [review scope and limitations](REVIEW.md#known-limitations).
+![Native 1× scale vs enlarged diagnostic view](../art/samples/native-size-comparison.png)
+
+---
 
 ## Troubleshooting
 
-| Symptom | What to check |
+| Symptom | What to Check & How to Fix It |
 | --- | --- |
-| Pet does not appear in the list | Refresh the list. Confirm that the two files are directly inside `pets/phoebe-chupi/`, without an extra nested folder. |
-| Preview is blank | Check the download against `SHA256SUMS.txt` in the release and confirm `spriteVersionNumber: 2` in the manifest. |
-| Floating pet still shows the previous character | Select Phoebe, then hide and show the floating pet. If the renderer remains stale, save your work and restart the app when convenient. |
-| Pet holds a still pose | Check the operating system's reduced-motion setting and the app's current activity state. Blink poses include partly closed and closed eyes. |
-| Head turns use the wrong frames | Keep the full 1536 × 2288 sheet and the v2 version field. The final two rows contain the look poses. |
-| Local helper refuses to overwrite a folder | Back up that installation and follow the update steps above. |
-| Enlarged artwork looks soft | Inspect at the native 192 × 208 cell size. Screenshot scaling and preview GIF palettes can change the appearance. |
+| **Pet does not appear in the list** | 1. Click **Refresh** in the Pets settings panel;<br>2. Confirm that `pet.json` and `spritesheet.webp` sit directly inside `pets/phoebe-chupi/` without an extra wrapper folder. |
+| **Preview box is blank** | 1. Verify your download against `SHA256SUMS.txt` (or `CHECKSUMS.sha256` in the repo root);<br>2. Confirm your app version supports `spriteVersionNumber: 2`. |
+| **Floating pet still shows the previous character** | Select Phoebe, then hide and re-show the floating pet window. If the renderer cache stays stale, save your work and restart the Codex app when convenient. |
+| **Pet stays frozen on a single frame** | 1. Check whether your OS has **Reduce Motion** enabled;<br>2. Note that Phoebe's 6.6-second idle cycle includes half-closed and closed blink frames, which may be held when animations are paused. |
+| **Head turns show the wrong frames in Dot** | Keep the full **1536 × 2288** (8 × 11) sheet intact and `spriteVersionNumber: 2` in `pet.json`—Dot reads rows 9 and 10 for the 16 gaze directions. |
+| **`install.py --local` refuses to overwrite** | Back up your existing `pets/phoebe-chupi/` folder outside `pets/`, then replace `spritesheet.webp` as shown in the upgrade section above. |
+| **Enlarged screenshots or GIFs look soft** | Inspect at the native **192 × 208** cell size using the lossless WebP or PNG crops. Browser zoom interpolation and 256-color GIF quantization both soften fine line work. |
 
-For an unresolved display issue, [open an issue](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/issues) with the app version, operating system, installation method, and an image showing the affected frame.
+Still running into display issues? Please [open an issue](https://github.com/RiomQAQ/phoebe-chupi-codex-pet/issues) with your Codex app build number, OS version, installation method, and a screenshot of the affected frame.
